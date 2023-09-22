@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="156px" height="86px" viewBox="0 0 156 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illu-intermedio-large</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="156" height="86"></rect>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-343.000000, -115.000000)">
+            <g id="illu-intermedio-large" transform="translate(343.000000, 115.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-Copy">
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <use fill-opacity="0.2" fill="#0AD6A0" xlink:href="#path-1"></use>
+                </g>
+                <g id="botanic" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(56.000000, 10.000000)" id="Path">
+                        <path d="M11.6153846,85 L34.3846154,85 C35.8261538,85 37.0753846,84.0235 37.3876923,82.651 L43,58 L3,58 L8.61846154,82.651 C8.93076923,84.0205 10.1753846,84.997 11.6153846,85 L11.6153846,85 Z" fill="#FF7200"></path>
+                        <path d="M3.0625,52 L42.9375,52 C44.6295312,52 46,53.3425 46,55 C46,56.6575 44.6295312,58 42.9375,58 L3.0625,58 C1.37046875,58 0,56.6575 0,55 C0,53.3425 1.37046875,52 3.0625,52 Z" fill="#823A00"></path>
+                        <path d="M22,3.96458571 C22.0875,3.32152857 22.5875,3 23.5,3 C24.4125,3 24.9125,3.32152857 25,3.96458571 L25,52 L22,52 L22,3.96458571 Z" fill="#0AD6A0"></path>
+                        <path d="M22,74.5 C22,73.672 21.2676768,73 20.3653499,73 L6.44398027,73 L7.16976492,76 L20.3653499,76 C21.2676768,76 22,75.328 22,74.5 Z" fill="#B55203" opacity="0.496729651"></path>
+                        <path d="M16.5824274,66 C15.7089275,66 15,66.672 15,67.5 C15,68.328 15.7089275,69 16.5824274,69 L40.4434633,69 L41.1176592,66 L16.5824274,66 Z" fill="#B55203" opacity="0.496729651"></path>
+                        <path d="M23,6 C23,2.6865 25.8144286,0 29.2857143,0 L34,0 C34,3.3135 31.1855714,6 27.7142857,6 L23,6 Z" fill="#0AD6A0"></path>
+                        <path d="M24,25 L29.7777778,25 C33.7658889,25 37,21.8654 37,18 L31.2222222,18 C27.2341111,18 24,21.1346 24,25 Z" fill="#0AD6A0"></path>
+                        <path d="M23,46 L30.5,46 C36.299,46 41,41.0751429 41,35 L33.5,35 C27.701,35 23,39.9248571 23,46 Z" fill="#0AD6A0"></path>
+                        <path d="M24,5 C24,2.791 21.6972857,1 18.8571429,1 L15,1 C15,3.209 17.3027143,5 20.1428571,5 L24,5 Z" fill="#0AD6A0"></path>
+                        <path d="M22,18 L16.2222222,18 C12.2341111,18 9,14.8654 9,11 L14.7777778,11 C18.7658889,11 22,14.1346 22,18 Z" fill="#0AD6A0"></path>
+                        <path d="M22,38 L14.5,38 C8.701,38 4,33.0751429 4,27 L11.5,27 C17.299,27 22,31.9248571 22,38 Z" fill="#0AD6A0"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

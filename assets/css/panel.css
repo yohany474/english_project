@@ -1,0 +1,371 @@
+:root {
+    --fondo: #f6f5f2;
+    --secciones: #f6f6f8;
+    --principal: #538fff;
+    --principalOscuro: #385596;
+    --letra: #27374d;
+    --blanco: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    z-index: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+#header {
+    border-top: 2px solid var(--principal);
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+    padding: 0 .5em;
+    background-color: var(--fondo);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.logo {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+
+#header span {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    gap: .15em;
+    color: var(--principal) !important;
+    transition: all .5s ease;
+}
+
+#header span:hover {
+    color: var(--principalOscuro);
+    transform: scale(1.05);
+}
+
+.header_right {
+    gap: 1em;
+    align-items: center;
+    display: flex;
+    justify-self: flex-end;
+}
+
+#iconoSearch {
+    transform: translateX(11.5em);
+    color: var(--principal);
+}
+
+#buscarContenido {
+    padding: .4em .4em .4em .8em;
+    font-size: 14px;
+    border-radius: .4em;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: var(--blanco);
+}
+
+
+/* Main principal */
+#mainPrincipal {
+    flex: 1;
+    display: flex;
+}
+
+#asideMenu {
+    width: 220px;
+    gap: .8em;
+    padding: 1em 0;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: .1em;
+    border-top-left-radius: .1em;
+    background-color: var(--principal);
+}
+
+#page {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    flex: 1;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 1.5em .5em .5em .5em;
+}
+
+.paginas {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.paginas>h2 {
+    color: var(--letra);
+    font-size: 1.1em;
+}
+
+.button {
+    width: 90%;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: flex;
+    padding: .6em .4em;
+    align-items: center;
+    border-radius: .8em;
+    justify-content: center;
+    gap: .9em;
+    font-size: 1.1em;
+    color: var(--secciones);
+    font-weight: 600;
+
+}
+
+.button>p {
+    width: 100px;
+}
+
+.btnActive {
+    background-color: #317aff;
+}
+
+
+.button:hover {
+    background-color: #317aff;
+}
+
+.botones_cont_bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.singOut {
+    color: #27374d;
+    background-color: var(--fondo);
+}
+
+.singOut:hover {
+    background-color: var(--fondo);
+}
+
+.banner {
+    width: 90%;
+    height: 5.5rem;
+}
+
+
+/* rutaActual */
+#rutaActual {
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    color: #317aff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    gap: .15em;
+}
+
+#iconoMenu {
+    display: none;
+}
+
+/* Media query */
+
+@media screen and (max-width: 500px) {
+
+
+    #iconoMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #desplegarMenu {
+        z-index: 1;
+    }
+
+    #cerrarMenu {
+        z-index: 0;
+        opacity: 0;
+        transform: rotate(-180deg);
+
+    }
+
+    .animacionMenu {
+        transform: rotate(180deg);
+        opacity: 0;
+        z-index: 0 !important;
+    }
+
+
+    .animacionCerrar {
+        transition: all .3s ease;
+        opacity: 1 !important;
+        z-index: 1 !important;
+        transform: rotate(-0deg) !important;
+    }
+
+    #desplegarMenu, #cerrarMenu {
+        color: gray;
+        right: .5em;
+        font-size: 1.9em;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    .header_right {
+        display: none;
+    }
+
+
+    #asideMenu {
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+
+        transform: translateX(-500%);
+        position: absolute;
+        transition: all .3s ease;
+    }
+
+    .mostrarMenu {
+
+        transform: translate(0) !important;
+        visibility: visible !important;
+        z-index: 9;
+    }
+
+    .banner {
+        width: 90%;
+        height: 8rem;
+    }
+
+    .botones_cont_bottom {
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+
+/* Container board */
+
+#ContainerCardInicio {
+    /* display: grid;
+    grid-template-columns: repeat(
+
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
+    gap: 16px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: auto;
+    gap: 1em;
+    padding-top: .5em;
+    padding-left: .1em;
+    height: 100%;
+}
+
+/* Estilos para las tarjetas del contenedor */
+
+.cardActivities {
+    width: 195px;
+    max-width: 100%;
+    border-radius: .2em;
+    height: 220px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;   
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+/* Card activities responsive */
+
+@media screen and (max-width: 700px) {
+    .cardActivities{
+        width: 45% !important;
+    }
+    #ContainerCardInicio{
+        overflow: auto;
+        height: 14rem;
+        justify-content: space-around;
+    }
+}
+
+.cardActivitiesIcono {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+}
+
+.cardActivitiesIcono>i {
+    font-size: 4em;
+    align-self: center;
+    color: #51a8ff;
+}
+
+.cardActivitiesIcono>p {
+    font-size: 1.1em;
+    margin-top: .2em;
+    color: #999;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardActivities span:nth-child(2) {
+    height: 2em;
+    color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: #51a8ff;
+    font-size: 15px;
+}
+
+.cardActivitiesEnlace {
+    flex: 1;
+    padding: .2em;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: .2em;
+    border-bottom-left-radius: .2em;
+    background-color: #73b9ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardActivitiesEnlace>a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+/* Colores a las cardActividades */
