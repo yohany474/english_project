@@ -13,28 +13,12 @@ if (mysqli_num_rows($resultado) > 0) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/listening.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet">
         <!-- MEDIDAS RESPONSIVE -->
-        <link rel="stylesheet" href="assets/css/420px.css" media="(max-width: 420px)">
-        <link rel="stylesheet" href="assets/css/720px.css" media="(max-width: 720px)">
-        <link rel="stylesheet" href="assets/css/1366x768.css" media="(min-width: 1366px)">
         <title>Encuesta de Listening</title>
     </head>
 
     <body>
-        <main class="body">
-            <header class="header-listening">
-                <h1>
-                    Listening
-                </h1>
-                <p>
-                    3/8
-                </p>
-                <button id="close-button">X</button>
-            </header>
++
 
             <form action="resultadosListening.php" method="POST">
                 <main class="main-listening">
@@ -90,7 +74,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 <input type="submit" class="button" name="validar" value="Terminar prueba">
             </form>
         </main>
-        <script src="assets/js/listening.js"></script>
+       
     </body>
 
     </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/panel.css" />
@@ -67,19 +67,15 @@
         <p>Listening</p>
       </div>
 
-      <div id="voca" class="button" onclick="mostrarContenedoresMenu('Vocabulary', this)">
-        <i class="fas fa-language"></i>
-        <p>Vocabulary</p>
-      </div>
 
       <!-- Banner -->
 
       <section class="botones_cont_bottom">
         <img src="assets/img/banner.png" alt="" class="banner" />
-        <div class="button singOut">
+        <button id="cerrar_sesion" class="button singOut">
           <i class="fa-solid fa-right-from-bracket"></i>
           <p>Sing out</p>
-        </div>
+        </button>
       </section>
     </aside>
 
@@ -90,7 +86,7 @@
       </div>
 
       <section class="paginas contenedorActive" id="Inicio">
-        
+
         <section id="ContainerCardInicio">
 
           <article class="cardActivities actiGrammar">
@@ -99,7 +95,7 @@
               <p>Grammar</p>
             </span>
             <span style="background-color: #45d3a6;">12 Activities</span>
-            <span class="cardActivitiesEnlace" style="background-color: #7bd8ba;" >
+            <span class="cardActivitiesEnlace" style="background-color: #7bd8ba;">
               <a href="#">Ver contenido</a>
               <a href="#">Ver estadísticas</a>
             </span>
@@ -110,7 +106,7 @@
               <i class="fas fa-pencil-alt" style="color: #ffd600;"></i>
               <p>Writing</p>
             </span>
-            <span style="background-color: #ffd600;" >12 Activities</span>
+            <span style="background-color: #ffd600;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #fcdf96;">
               <a href="#">Ver contenido</a>
               <a href="#">Ver estadísticas</a>
@@ -119,12 +115,12 @@
 
           <article class="cardActivities actiReading">
             <span class="cardActivitiesIcono">
-              <i class="fas fa-book-open"  style="color: #ff6961;"></i>
+              <i class="fas fa-book-open" style="color: #ff6961;"></i>
               <p>Reading</p>
             </span>
-            <span  style="background-color: #ff6961;">12 Activities</span>
+            <span style="background-color: #ff6961;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #ffbfb0;">
-              <a href="#">Ver contenido</a>
+              <a href="preguntasReading.php">Ver contenido</a>
               <a href="#">Ver estadísticas</a>
             </span>
           </article>
@@ -134,30 +130,49 @@
               <i class="fas fa-headphones"></i>
               <p>Listening</p>
             </span>
-            <span >12 Activities</span>
+            <span>12 Activities</span>
             <span class="cardActivitiesEnlace">
-              <a href="#">Ver contenido</a>
+              <a href="preguntasListening.PHP">Ver contenido</a>
               <a href="#">Ver estadísticas</a>
             </span>
           </article>
 
-          <article class="cardActivities actiVocabulary">
-            <span class="cardActivitiesIcono">
-              <i class="fas fa-language" style="color: #ff8431;"></i>
-              <p>Vocabulary</p>
-            </span>
-            <span style="background-color: #ff8431;">12 Activities</span>
-            <span class="cardActivitiesEnlace" style="background-color: #ffa468;">
-              <a href="#">Ver contenido</a>
-              <a href="#">Ver estadísticas</a>
-            </span>
-          </article>
+
+
+          
+
 
         </section>
       </section>
 
       <section class="paginas contenedorActive" id="Grammar">
         <h2>Grammar</h2>
+        <form action="controller/CrearGrammar.php" method="post" class="formulario-ejercicio">
+          <div class="fores">
+            <section>
+              <label for="titulo">Título del Ejercicio:</label>
+              <input type="text" id="titulo" name="titulo" required>
+            </section>
+            <section>
+              <label for="titulo">Nivel de la actividad</label>
+              <select name="nivel">
+                <option value="1">A1</option>
+                <option value="2">A2</option>
+                <option value="3">B1</option>
+              </select>
+            </section>
+          </div>
+          <label for="contenido">Descripcion del Ejercicio:</label>
+          <textarea id="contenido" name="descripcion" rows="5" required></textarea>
+          <label for="contenido">Contenido del Ejercicio:</label>
+          <textarea id="contenido" name="contenido" rows="5" required></textarea>
+
+          <label for="palabras-clave">Palabras Clave (separadas por comas):</label>
+          <input type="text" id="palabras-clave" name="palabras-clave" required>
+
+
+          <button type="submit">Crear Ejercicio</button>
+        </form>
       </section>
 
       <section class="paginas" id="Writing">
@@ -168,6 +183,18 @@
         <form action="" id="ventanaFormReading" enctype="multipart/form-data" method="post">
           <main id="mainReading">
             <div class="rowWrap">
+
+
+              <div class="itemForm" style="width: 4rem;">
+                <label for="Nivel">Nivel</label>
+                <select name="nivel" id="">
+                  <option value="1">A1</option>
+                  <option value="2">A2</option>
+                  <option value="3">B1</option>
+                </select>
+              </div>
+
+
               <div class="itemForm">
                 <label for="title">Titulo de actividad</label>
                 <input type="text" name="titulo" id="title" required />
@@ -179,7 +206,7 @@
               </div>
 
               <div class="itemForm" required>
-                <label for="title">Seleccione cantidad de preguntas</label>
+                <label for="title">Cantidad de preguntas</label>
                 <input type="number" name="cantidadPreguntas" id="cantidadPreguntasR" />
               </div>
             </div>
@@ -205,6 +232,17 @@
         <form action="" id="ventanaFormListening" enctype="multipart/form-data" method="post">
           <main id="mainListening">
             <div class="rowWrap">
+
+              
+              <div class="itemForm"  style="width: 4rem;">
+                <label for="Nivel">Nivel</label>
+                <select name="nivel" id="">
+                  <option value="1">A1</option>
+                  <option value="2">A2</option>
+                  <option value="3">B1</option>
+                </select>
+              </div>
+
               <div class="itemForm">
                 <label for="title">Titulo de actividad</label>
                 <input type="text" name="titulo" id="title" required />
@@ -216,7 +254,7 @@
               </div>
 
               <div class="itemForm" required>
-                <label for="title">Seleccione cantidad de preguntas</label>
+                <label for="title">Cantidad de preguntas</label>
                 <input type="number" name="cantidadPreguntas" id="cantidadPreguntasL" />
               </div>
             </div>
@@ -231,9 +269,6 @@
         </form>
       </section>
 
-      <section class="paginas" id="Vocabulary">
-        <h2>Vocabulary</h2>
-      </section>
     </section>
   </main>
 
@@ -242,6 +277,7 @@
   <script src="assets/js/generarPreguntasReading.js"></script>
   <script src="assets/js/enviarListening.js"></script>
   <script src="assets/js/enviarReading.js"></script>
+  <script src="assets/js/cerrar.js"></script>
 </body>
 
 </html>

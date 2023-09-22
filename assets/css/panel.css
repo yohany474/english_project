@@ -5,14 +5,14 @@
     --principalOscuro: #385596;
     --letra: #27374d;
     --blanco: #fff;
-
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -23,7 +23,6 @@ body {
     overflow: hidden;
 }
 
-
 #header {
     border-top: 2px solid var(--principal);
     height: 4rem;
@@ -31,9 +30,10 @@ body {
     display: flex;
     font-weight: 600;
     justify-content: space-between;
-    padding: 0 .5em;
+    padding: 0 0.5em;
     background-color: var(--fondo);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .logo {
@@ -41,15 +41,14 @@ body {
     height: 5.5rem;
 }
 
-
 #header span {
     display: flex;
     font-size: 16px;
     align-items: center;
     cursor: pointer;
-    gap: .15em;
+    gap: 0.15em;
     color: var(--principal) !important;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 #header span:hover {
@@ -70,15 +69,15 @@ body {
 }
 
 #buscarContenido {
-    padding: .4em .4em .4em .8em;
+    padding: 0.4em 0.4em 0.4em 0.8em;
     font-size: 14px;
-    border-radius: .4em;
+    border-radius: 0.4em;
     border: none;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     background-color: var(--blanco);
 }
-
 
 /* Main principal */
 #mainPrincipal {
@@ -88,23 +87,25 @@ body {
 
 #asideMenu {
     width: 220px;
-    gap: .8em;
+    gap: 0.8em;
     padding: 1em 0;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: flex;
     flex-direction: column;
-    border-bottom-left-radius: .1em;
-    border-top-left-radius: .1em;
+    border-bottom-left-radius: 0.1em;
+    border-top-left-radius: 0.1em;
     background-color: var(--principal);
 }
 
 #page {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     flex: 1;
     background-color: #f9f9f9;
     position: relative;
-    padding: 1.5em .5em .5em .5em;
+    padding: 1.5em 0.5em 0.5em 0.5em;
 }
 
 .paginas {
@@ -120,18 +121,17 @@ body {
 
 .button {
     width: 90%;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     display: flex;
-    padding: .6em .4em;
+    padding: 0.6em 0.4em;
     align-items: center;
-    border-radius: .8em;
+    border-radius: 0.8em;
     justify-content: center;
-    gap: .9em;
+    gap: 0.9em;
     font-size: 1.1em;
     color: var(--secciones);
     font-weight: 600;
-
 }
 
 .button>p {
@@ -141,7 +141,6 @@ body {
 .btnActive {
     background-color: #317aff;
 }
-
 
 .button:hover {
     background-color: #317aff;
@@ -169,7 +168,6 @@ body {
     height: 5.5rem;
 }
 
-
 /* rutaActual */
 #rutaActual {
     position: absolute;
@@ -180,7 +178,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     display: flex;
-    gap: .15em;
+    gap: 0.15em;
 }
 
 #iconoMenu {
@@ -190,8 +188,6 @@ body {
 /* Media query */
 
 @media screen and (max-width: 500px) {
-
-
     #iconoMenu {
         display: flex;
         align-items: center;
@@ -206,7 +202,6 @@ body {
         z-index: 0;
         opacity: 0;
         transform: rotate(-180deg);
-
     }
 
     .animacionMenu {
@@ -215,17 +210,17 @@ body {
         z-index: 0 !important;
     }
 
-
     .animacionCerrar {
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         opacity: 1 !important;
         z-index: 1 !important;
         transform: rotate(-0deg) !important;
     }
 
-    #desplegarMenu, #cerrarMenu {
+    #desplegarMenu,
+    #cerrarMenu {
         color: gray;
-        right: .5em;
+        right: 0.5em;
         font-size: 1.9em;
         position: absolute;
         transition: all 0.3s ease;
@@ -235,7 +230,6 @@ body {
         display: none;
     }
 
-
     #asideMenu {
         width: 100%;
         height: 100vh;
@@ -243,11 +237,10 @@ body {
 
         transform: translateX(-500%);
         position: absolute;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
     .mostrarMenu {
-
         transform: translate(0) !important;
         visibility: visible !important;
         z-index: 9;
@@ -263,7 +256,6 @@ body {
         justify-content: center;
     }
 }
-
 
 /* Container board */
 
@@ -284,36 +276,56 @@ body {
     width: 100%;
     overflow: auto;
     gap: 1em;
-    padding-top: .5em;
-    padding-left: .1em;
-    height: 100%;
+    padding-top: 0.5em;
+    padding-left: 0.1em;
+    height: calc(100vh - 93);
 }
 
 /* Estilos para las tarjetas del contenedor */
 
 .cardActivities {
-    width: 195px;
+    width: 280px;
     max-width: 100%;
-    border-radius: .2em;
+    border-radius: 0.2em;
     height: 220px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     cursor: pointer;
 }
 
+.cardActivities:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px;
 
+}
 
 /* Card activities responsive */
 
 @media screen and (max-width: 700px) {
-    .cardActivities{
+    .cardActivities {
         width: 45% !important;
     }
-    #ContainerCardInicio{
+
+    #ContainerCardInicio {
         overflow: auto;
         height: 14rem;
         justify-content: space-around;
+    }
+
+    .fores {
+        flex-direction: column;
+        height: 9rem !important;
+    }
+
+    .fores section {
+        width: 100% !important;
+    }
+
+    .formulario-ejercicio button {
+        width: 50% !important;
+        left: 20% !important;
+        bottom: 10% !important;
     }
 }
 
@@ -332,7 +344,7 @@ body {
 
 .cardActivitiesIcono>p {
     font-size: 1.1em;
-    margin-top: .2em;
+    margin-top: 0.2em;
     color: #999;
     text-align: center;
     font-weight: 600;
@@ -344,18 +356,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+        rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
     background-color: #51a8ff;
     font-size: 15px;
 }
 
 .cardActivitiesEnlace {
     flex: 1;
-    padding: .2em;
+    padding: 0.2em;
     display: flex;
     flex-direction: column;
-    border-bottom-right-radius: .2em;
-    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
     background-color: #73b9ff;
     justify-content: center;
     align-items: center;
@@ -365,7 +378,75 @@ body {
     color: var(--blanco);
     text-decoration: none;
     font-size: 14px;
+}
 
+.formulario-ejercicio {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 125px);
+    padding: 0rem 1.4rem;
+    overflow: auto;
+}
+
+.formulario-ejercicio input {
+    border: none;
+    color: #363636;
+    outline: none;
+    padding: 0.78em 0.5em;
+    border-radius: 0.35em;
+    font-size: 1em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+        rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.formulario-ejercicio select {
+    border: none;
+    color: #363636;
+    outline: none;
+    padding: 0.78em 0.5em;
+    border-radius: 0.35em;
+    font-size: 1em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+        rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.formulario-ejercicio .fores {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+.fores section {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.formulario-ejercicio label {
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #44628c;
+}
+
+.formulario-ejercicio textarea {
+    resize: none;
+}
+
+.formulario-ejercicio button {
+    margin-top: 10px;
+    width: 20%;
+    background-color: #538fff;
+    color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    padding: 0.59em 0.5em !important;
+    transition: all 0.5s ease;
+    border-radius: 8px;
 }
 
 /* Colores a las cardActividades */

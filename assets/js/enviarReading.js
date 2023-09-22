@@ -29,6 +29,15 @@ function generarContenedoresDePreguntasYOpciones() {
     "contenedorPreguntasR"
   );
 
+
+  if(cantidadPreguntasReading > 5){
+
+    alert("La cantidad de preguntas maxima es 5");
+    document.getElementById('cantidadPreguntasR').value =0;
+    exit;
+
+  }
+
   let preguntasHTML = "";
   for (let i = 1; i <= cantidadPreguntasReading; i++) {
     preguntasHTML += `
