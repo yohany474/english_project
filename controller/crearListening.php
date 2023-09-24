@@ -9,7 +9,8 @@ function getLetraFromNumero($numero)
 
 if ($_SERVER['REQUEST_METHOD'] ==='POST') {
 
-    $titulo = $_POST["titulo"];
+    $titulo =   mysqli_real_escape_string($conexion,  $_POST["titulo"]);
+
 
     // Obtener información del archivo de audio
     $nombreAudio = $_FILES['audio']['name'];
@@ -18,6 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
 
     // Generar un nombre único para el archivo de audio
     $nombreUnicoAudio = uniqid() . '.' . $extensionAudio;
+
+    // Nivel seleccionado
+    $nivel  =$_POST['nivel'];
 
     // Ruta completa para guardar el archivo de audio
     $rutaBd = 'uploads/' . $nombreUnicoAudio;
@@ -31,12 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
         $insercionCorrecta = true;
 
         for ($i = 1; $i <= $cantidadPreguntas; $i++) {
-            $pregunta = $_POST['pregunta' . $i];
+            $pregunta = mysqli_real_escape_string($conexion, $_POST['pregunta' . $i]);
             $cantidadOpciones = $_POST['cantidadOpciones' . $i];
             $opciones = [];
 
             for ($j = 1; $j <= $cantidadOpciones; $j++) {
-                $opcion = $_POST['pregunta' . $i . '_opcion' . getLetraFromNumero($j)];
+                $opcion =    mysqli_real_escape_string( $conexion, $_POST['pregunta' . $i . '_opcion' . getLetraFromNumero($j)]);
                 $opciones[] = $opcion;
             }
 
@@ -46,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
             $respuestaCorrecta = $_POST['rta_correcta' . $i];
 
             // Preparar y ejecutar la consulta para insertar los datos
-            $stmt = "INSERT INTO actividadlistening(titulo, audio, pregunta, opciones, respuestacorrecta) 
-                  VALUES ('$titulo','$rutaBd', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
+            $stmt = "INSERT INTO actividadlistening(idNivel,titulo, audio, pregunta, opciones, respuestacorrecta) 
+                  VALUES ('$nivel','$titulo','$rutaBd', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
             if (!mysqli_query($conexion, $stmt)) {
                 $insercionCorrecta = false; // Si hay un error en alguna inserción, se marca como falsa
             }

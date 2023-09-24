@@ -10,8 +10,9 @@ function getLetraFromNumero($numero)
 
 if ($_SERVER['REQUEST_METHOD'] ==='POST') {
 
-    $titulo = $_POST["titulo"];
-    $textoInformacion = $_POST['texto'];
+    $titulo =mysqli_real_escape_string($conexion,  $_POST["titulo"]);
+
+    $textoInformacion = mysqli_real_escape_string($conexion, $_POST['texto']);
     // Obtener información del archivo de imagen
     $nombreImagen = $_FILES['imagen']['name'];
     $rutaImagen = $_FILES['imagen']['tmp_name'];
@@ -19,6 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
 
     // Generar un nombre único para el archivo de audio
     $nombreUnicoImagen = uniqid() . '.' . $nombreImagen;
+
+    // Nivel seleccionado
+    $nivel = $_POST['nivel'];
 
     // Ruta completa para guardar el archivo de audio
     $rutaBd = 'uploads/' . $nombreUnicoImagen;
@@ -34,23 +38,23 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
        
 
         for ($i = 1; $i <= $cantidadPreguntas; $i++) {
-            $pregunta = $_POST['pregunta' . $i];
-            $cantidadOpciones = $_POST['cantidadOpciones' . $i];
+            $pregunta = mysqli_real_escape_string($conexion,  $_POST['pregunta' . $i]);
+            $cantidadOpciones = mysqli_real_escape_string($conexion,  $_POST['cantidadOpciones' . $i]);
             $opciones = [];
 
             for ($j = 1; $j <= $cantidadOpciones; $j++) {
-                $opcion = $_POST['pregunta' . $i . '_opcion' . getLetraFromNumero($j)];
+                $opcion = mysqli_real_escape_string($conexion, $_POST['pregunta' . $i . '_opcion' . getLetraFromNumero($j)]);
                 $opciones[] = $opcion;
             }
 
             $opciones_str = implode('/', $opciones);
 
             // Obtener la respuesta correcta de la pregunta actual
-            $respuestaCorrecta = $_POST['rta_correcta' . $i];
+            $respuestaCorrecta = mysqli_real_escape_string($conexion, $_POST['rta_correcta' . $i]);
 
             // Preparar y ejecutar la consulta para insertar los datos
-            $stmt = "INSERT INTO actividadReading(titulo, imagen, texto, pregunta, opciones, respuestacorrecta) 
-                  VALUES ('$titulo','$rutaBd', '$textoInformacion', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
+            $stmt = "INSERT INTO actividadReading(idNivelRea, titulo, imagen, texto, pregunta, opciones, respuestacorrecta) 
+                  VALUES ('$nivel', '$titulo','$rutaBd', '$textoInformacion', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
             if (!mysqli_query($conexion, $stmt)) {
                 $insercionCorrecta = false; // Si hay un error en alguna inserción, se marca como falsa
             }
