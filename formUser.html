@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Preguntas</title>
+    <link rel="stylesheet" href="assets/css/questionCheck.css">
+</head>
+<body>
+<div class="container">
+    <h1>Formulario de Preguntas</h1>
+    <form id="questionForm">
+        <div class="question">
+            <label for="pregunta1">Pregunta 1: ¿Cuál es tu color favorito?</label>
+            <label class="div1">
+              <input type="radio" name="respuesta1" value="rojo">
+              <div class="checkmark"></div>
+              <label for="pregunta1_rojo">Rojo</label>
+            </label>
+            <label class="div1">
+              <input type="radio" name="respuesta1" value="verde">
+              <div class="checkmark"></div>
+              <label for="pregunta1_verde">Verde</label>
+            </label>
+            <label class="div1">
+              <input type="radio" name="respuesta1" value="azul">
+              <div class="checkmark"></div>
+              <label for="pregunta1_azul">Azul</label>
+            </label>
+        </div>
+
+        <div class="question">
+            <label for="pregunta2">Pregunta 2: ¿Cuál es tu animal favorito?</label>
+            <label class="div1">
+              <input type="radio" name="respuesta2" value="perro">
+              <div class="checkmark"></div>
+              <label for="pregunta2_perro">Perro</label>
+            </label>
+            <label class="div1">
+              <input type="radio" name="respuesta2" value="gato">
+              <div class="checkmark"></div>
+              <label for="pregunta2_gato">Gato</label>
+            </label>
+            <label class="div1">
+              <input type="radio" name="respuesta2" value="pajaro">
+              <div class="checkmark"></div>
+              <label for="pregunta2_pajaro">Pájaro</label>
+            </label>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn" type="button" id="nextButton">Siguiente</button>
+            <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
+        </div>
+    </form>
+</div>
+<script>
+    // JavaScript para manejar el cambio de preguntas
+    const form = document.getElementById("questionForm");
+    const questions = form.querySelectorAll(".question");
+    const nextButton = document.getElementById("nextButton");
+    const submitButton = document.getElementById("submitButton");
+
+    let currentQuestion = 0;
+
+    nextButton.addEventListener("click", () => {
+        // Mostrar un mensaje de confirmación
+        const confirmation = confirm("¿Seguro que quieres continuar a la siguiente pregunta?");
+
+        if (confirmation) {
+            questions[currentQuestion].style.display = "none";
+            currentQuestion++;
+
+            if (currentQuestion < questions.length) {
+                questions[currentQuestion].style.display = "flex";
+            } else {
+                nextButton.style.display = "none"; // Ocultar el botón "Siguiente"
+                submitButton.style.display = "flex"; // Mostrar el botón "Enviar respuestas"
+            }
+        }
+    });
+
+    // Mostrar la primera pregunta, ocultar las demás
+    questions[currentQuestion].style.display = "flex";
+    for (let i = 1; i < questions.length; i++) {
+        questions[i].style.display = "none";
+    }
+</script>
+</body>
+</html>
+

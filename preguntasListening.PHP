@@ -1,7 +1,7 @@
 <?php
 require_once 'config/Conexion.php';
 // Consulta SQL para obtener todas las actividades de listening
-$sql = "SELECT * FROM actividadlistening";
+$sql = "SELECT * FROM actividadlistening  WHERE titulo = 'Getting to Know Each Other'";
 $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
@@ -13,73 +13,76 @@ if (mysqli_num_rows($resultado) > 0) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- MEDIDAS RESPONSIVE -->
+        <link rel="stylesheet" href="assets/css/questionCheck.css">
         <title>Encuesta de Listening</title>
     </head>
 
     <body>
-+
+        
+    <section class="container">
 
-            <form action="resultadosListening.php" method="POST">
-                <main class="main-listening">
-                    <div id="preguntas-container">
-                        <?php
-                        $tituloAnterior = ""; // Variable para almacenar el título anterior
-                        $audioAnterior = ""; // Variable para almacenar el audio anterior
+    
+        <form action="resultadosListening.php" method="POST" id="questionForm">
 
-                        while ($pregunta = mysqli_fetch_assoc($resultado)) {
-                            $idActividad = $pregunta["idactividadlistening"];
-                            $titulo = $pregunta["titulo"];
-                            $audio = $pregunta["audio"];
-                            $preguntaa = $pregunta["pregunta"];
-                            $opciones = explode('/', $pregunta["opciones"]);
+            
+                    <?php
+                    $tituloAnterior = ""; // Variable para almacenar el título anterior
+                    $audioAnterior = ""; // Variable para almacenar el audio anterior
+                
+                    while ($pregunta = mysqli_fetch_assoc($resultado)) {
+                        $idActividad = $pregunta["idactividadlistening"];
+                        $titulo = $pregunta["titulo"];
+                        $audio = $pregunta["audio"];
+                        $preguntaa = $pregunta["pregunta"];
+                        $opciones = explode('/', $pregunta["opciones"]);
 
-                            // Comprobar si el título y el audio son diferentes del anterior
-                            if ($titulo !== $tituloAnterior || $audio !== $audioAnterior) {
-                                // Cerrar el div anterior si no es la primera actividad
-                                if ($tituloAnterior !== "") {
-                                    echo '</div>';
-                                }
-
-                                $tituloAnterior = $titulo;
-                                $audioAnterior = $audio;
-
-                                // Mostrar el título y el audio
-                                echo '<h2>Titulo de la actividad: ' . $titulo . '</h2>';
-                                echo '<audio controls>';
-                                echo '<source src="' . $audio . '" type="audio/mpeg">';
-                                echo 'Tu navegador no soporta el elemento de audio.';
-                                echo '</audio>';
-                                echo '<div>'; // Iniciar un nuevo conjunto de preguntas
-                            }
-
-                            // Agregar la pregunta al formulario actual
-                            echo '<div class="pregunta">';
-                            echo '<div class="sub-pregunta">';
-                            echo '<p>' . $preguntaa . '</p>';
-                            echo '</div>';
-
-                            foreach ($opciones as $key => $opcion) {
-                                $opcionesLabel = chr(65 + $key); // a), b), c), ...
-                                echo '<div class="respuesta">';
-                                echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '"> ' . $opcionesLabel . ') ' . $opcion . '';
+                        // Comprobar si el título y el audio son diferentes del anterior
+                        if ($titulo !== $tituloAnterior || $audio !== $audioAnterior) {
+                            // Cerrar el div anterior si no es la primera actividad
+                            if ($tituloAnterior !== "") {
                                 echo '</div>';
                             }
+
+                            $tituloAnterior = $titulo;
+                            $audioAnterior = $audio;
+
+                            // Mostrar el título y el audio
+                            echo '<h2>Titulo de la actividad: ' . $titulo . '</h2>';
+                            echo '<audio controls>';
+                            echo '<source src="' . $audio . '" type="audio/mpeg">';
+                            echo 'Tu navegador no soporta el elemento de audio.';
+                            echo '</audio>';
+                            echo '<div>'; // Iniciar un nuevo conjunto de preguntas
+                        }
+
+                        // Agregar la pregunta al formulario actual
+                        echo '<div class="pregunta">';
+                        echo '<div class="sub-pregunta">';
+                        echo '<p>' . $preguntaa . '</p>';
+                        echo '</div>';
+
+                        foreach ($opciones as $key => $opcion) {
+                            $opcionesLabel = chr(65 + $key); // a), b), c), ...
+                            echo '<div class="question">';
+                            echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '"> ' . $opcionesLabel . ') ' . $opcion . '';
                             echo '</div>';
                         }
-                        ?>
-                    </div>
-                    <div id="next-button" class="button">Siguiente</div>
-                </main>
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
                 <input type="submit" class="button" name="validar" value="Terminar prueba">
-            </form>
-        </main>
-       
+                <div id="next-button" class="button">Siguiente</div>
+          
+
+        </form>
+
+    </section>
     </body>
 
     </html>
 
-<?php
+    <?php
 } else {
     echo "No se encontraron actividades de listening.";
 }
