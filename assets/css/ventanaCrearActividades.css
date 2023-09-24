@@ -1,0 +1,153 @@
+#ventanaFormListening, #ventanaFormReading {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#ventanaFormListening>header, #ventanaFormReading>header {
+    height: 4.5rem;
+    background-color: #538fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    font-size: 1.5em;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f2f2f2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#abrirVentanaListening, #abrirVentanaReading {
+    cursor: pointer;
+}
+
+#cerrarVentanaListening, #cerrarVentanaReading {
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#mainListening, #mainReading {
+
+    color: #44628c;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    padding: 1em;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+}
+
+input,
+select, textarea,
+button {
+    border: none;
+    color: #363636;
+    outline: none;
+    padding: .78em .5em;
+    border-radius: .35em;
+    font-size: 1em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.itemForm>[type="file"] {
+    padding: .59em .5em !important;
+}
+
+.itemForm textarea[name='texto'] {
+    resize: none;
+}
+
+.rowWrap>[type="submit"] {
+    background-color: #538fff;
+    color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .59em .5em !important;
+    transition: all .5s ease;
+}
+
+.rowWrap>[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.rowWrap {
+    display: flex;
+    justify-content: space-around;
+    gap: .5em;
+    align-items: center;
+
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.itemForm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .5em;
+}
+
+.itemForm>label {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+/* Contenedor para crear dinamicamente las preguntas */
+
+#contenedorPreguntasL, #contenedorPreguntasR {
+
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 18em;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+
+    .rowWrap {
+        flex-wrap: wrap;
+    }
+
+    #ventanaFormListening>header, #ventanaFormReading>header {
+        font-size: 1.05em !important;
+    }
+
+    #ventanaFormListening {
+        padding-bottom: 1.5em;
+    }
+
+    #mainListening, #mainReading {
+        justify-content: flex-start;
+    }
+
+    #contenedorPreguntas {
+        height: 40vh;
+    }
+
+    .itemForm>label {
+        font-size: 15px !important;
+    }
+
+    /* Ocultar el texto interno del campo de tipo "file" */
+    .itemForm>[type="file"]::-webkit-file-upload-button {
+        font-size: 0;
+        /* Hacer que el texto sea invisible */
+        padding: .59em .5em !important;
+        /* Estilos adicionales si es necesario */
+    }
+}
