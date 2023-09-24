@@ -67,10 +67,10 @@
         <p>Listening</p>
       </div>
 
-      <div id="voca" class="button" onclick="mostrarContenedoresMenu('Vocabulary', this)">
+      <!-- <div id="voca" class="button" onclick="mostrarContenedoresMenu('Vocabulary', this)">
         <i class="fas fa-language"></i>
         <p>Vocabulary</p>
-      </div>
+      </div> -->
 
       <!-- Banner -->
 
@@ -146,7 +146,7 @@
 
       <section class="paginas contenedorActive" id="Grammar">
         <h2>Grammar</h2>
-        <form action="./controller/CrearEjercicio.php" method="post" class="formulario-ejercicio">
+        <form action="./controller/CrearGrammar.php" method="post" class="formulario-ejercicio">
 
           <label for="IDnivel">ID de Nivel:</label>
           <select id="IDnivel" name="IDnivel">
@@ -170,12 +170,38 @@
           <input type="text" id="palabras-clave" name="palabras-clave" required>
 
 
-          <button type="submit">Crear Ejercicio</button>
+          <button type="submit">Crear Ejercicio Grammar</button>
         </form>
       </section>
 
       <section class="paginas" id="Writing">
         <h2>Writing</h2>
+        <form action="./controller/CrearWriting.php" method="post" class="formulario-ejercicio">
+
+          <label for="IDnivel">ID de Nivel:</label>
+          <select id="IDnivel" name="IDnivel">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+          </select>
+
+          <label for="titulo">Título del Ejercicio:</label>
+          <input type="text" id="titulo" name="titulo" required>
+
+
+          <label for="secrip-corta">Descripción Corta:</label>
+          <textarea id="secrip-corta" name="secrip-corta"></textarea>
+
+
+          <label for="contenido">Contenido del Ejercicio:</label>
+          <textarea id="contenido" name="contenido" rows="5" required></textarea>
+
+          <label for="palabras-clave">Palabras Clave (separadas por comas):</label>
+          <input type="text" id="palabras-clave" name="palabras-clave" required>
+
+
+          <button type="submit">Crear Ejercicio Writing</button>
+        </form>
       </section>
 
       <section class="paginas" id="Reading">
