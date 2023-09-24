@@ -1,11 +1,25 @@
 <?php
 require_once 'config/Conexion.php';
-// Consulta SQL para obtener todas las actividades de listening
-$sql = "SELECT * FROM actividadlistening  WHERE titulo = 'Getting to Know Each Other'";
+
+function consultarPreguntasListening($nivel)
+{
+    global $conexion;
+    $resultado = array();
+    $nivelE = mysqli_real_escape_string($conexion, $nivel);
+    $consulta = $conexion->query("SELECT * FROM actividadlistening WHERE idNivel = '$nivelE' ");
+
+    if ($consulta->num_rows > 0) {
+        $resultado = array(
+            'titulo'
+        );
+    }
+}
+
+$sql = "SELECT * FROM actividadlistening  WHERE idNivel = 2";
 $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
-    ?>
+?>
 
     <!DOCTYPE html>
     <html lang="es">
@@ -13,76 +27,84 @@ if (mysqli_num_rows($resultado) > 0) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/questionCheck.css">
-        <title>Encuesta de Listening</title>
+        <link rel="stylesheet" href="assets/css/preguntasListening.css">
+        <title>Preguntas Listening</title>
     </head>
 
     <body>
-        
-    <section class="container">
 
-    
-        <form action="resultadosListening.php" method="POST" id="questionForm">
+        <div class="container">
+            <span>
+                <p id="preguntaActual"></p>
+                /
+                <p id="totalPregunta"></p>
+            </span>
+            <h2>Formulario de Preguntas</h2>
+            <form id="questionForm" action="" method="post">
 
-            
-                    <?php
-                    $tituloAnterior = ""; // Variable para almacenar el título anterior
-                    $audioAnterior = ""; // Variable para almacenar el audio anterior
-                
-                    while ($pregunta = mysqli_fetch_assoc($resultado)) {
-                        $idActividad = $pregunta["idactividadlistening"];
-                        $titulo = $pregunta["titulo"];
-                        $audio = $pregunta["audio"];
-                        $preguntaa = $pregunta["pregunta"];
-                        $opciones = explode('/', $pregunta["opciones"]);
+                <?php
 
-                        // Comprobar si el título y el audio son diferentes del anterior
-                        if ($titulo !== $tituloAnterior || $audio !== $audioAnterior) {
-                            // Cerrar el div anterior si no es la primera actividad
-                            if ($tituloAnterior !== "") {
-                                echo '</div>';
-                            }
+                $audio_actual = ''; // Variable para almacenar el audio actual
 
-                            $tituloAnterior = $titulo;
-                            $audioAnterior = $audio;
+                while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
-                            // Mostrar el título y el audio
-                            echo '<h2>Titulo de la actividad: ' . $titulo . '</h2>';
-                            echo '<audio controls>';
-                            echo '<source src="' . $audio . '" type="audio/mpeg">';
-                            echo 'Tu navegador no soporta el elemento de audio.';
-                            echo '</audio>';
-                            echo '<div>'; // Iniciar un nuevo conjunto de preguntas
-                        }
+                    $idActividad = $pregunta["idactividadlistening"];
+                    $audio_pregunta = $pregunta["audio"]; // Obtener el audio de la pregunta actual
+                    $preguntaa = $pregunta["pregunta"];
+                    $opciones = explode('/', $pregunta["opciones"]);
 
-                        // Agregar la pregunta al formulario actual
-                        echo '<div class="pregunta">';
-                        echo '<div class="sub-pregunta">';
-                        echo '<p>' . $preguntaa . '</p>';
-                        echo '</div>';
+                    // Si el audio actual es diferente al de la pregunta actual, actualízalo
+                    if ($audio_pregunta != $audio_actual) {
+                        echo '<audio id="audio" controls src="' . $audio_pregunta . '"></audio>';
+                        $audio_actual = $audio_pregunta;
+                    }
+                    ?>
+                    <div class="question">
+                        <label for="pregunta1">
+                            <?php echo $preguntaa ?>
+                        </label>
+
+                        <?php
 
                         foreach ($opciones as $key => $opcion) {
                             $opcionesLabel = chr(65 + $key); // a), b), c), ...
-                            echo '<div class="question">';
-                            echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '"> ' . $opcionesLabel . ') ' . $opcion . '';
-                            echo '</div>';
+                
+                            ?>
+                            <label class="div1">
+                                <?php
+                                echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
+                                ?>
+                                <div class="checkmark"></div>
+                                <label for="pregunta1_rojo">
+                                    <?php
+                                    echo $opcionesLabel . ') ' . $opcion . '';
+                                    ?>
+                                </label>
+                            </label>
+                            <?php
                         }
-                        echo '</div>';
-                    }
-                    ?>
+                        ?>
+                    </div>
+                    <?php
+                }
+                ?>
+
+
+                <div class="btn-container">
+                    <button class="btn" type="button" id="previousButton">Anterior</button>
+                    <button class="btn" type="button" id="nextButton">Siguiente</button>
+                    <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
                 </div>
-                <input type="submit" class="button" name="validar" value="Terminar prueba">
-                <div id="next-button" class="button">Siguiente</div>
-          
+            </form>
+        </div>
 
-        </form>
+        <script src="assets/js/validarListening.js"></script>
 
-    </section>
     </body>
 
     </html>
 
-    <?php
+<?php
 } else {
     echo "No se encontraron actividades de listening.";
 }

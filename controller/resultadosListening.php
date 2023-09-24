@@ -1,8 +1,10 @@
 <?php
-require_once'config/Conexion.php';
+require_once '../config/Conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultadoValidacion = array(); // Array para almacenar los resultados de validación
+    $respuestasCorrectas = 0;
+    $respuestasIncorrectas = 0;
 
     // Recorremos todas las respuestas enviadas por el formulario
     foreach ($_POST as $key => $value) {
@@ -19,36 +21,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Validar la respuesta del usuario
             if ($respuestaUsuario === $respuestaCorrecta) {
                 $resultadoValidacion[$idActividad] = "Respuesta correcta";
+                $respuestasCorrectas++;
             } else {
                 $resultadoValidacion[$idActividad] = "Respuesta incorrecta. La respuesta correcta es: $respuestaCorrecta";
+                $respuestasIncorrectas++;
             }
         }
     }
 }
 
 mysqli_close($conexion);
+
+// Crear un array con el número de respuestas correctas e incorrectas
+$respuestaJSON = array(
+    "respuestas" => 'Respuestas correctas' .$respuestasCorrectas .'Respuestas incorrectas'. $respuestasIncorrectas
+);
+
+// Convertir el array en formato JSON
+echo json_encode($respuestaJSON);
 ?>
-
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado de la Prueba</title>
-</head>
-
-<body>
-    <h1>Resultado de la Prueba</h1>
-
-    <?php
-    // Mostrar los resultados de validación para cada pregunta
-    foreach ($resultadoValidacion as $idActividad => $resultado) {
-
-    
-        echo "<p>Pregunta $idActividad: $resultado</p>";
-    }
-    ?>
-
-</body>
-
-</html>
