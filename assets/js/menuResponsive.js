@@ -18,7 +18,7 @@ var second= document.getElementById("senador");
 $(document).ready(function () {
    $(".totem").on("click", function () {
       var valor = $(this).data("valor");
-   
+      console.log(valor)
       primer.classList.add('regular');
 
       $.ajax({
@@ -27,6 +27,7 @@ $(document).ready(function () {
          data: { valor: valor },
          success: function (response) {
             second.classList.add('resolver');
+            $('#llegar-activi').html(response);
          },
          error: function (xhr, status, error) {
             primer.classList.remove('regular');

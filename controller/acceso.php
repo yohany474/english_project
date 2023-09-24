@@ -1,6 +1,6 @@
 <?php
 // Conexion a la base de datos
-
+session_start();
 require_once '../config/Conexion.php';
 
 
@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')  {
             $row = mysqli_fetch_assoc($result);
 
             // Iniciar la sesión
-            session_start();
             $_SESSION['nombre'] = $row['nombre_real'];
 
             // Redireccionar a la página deseada

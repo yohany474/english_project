@@ -8,11 +8,9 @@
         <link rel="stylesheet" href="assets/css/login.css">
         <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <title>Aprende inglés</title>
+        <title>Aprende ingles Sena ingles</title>
 </head>
 
 <body>
@@ -20,24 +18,24 @@
         <div id="container_login">
                 <form class="form" id="acceso" method="post">
                         <p class="form-title">Sign in to your account</p>
-                         <div class="input-container">
-                           <input type="number" name="id" id="id" placeholder="Enter email">
-                           <span>
-                           </span>
-                       </div>
-                       <div class="input-container">
-                           <input type="password" name="password" id="password" placeholder="Enter password">
-                         </div>
-                          <button type="submit" class="submit" name="acceso">
-                         Sign in
-                       </button>
-                 
-                       <p class="signup-link">
-                         No account?
-                         <!-- <a href="">Sign up</a> -->
-                       </p>
-                    </form>
-                 
+                        <div class="input-container">
+                                <input type="number" name="id" id="id" placeholder="Enter email">
+                                <span>
+                                </span>
+                        </div>
+                        <div class="input-container">
+                                <input type="password" name="password" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="submit" name="acceso">
+                                Sign in
+                        </button>
+
+                        <p class="signup-link">
+                                No account?
+                                <!-- <a href="">Sign up</a> -->
+                        </p>
+                </form>
+
         </div>
         <header class="enca-contenido">
                 <section class="encabezado">
@@ -90,16 +88,8 @@
                 </header>
                 <section class="espaciadores">
                         <div class="scroll">
-                                <section class="text-te">
-                                        <section class="target">
-                                                <section class="img-im">
-                                                        <img src="assets/img/illu-intermedio-large.svg" alt="">
-                                                </section>
-                                                <section class="container">
-                                                        <h2>Is learning English easy or difficult?</h2>
-                                                        <p>Many people believe that English is a difficult language to learn but is it really? When you...</p>
-                                                </section>
-                                        </section>                                      
+                                <section class="text-te" id="llegar-activi">
+                                        <!-- LLEGADA DE ACTIVIADES DE MANERA DINAMICA -->
                                 </section>
                         </div>
                 </section>
@@ -208,21 +198,13 @@
         </section>
         <section class="dome">
                 <picture>
-                        <source media="(min-width: 1280px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
-                        <source media="(min-width: 1024px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
-                        <source media="(min-width: 768px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
-                        <source media="(min-width: 481px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
-                        <source media="(min-width: 321px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
-                        <source class="b3Yrqyzc" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
-                        <img class="b3Yrqyzc"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg"
-                                alt="">
+                        <source media="(min-width: 1280px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
+                        <source media="(min-width: 1024px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
+                        <source media="(min-width: 768px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
+                        <source media="(min-width: 481px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
+                        <source media="(min-width: 321px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
+                        <source class="b3Yrqyzc" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
+                        <img class="b3Yrqyzc" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg" alt="">
 
                 </picture>
                 <section class="contaner">
@@ -326,9 +308,7 @@
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

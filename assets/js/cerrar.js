@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
             if (data.success) {
                 // Redireccionar a la página de inicio de sesión o a donde desees
-                window.location.href = "./index.html";
+                window.location.href = "./index.php";
             } else {
                 alert("No se pudo cerrar la sesión. Por favor, inténtalo de nuevo.");
             }
