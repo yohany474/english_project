@@ -19,7 +19,7 @@ $sql = "SELECT * FROM actividadlistening  WHERE idNivel = 2";
 $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
-?>
+    ?>
 
     <!DOCTYPE html>
     <html lang="es">
@@ -45,7 +45,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 <?php
 
                 $audio_actual = ''; // Variable para almacenar el audio actual
-
+            
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
                     $idActividad = $pregunta["idactividadlistening"];
@@ -104,7 +104,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
     </html>
 
-<?php
+    <?php
 } else {
     echo "No se encontraron actividades de listening.";
 }

@@ -24,6 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
     // Nivel seleccionado
     $nivel = $_POST['nivel'];
 
+    // Instrucciones 
+    $instrucciones = $_POST['instruccionReading'];
+
     // Ruta completa para guardar el archivo de audio
     $rutaBd = 'uploads/' . $nombreUnicoImagen;
     $rutaCompletaImagen = '../uploads/' . $nombreUnicoImagen;
@@ -53,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
             $respuestaCorrecta = mysqli_real_escape_string($conexion, $_POST['rta_correcta' . $i]);
 
             // Preparar y ejecutar la consulta para insertar los datos
-            $stmt = "INSERT INTO actividadReading(idNivelRea, titulo, imagen, texto, pregunta, opciones, respuestacorrecta) 
-                  VALUES ('$nivel', '$titulo','$rutaBd', '$textoInformacion', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
+            $stmt = "INSERT INTO actividadReading(idNivelRea, titulo, imagen, texto, pregunta, opciones, respuestacorrecta, instrucciones) 
+                  VALUES ('$nivel', '$titulo','$rutaBd', '$textoInformacion', '$pregunta', '$opciones_str', '$respuestaCorrecta', '$instrucciones')";
             if (!mysqli_query($conexion, $stmt)) {
                 $insercionCorrecta = false; // Si hay un error en alguna inserción, se marca como falsa
             }

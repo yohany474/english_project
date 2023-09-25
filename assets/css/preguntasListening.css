@@ -5,12 +5,18 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
+
     background-color: #0054ef40;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1em;
 }
 
+embed {
+    width: 100%;
+    height: 100vh; /* Establece la altura al 100% de la ventana gráfica */
+    display: block; /* Elimina cualquier espacio adicional alrededor del embed */
+    border: none; /* Elimina el borde si lo hubiera */
+}
 .container {
     display: flex;
     flex-direction: column;

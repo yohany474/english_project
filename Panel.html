@@ -149,7 +149,7 @@
         <form action="./controller/CrearGrammar.php" method="post" class="formulario-ejercicio">
 
           <label for="IDnivel">ID de Nivel:</label>
-          <select id="IDnivel" name="IDnivel">
+          <select id="IDnivel" name="IDnivel" style="width: 4rem;">
             <option value="A1">A1</option>
             <option value="A2">A2</option>
             <option value="B1">B1</option>
@@ -223,10 +223,8 @@
                 <input type="text" name="titulo" id="title" required />
               </div>
 
-              <div class="itemForm">
-                <label for="Imagen">Imagen de actividad</label>
-                <input type="file" name="imagen" id="Imagen" accept="image/*" required />
-              </div>
+
+
 
               <div class="itemForm" required>
                 <label for="title">Cantidad de preguntas</label>
@@ -235,6 +233,18 @@
             </div>
 
             <div class="rowWrap">
+
+              <div class="itemForm">
+                <label for="Imagen">Imagen de actividad</label>
+                <input type="file" name="imagen" id="Imagen" accept="image/*" required />
+              </div>
+
+              <div class="itemForm">
+                <label for="Nivel">Instrucciones</label>
+                <textarea name="instruccionReading" id="" cols="30" rows="10" style="resize: none; height: 2.5rem;"></textarea>
+              </div>
+         
+    
               <div class="itemForm">
                 <label for="text">Ingrese el texto</label>
                 <textarea name="texto" id="text" cols="0" rows="3"></textarea>
@@ -254,8 +264,8 @@
       <section class="paginas" id="Listening">
         <form action="" id="ventanaFormListening" enctype="multipart/form-data" method="post">
           <main id="mainListening">
-            <div class="rowWrap">
 
+            <div class="rowWrap">
               <div class="itemForm"  style="width: 4rem;">
                 <label for="Nivel">Nivel</label>
                 <select name="nivel" id="">
@@ -271,14 +281,24 @@
                 <input type="text" name="titulo" id="title" required />
               </div>
 
+
+
+
+              <div class="itemForm" required>
+                <label for="title"> Cantidad de preguntas</label>
+                <input type="number" name="cantidadPreguntas" id="cantidadPreguntasL" />
+              </div>
+            </div>
+
+            <div class="rowWrap">
               <div class="itemForm">
                 <label for="audio">Audio de actividad</label>
                 <input type="file" name="audio" id="audio" accept=".mp3" required />
               </div>
 
-              <div class="itemForm" required>
-                <label for="title"> Cantidad de preguntas</label>
-                <input type="number" name="cantidadPreguntas" id="cantidadPreguntasL" />
+              <div class="itemForm">
+                <label for="Nivel">Descripcion audio</label>
+                <textarea name="descripcionaudio" id="" cols="30" rows="10" style="resize: none; height: 3rem;"></textarea>
               </div>
             </div>
 
