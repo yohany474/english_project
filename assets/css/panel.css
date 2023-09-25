@@ -23,7 +23,10 @@ body {
     overflow: hidden;
 }
 
-
+.frt{
+    height: 30vh;
+    overflow-y: scroll;
+}
 #header {
     border-top: 2px solid var(--principal);
     height: 4rem;
