@@ -51,7 +51,6 @@
                                         <li class="totem" data-valor="2">READING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
                                         <li class="totem" data-valor="3">WRITING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
                                         <li class="totem" data-valor="4">GRAMMAR <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="5">VOCABULARY <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
                                 </section>
                                 <section class="accede">
                                         <p id="login" class="cd">Accede</p>
