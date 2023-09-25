@@ -112,7 +112,7 @@ button {
     flex-direction: column;
     overflow: auto;
     scroll-behavior: smooth;
-    height: 18em;
+    height: 15em;
 }
 
 

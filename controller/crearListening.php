@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
 
     // Nivel seleccionado
     $nivel  =$_POST['nivel'];
+    // Descripcion del audio
+    $descripcionAudio = $_POST['descripcionaudio'];
 
     // Ruta completa para guardar el archivo de audio
     $rutaBd = 'uploads/' . $nombreUnicoAudio;
@@ -50,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
             $respuestaCorrecta = $_POST['rta_correcta' . $i];
 
             // Preparar y ejecutar la consulta para insertar los datos
-            $stmt = "INSERT INTO actividadlistening(idNivel,titulo, audio, pregunta, opciones, respuestacorrecta) 
-                  VALUES ('$nivel','$titulo','$rutaBd', '$pregunta', '$opciones_str', '$respuestaCorrecta')";
+            $stmt = "INSERT INTO actividadlistening(idNivel,titulo, audio, pregunta, opciones, respuestacorrecta, descripcionaudio) 
+                  VALUES ('$nivel','$titulo','$rutaBd', '$pregunta', '$opciones_str', '$respuestaCorrecta', '$descripcionAudio')";
             if (!mysqli_query($conexion, $stmt)) {
                 $insercionCorrecta = false; // Si hay un error en alguna inserción, se marca como falsa
             }
