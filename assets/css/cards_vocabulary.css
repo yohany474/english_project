@@ -1,5 +1,5 @@
 .container_vocabulary {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .container_vocabulary h1 {
@@ -15,13 +15,13 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  
 }
 
 .container_vocabulary article {
   width: 30%;
-  border: 1px solid rgba(0, 0, 255, 0.76);
+  border: 1px solid #3d3dff;
   border-radius: 6px;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.288);
 }
 
 .title_vocabulary {
@@ -30,11 +30,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 255, 0.76);
+  background-color: #3d3dff;
   color: white;
   width: 100%;
   height: 100px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   font-size: 1.4em;
 }
 
@@ -46,7 +46,7 @@
 .option_vocabulary {
   display: flex;
   flex-direction: column;
-  
+
   align-items: flex-start;
   padding-left: 40px;
   gap: 5px;
@@ -56,9 +56,74 @@
   list-style: circle;
 }
 
-.option_vocabulary li:hover {
-  background-color: rgba(128, 128, 128, 0.438);
+.option_vocabulary li a {
+  color: black;
+  word-break: break-all;
 }
+
+.option_vocabulary li:hover {
+  color:#000000 ;
+  text-decoration: underline;
+}
+
+.option_vocabulary li a:hover{
+  color:#0066cc ;
+}
+
+
+.bank_words {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 450px;
+
+}
+
+.bank_words h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  color: white;
+  background-color: #3d3dff;
+  width: 90%;
+  height: 80px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:5px ;
+  overflow: auto;
+}
+
+.columns ul {
+  font-size: 1.1rem;
+  height: 350px;
+  width: 25%;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.columns ul li{
+  list-style:inside;
+  
+}
+
+
+.columns ul li a{
+  color:#0066cc ;
+}
+.columns ul li a:hover{
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width: 600px) {
   .container_vocabulary div {
@@ -88,4 +153,59 @@
     border-radius: 5px;
     font-size: 1.4em;
   }
+
+  .bank_words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .bank_words h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    
+    background-color: #3d3dff;
+    width: 90%;
+    height: 250px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .columns{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 5px ;
+    overflow: auto;
+  }
+  
+  
+.columns ul {
+  font-size: 1.1rem;
+  height: auto;
+  width: 100%;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+}
+
+.columns ul li{
+  list-style:inside;
+  
+  
+}
+
+
+.columns ul li a{
+  color:#0066cc ;
+  height: 50px;
+}
+.columns ul li a:hover{
+  text-decoration: underline;
+}
+
 }

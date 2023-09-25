@@ -159,51 +159,45 @@
                                         <ul class="option_vocabulary">
                                                 <li>
                                                         <a href="https://drive.google.com/file/d/1pBgkHMuIMzXauFM4OArkVOaJRSATE4qn/view?usp=sharing"
-                                                                target="_blank"> Days of the week and months</a>
+                                                                target="_blank">Days of the week and months</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1Ua3OXNiaxGymZleN_kFTsbda_PBmxYI1/view?usp=sharing">
-                                                                Number and prices</a>
+                                                        <a href="https://drive.google.com/file/d/1Ua3OXNiaxGymZleN_kFTsbda_PBmxYI1/view?usp=sharing"
+                                                                target="_blank">Number and prices</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1CZXq6Le6PCvEVGxXMZbzME_k0hV3iucL/view?usp=sharing">
-                                                                Countries and nationalities</a>
+                                                        <a href="https://drive.google.com/file/d/1CZXq6Le6PCvEVGxXMZbzME_k0hV3iucL/view?usp=sharing"
+                                                                target="_blank">Countries and nationalities</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/18nlEvKclmnHpc_DyfVeW9uG3ugXYkUMv/view?usp=sharing">Colors</a>
+                                                        <a href="https://drive.google.com/file/d/18nlEvKclmnHpc_DyfVeW9uG3ugXYkUMv/view?usp=sharing"
+                                                                target="_blank">Colors</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1V2CMSRuZsngfJHdTm0l_BZO5W-r_-Iyp/view?usp=sharing">Personal
-                                                                Possessions</a>
+                                                        <a href="https://drive.google.com/file/d/1V2CMSRuZsngfJHdTm0l_BZO5W-r_-Iyp/view?usp=sharing"
+                                                                target="_blank">Personal Possessions</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1WGcre7dVGzYOQvL-SMBWjXtNB-3nPwNU/view?usp=sharing">Parts
-                                                                of the body</a>
+                                                        <a href="https://drive.google.com/file/d/1WGcre7dVGzYOQvL-SMBWjXtNB-3nPwNU/view?usp=sharing"
+                                                                target="_blank">Parts of the body</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1mpBmtxYH60XF3q2MkO00QMdempblq3fj/view?usp=sharing">Family
-                                                                and Friends</a>
+                                                        <a href="https://drive.google.com/file/d/1mpBmtxYH60XF3q2MkO00QMdempblq3fj/view?usp=sharing"
+                                                                target="_blank">Family and Friends</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1D2-KVxniomiC9VibWrnxQGLli7GPtzBj/view?usp=sharing">Food
-                                                                and Drinks</a>
+                                                        <a href="https://drive.google.com/file/d/1D2-KVxniomiC9VibWrnxQGLli7GPtzBj/view?usp=sharing"
+                                                                target="_blank">Food and Drinks</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1fbgUdEuWdqZKLul0LukBvwm0_2aNkj6t/view?usp=sharing">Household
-                                                                Rooms and Objects</a>
+                                                        <a href="https://drive.google.com/file/d/1fbgUdEuWdqZKLul0LukBvwm0_2aNkj6t/view?usp=sharing"
+                                                                target="_blank">Household Rooms and Objects</a>
                                                 </li>
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1nwbwVRtGsw1XcMe8Gf9osc_kfw9t86yX/view?usp=sharing">Clothes</a>
+                                                        <a href="https://drive.google.com/file/d/1nwbwVRtGsw1XcMe8Gf9osc_kfw9t86yX/view?usp=sharing"
+                                                                target="_blank">Clothes</a>
                                                 </li>
+
 
                                         </ul>
 
@@ -218,38 +212,48 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1gSQRh3RutP9AJvBclSx0HARhBx3ZrzRL/view?usp=sharing">Felling and emotions</a>
+                                                        <a href="https://drive.google.com/file/d/1gSQRh3RutP9AJvBclSx0HARhBx3ZrzRL/view?usp=sharing"
+                                                                target="_blank">Feelings and emotions</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/10kZ6Ve_JgEdyjB0slCTs86vBM-SpVeCO/view?usp=sharing">Food and Drinks</a>
+                                                        <a href="https://drive.google.com/file/d/10kZ6Ve_JgEdyjB0slCTs86vBM-SpVeCO/view?usp=sharing"
+                                                                target="_blank">Food and Drinks</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1kA-VjoTj9XeKQCvDC6ezZMticmpjLjQO/view?usp=sharing">Education</a>
+                                                        <a href="https://drive.google.com/file/d/1kA-VjoTj9XeKQCvDC6ezZMticmpjLjQO/view?usp=sharing"
+                                                                target="_blank">Education</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1EPlWhtd5e9QEcUqPXFZav_zbjkaB9fqg/view?usp=sharing">Jobs</a>
+                                                        <a href="https://drive.google.com/file/d/1EPlWhtd5e9QEcUqPXFZav_zbjkaB9fqg/view?usp=sharing"
+                                                                target="_blank">Jobs</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1DAWNBkSiejc87xaboxx594d-pou0zUVv/view?usp=sharing">Weather</a>
-
+                                                        <a href="https://drive.google.com/file/d/1DAWNBkSiejc87xaboxx594d-pou0zUVv/view?usp=sharing"
+                                                                target="_blank">Weather</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1zHAQvjhRqE26BWajlMOiix8AOY-TqemO/view?usp=sharing">Family and Friends</a>
+                                                        <a href="https://drive.google.com/file/d/1zHAQvjhRqE26BWajlMOiix8AOY-TqemO/view?usp=sharing"
+                                                                target="_blank">Family and Friends</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1jqp2aDZGOcbiDaHKy4RTusxLxclbw9_j/view?usp=sharing">Daily routines</a>
+                                                        <a href="https://drive.google.com/file/d/1jqp2aDZGOcbiDaHKy4RTusxLxclbw9_j/view?usp=sharing"
+                                                                target="_blank">Daily routines</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1EvNPUlM5IGIv946wfCrGmgOXKfLLO5J2/view?usp=sharing">Free-time Activities</a>
+                                                        <a href="https://drive.google.com/file/d/1EvNPUlM5IGIv946wfCrGmgOXKfLLO5J2/view?usp=sharing"
+                                                                target="_blank">Free-time Activities</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1Vl5q1Zn-jivevhafjKz2L722boQcKuKB/view?usp=sharing">Places in Town</a>
+                                                        <a href="https://drive.google.com/file/d/1Vl5q1Zn-jivevhafjKz2L722boQcKuKB/view?usp=sharing"
+                                                                target="_blank">Places in Town</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1uXHYiUDg1LkRmGTFv4zjck_YA08xbKo7/view?usp=drive_link">Body and Health</a>
+                                                        <a href="https://drive.google.com/file/d/1uXHYiUDg1LkRmGTFv4zjck_YA08xbKo7/view?usp=drive_link"
+                                                                target="_blank">Body and Health</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1ogUaRovtdDc89lJZEx1mVfA6tOCm0Ex7/view?usp=sharing">Transport and Travel</a>
+                                                        <a href="https://drive.google.com/file/d/1ogUaRovtdDc89lJZEx1mVfA6tOCm0Ex7/view?usp=sharing"
+                                                                target="_blank">Transport and Travel</a>
                                                 </li>
 
 
@@ -263,13 +267,257 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a href=""> Days of the week and months</a>
+                                                        <a
+                                                                href="https://drive.google.com/file/d/1MSSJuXf0XAVn51HJY0w6R3YXxDTVUg5O/view?usp=sharing">Education</a>
                                                 </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1kuYMAhRKpjVQT8v2d8Xq_Xo_qkSZegtQ/view?usp=sharing">Emotions</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1k6kpeEcfdZbwSP1SYiwMtqnNS6cbPYEV/view?usp=sharing">Entertainment</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1UvIj9rxMk3TmUq7Qshr7gPKQd53eCYlx/view?usp=drive_link">Leisure Activities</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/181OdRP7ZH4DOqINRwRfhosfxbIjfmgcJ/view?usp=sharing">News and Media </a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1tETWGlYh5TzuhmExJNJPe77PcFBbhccy/view?usp=sharing">Sports, health and Fitness</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1sLmMi6EW0WNWA1pnk5GwKCQhWg25K5Y0/view?usp=sharing">Technology</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1tdnDQ4tKwSdK-ocwDSzPEuej5hoDgtw1/view?usp=sharing">Time Expresion for the Future</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/1L0E6TDSDoYP5_OliT_VkKPnOOAcZfTUD/view?usp=sharing">Time Expressions for the Past</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://drive.google.com/file/d/19AcAXelqAcFmM_onHclC6hmbqYX-VqBJ/view?usp=sharing">Travel and Transport</a>
+                                                </li>
+
+
 
 
                                         </ul>
                                 </article>
                         </div>
+
+                </section>
+                <section class="bank_words">
+                        <h1>
+                                TECHNICAL VOCABULARY FOR SENA PROGRAMS
+                        </h1>
+                        <div class="columns">
+                                <ul>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1C6CVHF34KK6TzWWuSU1lsF4LgqGpo9SQ/view?usp=sharing">3D
+                                                        Animation</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1fHlWUTw3Hl7ytebenorhKRqgNvHPFB02/view?usp=sharing">Accounting
+                                                        and Financial Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1Vcyc2QKXD8b5mx-hLF8cG8xbVDje59t-/view?usp=sharing">Accounting
+                                                        For Commercial and Financial Transactions</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1WY_8-n08p5l7d62wx__2Kg8kOcdgSyG1/view?usp=sharing">Administrative
+                                                        Assistance</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1lpTMlQK1k9f6v8dTaUDXN5dnPd3aHKNt/view?usp=sharing">Agricultura
+                                                        Business Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1H1hUdjdXsPZxAfToTJNneh-ixP7W6M4a/view?usp=sharing">Agricultural
+                                                        Crops</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1vGhnRecX91MPsQ8ykytlogg6k96IBrOY/view?usp=sharing">Agricultural
+                                                        Projects</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1nQxu32If3peJuH80mmoKCG_gUATR7d2w/view?usp=sharing">Aquaculture</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1iG7OUZjhTWfNL_GPeACBLP-152Hc86_a/view?usp=sharing">Assistance
+                                                        and Organization of Archives</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1MVVYb6P0ACUUuv4VGFbm141FkBKXy2kw/view?usp=sharing">Bakery</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1b2sMiezKkf7UHRnEz8DsPSlQkUBM-yKt/view?usp=sharing">Building
+                                                        Construction</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1TmTKSpO8SgcAtKyLjc8_kgttokx2KnCz/view?usp=sharing">Business
+                                                        Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1INddRuJ-fVgH3RvHAjr8TxvExGIeqP9A/view?usp=sharing">Cattle
+                                                        Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1EZjrwrRIR7WssbdRcXmThCnLyXNbE75R/view?usp=sharing">Cattle
+                                                        Production</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1j_pz7IADIm7rYacsv4TcsOsPqQ6Fubnj/view?usp=sharing">Cooking
+                                                        and kitchen</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1f3iJb0C3nsHtbx2bhxWwWAMISOmdGI-e/view?usp=sharing">Dairy
+                                                        Processing</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1Q5OW-CA1YdaZfNI5pDTmgM5iiL5cx6hE/view?usp=sharing">Digital
+                                                        Content Integration</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1pzZWouOUPeBSsQj_fSBnGBip4ve277cS/view?usp=sharing">Document
+                                                        Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1VyNFGvpvmU4hsjGE2O9uDLeQ8bWqDbYU/view?usp=sharing">Ecologial
+                                                        Farming Systems</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1nfxXZPrTui0yZ6TjIJ6yR143tSkmoTw2/view?usp=sharing">Electrical
+                                                        and Electronic Maintenance of Motor Vehicles</a>
+                                        </li>
+
+                                </ul>
+
+                                <ul>
+
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1vDEA-14uWkg5IVb1G_M7E2CZ2rNWYVv8/view?usp=sharing">Enviroment
+                                                        Monitoring</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1sFU83Htew3ov8cEO77gWPQn2nGBVD1ks/view?usp=sharing">Food
+                                                        Proccesing </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/18EwI9nrGIly9kyiJ0xaer8n-yXEFZune/view?usp=sharing">Health
+                                                        Administrative Support</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/12kfLwGtX4GfsQFzuJsPAGDyIVBYbra87/view?usp=sharing">Human
+                                                        Resources</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1674ppoU_WhiAt7NSPlnwMnatY-x0ZmBR/view?usp=sharing">Human
+                                                        Talent Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1MGy5mS1RWQ4LoFbNKavuk_oX2IL0TwAr/view?usp=sharing">Livestock
+                                                        Production</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1N7RfV29GU0Iji0ykSJrFqD8yKhvkiNbz/view?usp=sharing">Maintenance
+                                                        of Diesel Engines</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1rabmoBhxmmZ6ywLxqHLaRh_Bp40DP2NC/view?usp=sharing">Market
+                                                        Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/18k29RyfOC6J_rLsqSI4aPZRNVXAvrJ-7/view?usp=sharing">Meat
+                                                        Processing</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1lqueVXLfmMkmGwW3oligjMao-LcYqPYd/view?usp=sharing">Network
+                                                        Installation</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1KLkOHY3vkCc-lQuMVNfXFnwnJmourOkv/view?usp=sharing">Nursery
+                                                        Management</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1p8mxPIz1f-Yzpn4zd-Xb5b3kKITpSxVu/view?usp=sharing">Nursing</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/15YAR6phBYxB20cc1tit_UOylt5n2mq9I/view?usp=sharing">Pharmaceutical
+                                                        Services</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1a5gmYEVm4vdrV2FAlAjJCjtDOaqOMFRQ/view?usp=sharing">Software
+                                                        Analysis and Development</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1dOLxwCx08vm9E7Z6CAWnkV3ucm2fZAQd/view?usp=sharing">Sport
+                                                        Training</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/18cwGZ9TiECj0sflUjlV1bPXVEYZ1mlo8/view?usp=sharing">Systems</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1EvT-rZv6fRMKrfedzKJ9hokGCY7rUghu/view?usp=sharing">The
+                                                        Implementation of Sporting and Recreational Events</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1KiE7fNt7kGsz6yoC87pCPZBaWICClIbm/view?usp=sharing">Production
+                                                        of minor Species</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1qFg6klT6bUAPqPu3cE-gCSnxCBxUw082/view?usp=sharing">Wastewater
+                                                        Treatment</a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing">Welding
+                                                        of Metallic Products</a>
+                                        </li>
+
+                                </ul>
+
+                        </div>
+
 
                 </section>
         </section>
