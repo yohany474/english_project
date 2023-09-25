@@ -10,6 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $secrip_corta = $_POST["secrip-corta"]; // Obtener la descripción corta
     $palabrasClave = $_POST["palabras-clave"];
 
+    $archivo= $_FILES["Archivo"];
+
+    $dir_subida = "../uploads";
+    $nombre_archivo= $archivo["name"];
+    $ruta_archivo = $dir_subida . '/' . $nombre_archivo;
+    move_uploaded_file($archivo["tmp_name"], $ruta_archivo);
+
     // Mapear el valor seleccionado en IDnivel a los valores deseados en la base de datos
     switch ($IDnivel) {
         case "A1":
@@ -28,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($nivelID !== null) {
         // Insertar el ejercicio en la tabla "Ejercicios" incluyendo los nuevos campos
-        $sql = "INSERT INTO actividadesgrammar (titulo, Contenido_del_Ejercicio, IDnivel, `descript`) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO actividadesgrammar (titulo, Contenido_del_Ejercicio, IDnivel, `descript`, pdf) VALUES (?, ?, ?, ?, '$ruta_archivo')";
         $stmt = $conexion->prepare($sql);
 
         $stmt->bind_param("ssss", $titulo, $contenido, $nivelID, $secrip_corta);

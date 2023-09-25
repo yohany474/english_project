@@ -191,7 +191,13 @@ body {
 
 @media screen and (max-width: 500px) {
 
+    .deanvulo{
+        flex-direction: column;
+    }
 
+    .deanvulo div{
+        width: 100%;
+    }
     #iconoMenu {
         display: flex;
         align-items: center;
@@ -407,9 +413,8 @@ body {
     resize: none;
 }
 .formulario-ejercicio button{
-    position: absolute;
-    bottom: 20%;
-    left: 40%;
+  
+    margin-top: 15px;
     width: 20%;
     background-color: #538fff;
   color: #f0f0f0;
@@ -420,4 +425,30 @@ body {
   transition: all .5s ease;
 }
 
+.deanvulo{
+    display: flex;
+}
+.deanvulo div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.id{
+    width: 10%;
+}
+
+.id select{
+    width: 100% !important;
+}
+.tit{
+    width: 47%;
+}
+.ar{
+    width: 40%;
+}
+
+.ar input{
+    height: 65%;
+}
 /* Colores a las cardActividades */
