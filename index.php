@@ -260,7 +260,7 @@
                                 <article>
                                         <div class="title_vocabulary">
                                                 <h2>English vocabulary</h2>
-                                                <h2>A1 CEFR</h2>
+                                                <h2>B1 CEFR</h2>
                                         </div>
 
                                         <ul class="option_vocabulary">
