@@ -1,22 +1,90 @@
-.container_vocabulary{
-   
+.container_vocabulary {
 }
 
-
-.container_vocabulary h1{
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
+.container_vocabulary h1 {
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.container_vocabulary div{
+.container_vocabulary div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 80px;
+}
+
+.container_vocabulary article {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 255, 0.76);
+  border-radius: 6px;
+}
+
+.title_vocabulary {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 255, 0.76);
+  color: white;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 1.4em;
+}
+
+.option_vocabulary {
+  font-size: 1.1rem;
+  height: 250px;
+}
+
+.option_vocabulary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  gap: 2px;
+}
+
+.option_vocabulary li {
+  list-style: circle;
+}
+
+.option_vocabulary li:hover {
+  background-color: rgba(128, 128, 128, 0.438);
+}
+
+@media screen and (max-width: 600px) {
+  .container_vocabulary div {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
 
-}
+  .container_vocabulary article {
+    width: 70%;
+    border: 1px solid rgba(0, 0, 255, 0.76);
+    border-radius: 6px;
+  }
 
-.title_vocabulary{
-    background-color: blue;
-    color: black;
-    width: 33.3%;
+  .title_vocabulary {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.76);
+    color: white;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    font-size: 1.4em;
+  }
 }
