@@ -267,35 +267,44 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a
-                                                                href="https://drive.google.com/file/d/1MSSJuXf0XAVn51HJY0w6R3YXxDTVUg5O/view?usp=sharing">Education</a>
+                                                        <a href="https://drive.google.com/file/d/1MSSJuXf0XAVn51HJY0w6R3YXxDTVUg5O/view?usp=sharing"
+                                                                target="_blank">Education</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1kuYMAhRKpjVQT8v2d8Xq_Xo_qkSZegtQ/view?usp=sharing">Emotions</a>
+                                                        <a href="https://drive.google.com/file/d/1kuYMAhRKpjVQT8v2d8Xq_Xo_qkSZegtQ/view?usp=sharing"
+                                                                target="_blank">Emotions</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1k6kpeEcfdZbwSP1SYiwMtqnNS6cbPYEV/view?usp=sharing">Entertainment</a>
+                                                        <a href="https://drive.google.com/file/d/1k6kpeEcfdZbwSP1SYiwMtqnNS6cbPYEV/view?usp=sharing"
+                                                                target="_blank">Entertainment</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1UvIj9rxMk3TmUq7Qshr7gPKQd53eCYlx/view?usp=drive_link">Leisure Activities</a>
+                                                        <a href="https://drive.google.com/file/d/1UvIj9rxMk3TmUq7Qshr7gPKQd53eCYlx/view?usp=sharing"
+                                                                target="_blank">Leisure Activities</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/181OdRP7ZH4DOqINRwRfhosfxbIjfmgcJ/view?usp=sharing">News and Media </a>
+                                                        <a href="https://drive.google.com/file/d/181OdRP7ZH4DOqINRwRfhosfxbIjfmgcJ/view?usp=sharing"
+                                                                target="_blank">News and Media </a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1tETWGlYh5TzuhmExJNJPe77PcFBbhccy/view?usp=sharing">Sports, health and Fitness</a>
+                                                        <a href="https://drive.google.com/file/d/1tETWGlYh5TzuhmExJNJPe77PcFBbhccy/view?usp=sharing"
+                                                                target="_blank">Sports, health and Fitness</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1sLmMi6EW0WNWA1pnk5GwKCQhWg25K5Y0/view?usp=sharing">Technology</a>
+                                                        <a href="https://drive.google.com/file/d/1sLmMi6EW0WNWA1pnk5GwKCQhWg25K5Y0/view?usp=sharing"
+                                                                target="_blank">Technology</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1tdnDQ4tKwSdK-ocwDSzPEuej5hoDgtw1/view?usp=sharing">Time Expresion for the Future</a>
+                                                        <a href="https://drive.google.com/file/d/1tdnDQ4tKwSdK-ocwDSzPEuej5hoDgtw1/view?usp=sharing"
+                                                                target="_blank">Time Expresion for the Future</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1L0E6TDSDoYP5_OliT_VkKPnOOAcZfTUD/view?usp=sharing">Time Expressions for the Past</a>
+                                                        <a href="https://drive.google.com/file/d/1L0E6TDSDoYP5_OliT_VkKPnOOAcZfTUD/view?usp=sharing"
+                                                                target="_blank">Time Expressions for the Past</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/19AcAXelqAcFmM_onHclC6hmbqYX-VqBJ/view?usp=sharing">Travel and Transport</a>
+                                                        <a href="https://drive.google.com/file/d/19AcAXelqAcFmM_onHclC6hmbqYX-VqBJ/view?usp=sharing"
+                                                                target="_blank">Travel and Transport</a>
                                                 </li>
 
 
@@ -313,101 +322,101 @@
                         <div class="columns">
                                 <ul>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1C6CVHF34KK6TzWWuSU1lsF4LgqGpo9SQ/view?usp=sharing">3D
+                                                <a href="https://drive.google.com/file/d/1C6CVHF34KK6TzWWuSU1lsF4LgqGpo9SQ/view?usp=sharing"
+                                                        target="_blank">3D
                                                         Animation</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1fHlWUTw3Hl7ytebenorhKRqgNvHPFB02/view?usp=sharing">Accounting
+                                                <a href="https://drive.google.com/file/d/1fHlWUTw3Hl7ytebenorhKRqgNvHPFB02/view?usp=sharing"
+                                                        target="_blank">Accounting
                                                         and Financial Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1Vcyc2QKXD8b5mx-hLF8cG8xbVDje59t-/view?usp=sharing">Accounting
+                                                <a href="https://drive.google.com/file/d/1Vcyc2QKXD8b5mx-hLF8cG8xbVDje59t-/view?usp=sharing"
+                                                        target="_blank">Accounting
                                                         For Commercial and Financial Transactions</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1WY_8-n08p5l7d62wx__2Kg8kOcdgSyG1/view?usp=sharing">Administrative
+                                                <a href="https://drive.google.com/file/d/1WY_8-n08p5l7d62wx__2Kg8kOcdgSyG1/view?usp=sharing"
+                                                        target="_blank">Administrative
                                                         Assistance</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1lpTMlQK1k9f6v8dTaUDXN5dnPd3aHKNt/view?usp=sharing">Agricultura
+                                                <a href="https://drive.google.com/file/d/1lpTMlQK1k9f6v8dTaUDXN5dnPd3aHKNt/view?usp=sharing"
+                                                        target="_blank">Agricultura
                                                         Business Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1H1hUdjdXsPZxAfToTJNneh-ixP7W6M4a/view?usp=sharing">Agricultural
+                                                <a href="https://drive.google.com/file/d/1H1hUdjdXsPZxAfToTJNneh-ixP7W6M4a/view?usp=sharing"
+                                                        target="_blank">Agricultural
                                                         Crops</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1vGhnRecX91MPsQ8ykytlogg6k96IBrOY/view?usp=sharing">Agricultural
+                                                <a href="https://drive.google.com/file/d/1vGhnRecX91MPsQ8ykytlogg6k96IBrOY/view?usp=sharing"
+                                                        target="_blank">Agricultural
                                                         Projects</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1nQxu32If3peJuH80mmoKCG_gUATR7d2w/view?usp=sharing">Aquaculture</a>
+                                                <a href="https://drive.google.com/file/d/1nQxu32If3peJuH80mmoKCG_gUATR7d2w/view?usp=sharing"
+                                                        target="_blank">Aquaculture</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1iG7OUZjhTWfNL_GPeACBLP-152Hc86_a/view?usp=sharing">Assistance
+                                                <a href="https://drive.google.com/file/d/1iG7OUZjhTWfNL_GPeACBLP-152Hc86_a/view?usp=sharing"
+                                                        target="_blank">Assistance
                                                         and Organization of Archives</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1MVVYb6P0ACUUuv4VGFbm141FkBKXy2kw/view?usp=sharing">Bakery</a>
+                                                <a href="https://drive.google.com/file/d/1MVVYb6P0ACUUuv4VGFbm141FkBKXy2kw/view?usp=sharing"
+                                                        target="_blank">Bakery</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1b2sMiezKkf7UHRnEz8DsPSlQkUBM-yKt/view?usp=sharing">Building
+                                                <a href="https://drive.google.com/file/d/1b2sMiezKkf7UHRnEz8DsPSlQkUBM-yKt/view?usp=sharing"
+                                                        target="_blank">Building
                                                         Construction</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1TmTKSpO8SgcAtKyLjc8_kgttokx2KnCz/view?usp=sharing">Business
+                                                <a href="https://drive.google.com/file/d/1TmTKSpO8SgcAtKyLjc8_kgttokx2KnCz/view?usp=sharing"
+                                                        target="_blank">Business
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1INddRuJ-fVgH3RvHAjr8TxvExGIeqP9A/view?usp=sharing">Cattle
+                                                <a href="https://drive.google.com/file/d/1INddRuJ-fVgH3RvHAjr8TxvExGIeqP9A/view?usp=sharing"
+                                                        target="_blank">Cattle
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1EZjrwrRIR7WssbdRcXmThCnLyXNbE75R/view?usp=sharing">Cattle
+                                                <a href="https://drive.google.com/file/d/1EZjrwrRIR7WssbdRcXmThCnLyXNbE75R/view?usp=sharing"
+                                                        target="_blank">Cattle
                                                         Production</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1j_pz7IADIm7rYacsv4TcsOsPqQ6Fubnj/view?usp=sharing">Cooking
+                                                <a href="https://drive.google.com/file/d/1j_pz7IADIm7rYacsv4TcsOsPqQ6Fubnj/view?usp=sharing"
+                                                        target="_blank">Cooking
                                                         and kitchen</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1f3iJb0C3nsHtbx2bhxWwWAMISOmdGI-e/view?usp=sharing">Dairy
+                                                <a href="https://drive.google.com/file/d/1f3iJb0C3nsHtbx2bhxWwWAMISOmdGI-e/view?usp=sharing"
+                                                        target="_blank">Dairy
                                                         Processing</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1Q5OW-CA1YdaZfNI5pDTmgM5iiL5cx6hE/view?usp=sharing">Digital
+                                                <a href="https://drive.google.com/file/d/1Q5OW-CA1YdaZfNI5pDTmgM5iiL5cx6hE/view?usp=sharing"
+                                                        target="_blank">Digital
                                                         Content Integration</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1pzZWouOUPeBSsQj_fSBnGBip4ve277cS/view?usp=sharing">Document
+                                                <a href="https://drive.google.com/file/d/1pzZWouOUPeBSsQj_fSBnGBip4ve277cS/view?usp=sharing"
+                                                        target="_blank">Document
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1VyNFGvpvmU4hsjGE2O9uDLeQ8bWqDbYU/view?usp=sharing">Ecologial
+                                                <a href="https://drive.google.com/file/d/1VyNFGvpvmU4hsjGE2O9uDLeQ8bWqDbYU/view?usp=sharing"
+                                                        target="_blank">Ecologial
                                                         Farming Systems</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1nfxXZPrTui0yZ6TjIJ6yR143tSkmoTw2/view?usp=sharing">Electrical
+                                                <a href="https://drive.google.com/file/d/1nfxXZPrTui0yZ6TjIJ6yR143tSkmoTw2/view?usp=sharing"
+                                                        target="_blank">Electrical
                                                         and Electronic Maintenance of Motor Vehicles</a>
                                         </li>
 
@@ -416,101 +425,101 @@
                                 <ul>
 
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1vDEA-14uWkg5IVb1G_M7E2CZ2rNWYVv8/view?usp=sharing">Enviroment
+                                                <a href="https://drive.google.com/file/d/1vDEA-14uWkg5IVb1G_M7E2CZ2rNWYVv8/view?usp=sharing"
+                                                        target="_blank">Enviroment
                                                         Monitoring</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1sFU83Htew3ov8cEO77gWPQn2nGBVD1ks/view?usp=sharing">Food
+                                                <a href="https://drive.google.com/file/d/1sFU83Htew3ov8cEO77gWPQn2nGBVD1ks/view?usp=sharing"
+                                                        target="_blank">Food
                                                         Proccesing </a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/18EwI9nrGIly9kyiJ0xaer8n-yXEFZune/view?usp=sharing">Health
+                                                <a href="https://drive.google.com/file/d/18EwI9nrGIly9kyiJ0xaer8n-yXEFZune/view?usp=sharing"
+                                                        target="_blank">Health
                                                         Administrative Support</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/12kfLwGtX4GfsQFzuJsPAGDyIVBYbra87/view?usp=sharing">Human
+                                                <a href="https://drive.google.com/file/d/12kfLwGtX4GfsQFzuJsPAGDyIVBYbra87/view?usp=sharing"
+                                                        target="_blank">Human
                                                         Resources</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1674ppoU_WhiAt7NSPlnwMnatY-x0ZmBR/view?usp=sharing">Human
+                                                <a href="https://drive.google.com/file/d/1674ppoU_WhiAt7NSPlnwMnatY-x0ZmBR/view?usp=sharing"
+                                                        target="_blank">Human
                                                         Talent Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1MGy5mS1RWQ4LoFbNKavuk_oX2IL0TwAr/view?usp=sharing">Livestock
+                                                <a href="https://drive.google.com/file/d/1MGy5mS1RWQ4LoFbNKavuk_oX2IL0TwAr/view?usp=sharing"
+                                                        target="_blank"> Livestock
                                                         Production</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1N7RfV29GU0Iji0ykSJrFqD8yKhvkiNbz/view?usp=sharing">Maintenance
+                                                <a href="https://drive.google.com/file/d/1N7RfV29GU0Iji0ykSJrFqD8yKhvkiNbz/view?usp=sharing"
+                                                        target="_blank">Maintenance
                                                         of Diesel Engines</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1rabmoBhxmmZ6ywLxqHLaRh_Bp40DP2NC/view?usp=sharing">Market
+                                                <a href="https://drive.google.com/file/d/1rabmoBhxmmZ6ywLxqHLaRh_Bp40DP2NC/view?usp=sharing"
+                                                        target="_blank">Market
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/18k29RyfOC6J_rLsqSI4aPZRNVXAvrJ-7/view?usp=sharing">Meat
+                                                <a href="https://drive.google.com/file/d/18k29RyfOC6J_rLsqSI4aPZRNVXAvrJ-7/view?usp=sharing"
+                                                        target="_blank">Meat
                                                         Processing</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1lqueVXLfmMkmGwW3oligjMao-LcYqPYd/view?usp=sharing">Network
+                                                <a href="https://drive.google.com/file/d/1lqueVXLfmMkmGwW3oligjMao-LcYqPYd/view?usp=sharing"
+                                                        target="_blank">Network
                                                         Installation</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1KLkOHY3vkCc-lQuMVNfXFnwnJmourOkv/view?usp=sharing">Nursery
+                                                <a href="https://drive.google.com/file/d/1KLkOHY3vkCc-lQuMVNfXFnwnJmourOkv/view?usp=sharing"
+                                                        target="_blank">Nursery
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1p8mxPIz1f-Yzpn4zd-Xb5b3kKITpSxVu/view?usp=sharing">Nursing</a>
+                                                <a href="https://drive.google.com/file/d/1p8mxPIz1f-Yzpn4zd-Xb5b3kKITpSxVu/view?usp=sharing"
+                                                        target="_blank">Nursing</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/15YAR6phBYxB20cc1tit_UOylt5n2mq9I/view?usp=sharing">Pharmaceutical
+                                                <a href="https://drive.google.com/file/d/15YAR6phBYxB20cc1tit_UOylt5n2mq9I/view?usp=sharing"
+                                                        target="_blank">Pharmaceutical
                                                         Services</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1a5gmYEVm4vdrV2FAlAjJCjtDOaqOMFRQ/view?usp=sharing">Software
+                                                <a href="https://drive.google.com/file/d/1a5gmYEVm4vdrV2FAlAjJCjtDOaqOMFRQ/view?usp=sharing"
+                                                        target="_blank">Software
                                                         Analysis and Development</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1dOLxwCx08vm9E7Z6CAWnkV3ucm2fZAQd/view?usp=sharing">Sport
+                                                <a href="https://drive.google.com/file/d/1dOLxwCx08vm9E7Z6CAWnkV3ucm2fZAQd/view?usp=sharing"
+                                                        target="_blank">Sport
                                                         Training</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/18cwGZ9TiECj0sflUjlV1bPXVEYZ1mlo8/view?usp=sharing">Systems</a>
+                                                <a href="https://drive.google.com/file/d/18cwGZ9TiECj0sflUjlV1bPXVEYZ1mlo8/view?usp=sharing"
+                                                        target="_blank">Systems</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1EvT-rZv6fRMKrfedzKJ9hokGCY7rUghu/view?usp=sharing">The
+                                                <a href="https://drive.google.com/file/d/1EvT-rZv6fRMKrfedzKJ9hokGCY7rUghu/view?usp=sharing"
+                                                        target="_blank">The
                                                         Implementation of Sporting and Recreational Events</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1KiE7fNt7kGsz6yoC87pCPZBaWICClIbm/view?usp=sharing">Production
+                                                <a href="https://drive.google.com/file/d/1KiE7fNt7kGsz6yoC87pCPZBaWICClIbm/view?usp=sharing"
+                                                        target="_blank">Production
                                                         of minor Species</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1qFg6klT6bUAPqPu3cE-gCSnxCBxUw082/view?usp=sharing">Wastewater
+                                                <a href="https://drive.google.com/file/d/1qFg6klT6bUAPqPu3cE-gCSnxCBxUw082/view?usp=sharing"
+                                                        target="_blank">Wastewater
                                                         Treatment</a>
                                         </li>
                                         <li>
-                                                <a
-                                                        href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing">Welding
+                                                <a href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing"
+                                                        target="_blank">Welding
                                                         of Metallic Products</a>
                                         </li>
 
