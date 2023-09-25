@@ -1,0 +1,22 @@
+.container_vocabulary{
+   
+}
+
+
+.container_vocabulary h1{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.container_vocabulary div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.title_vocabulary{
+    background-color: blue;
+    color: black;
+    width: 33.3%;
+}

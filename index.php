@@ -7,8 +7,11 @@
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/login.css">
         <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/cards_vocabulary.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <title>Aprende ingles Sena ingles</title>
 </head>
@@ -46,12 +49,19 @@
                         <section class="missing" id="miss">
                                 <i class='bx bx-x' id="dasr"></i>
                                 <section class="conten">
-                                        <li><a href="https://prototiposena.englishinteraction.net/senaplacement2022/quiz_html5.html" target="_blank">SEPT</a><i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="1">LISTENING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="2">READING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="3">WRITING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="4">GRAMMAR <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
-                                        <li class="totem" data-valor="5">VOCABULARY <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
+                                        <li><a href="https://prototiposena.englishinteraction.net/senaplacement2022/quiz_html5.html"
+                                                        target="_blank">SEPT</a><i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
+                                        <li class="totem" data-valor="1">LISTENING <i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
+                                        <li class="totem" data-valor="2">READING <i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
+                                        <li class="totem" data-valor="3">WRITING <i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
+                                        <li class="totem" data-valor="4">GRAMMAR <i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
+                                        <li class="totem" data-valor="5">VOCABULARY <i class='bx bxs-right-arrow-alt'
+                                                        id="ders"></i></li>
                                 </section>
                                 <section class="accede">
                                         <p id="login" class="cd">Accede</p>
@@ -137,74 +147,53 @@
                                 </section>
                         </section>
                 </section>
-                <section class="recomendado">
-                        <h2>Temas populares</h2>
-                        <p>Estas son las lecciones mas visitadas en los últimos 30 días</p>
-                        <section class="aument">
-                                <section class="popular">
-                                        <section class="esp-img">
-                                                <img src="assets/img/Vocabulario.png" alt="">
-                                                <div>
-                                                        LECCIÓN
-                                                </div>
-                                        </section>
-                                        <section class="esp-cuerpo">
-                                                <h3>Los pronombres personales</h3>
-                                                <p>Hola como se ha encontrado usted?</p>
-                                        </section>
+                <section class="container_vocabulary">
+                        <h1>vocabulary</h1>
+                        <div >
+                                <article>
+                                        <div class="title_vocabulary">
+                                                <h2>English vocabulary</h2>
+                                                <h2>A1 CEFR</h3>
+                                        </div>
 
-                                        <section class="aprender">
-                                                Aprender <i class='bx bx-right-arrow-alt'></i>
-                                        </section>
-                                </section>
-
-                                <section class="popular">
-                                        <section class="esp-img">
-                                                <img src="assets/img/Vocabulario.png" alt="">
-                                                <div>
-                                                        LECCIÓN
-                                                </div>
-                                        </section>
-                                        <section class="esp-cuerpo">
-                                                <h3>Los pronombres personales</h3>
-                                                <p>Hola como se ha encontrado usted?</p>
-                                        </section>
-
-                                        <section class="aprender">
-                                                Aprender <i class='bx bx-right-arrow-alt'></i>
-                                        </section>
-                                </section>
-                                <section class="popular">
-                                        <section class="esp-img">
-                                                <img src="assets/img/Vocabulario.png" alt="">
-                                                <div>
-                                                        LECCIÓN
-                                                </div>
-                                        </section>
-                                        <section class="esp-cuerpo">
-                                                <h3>Los pronombres personales</h3>
-                                                <p>Hola como se ha encontrado usted?</p>
-                                        </section>
-
-                                        <section class="aprender">
-                                                Aprender <i class='bx bx-right-arrow-alt'></i>
-                                        </section>
-                                </section>
+                                        <ul class="option_vocabulary">
+                                                <li>
+                                                        Days of the week and months
+                                                </li>
+                                                <li>
+                                                        Number and prices
+                                                </li>
+                                                <li>
+                                                        Countries and nationalities
+                                                </li>
+                                        </ul>
 
 
 
-                        </section>
+                                </article>
+                                <article></article>
+                                <article></article>
+                        </div>
+
                 </section>
         </section>
         <section class="dome">
                 <picture>
-                        <source media="(min-width: 1280px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
-                        <source media="(min-width: 1024px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
-                        <source media="(min-width: 768px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
-                        <source media="(min-width: 481px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
-                        <source media="(min-width: 321px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
-                        <source class="b3Yrqyzc" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
-                        <img class="b3Yrqyzc" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg" alt="">
+                        <source media="(min-width: 1280px)" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
+                        <source media="(min-width: 1024px)" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
+                        <source media="(min-width: 768px)" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
+                        <source media="(min-width: 481px)" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
+                        <source media="(min-width: 321px)" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
+                        <source class="b3Yrqyzc" type="image/svg+xml"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
+                        <img class="b3Yrqyzc"
+                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg"
+                                alt="">
 
                 </picture>
                 <section class="contaner">
@@ -308,7 +297,9 @@
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
