@@ -146,18 +146,25 @@
 
       <section class="paginas contenedorActive" id="Grammar">
         <h2>Grammar</h2>
-        <form action="./controller/CrearGrammar.php" method="post" class="formulario-ejercicio">
-
-          <label for="IDnivel">ID de Nivel:</label>
-          <select id="IDnivel" name="IDnivel" style="width: 4rem;">
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-            <option value="B1">B1</option>
-          </select>
-
-          <label for="titulo">Título del Ejercicio:</label>
-          <input type="text" id="titulo" name="titulo" required>
-
+        <form action="./controller/CrearGrammar.php" method="post" class="formulario-ejercicio" enctype="multipart/form-data">
+          <section class="deanvulo">
+            <div class="id">
+              <label for="IDnivel">ID de Nivel:</label>
+              <select id="IDnivel" name="IDnivel" style="width: 4rem;">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+              </select>
+            </div>
+            <div class="tit">
+              <label for="titulo">Título del Ejercicio:</label>
+              <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="ar">
+              <label for="titulo">Archivo de ejemplo:</label>
+              <input type="file" id="titulo" name="Archivo" accept=".pdf" required>
+            </div>
+          </section>
 
           <label for="secrip-corta">Descripción Corta:</label>
           <textarea id="secrip-corta" name="secrip-corta"></textarea>
@@ -241,10 +248,11 @@
 
               <div class="itemForm">
                 <label for="Nivel">Instrucciones</label>
-                <textarea name="instruccionReading" id="" cols="30" rows="10" style="resize: none; height: 2.5rem;"></textarea>
+                <textarea name="instruccionReading" id="" cols="30" rows="10"
+                  style="resize: none; height: 2.5rem;"></textarea>
               </div>
-         
-    
+
+
               <div class="itemForm">
                 <label for="text">Ingrese el texto</label>
                 <textarea name="texto" id="text" cols="0" rows="3"></textarea>
@@ -266,7 +274,7 @@
           <main id="mainListening">
 
             <div class="rowWrap">
-              <div class="itemForm"  style="width: 4rem;">
+              <div class="itemForm" style="width: 4rem;">
                 <label for="Nivel">Nivel</label>
                 <select name="nivel" id="">
                   <option value="1">A1</option>
@@ -298,7 +306,8 @@
 
               <div class="itemForm">
                 <label for="Nivel">Descripcion audio</label>
-                <textarea name="descripcionaudio" id="" cols="30" rows="10" style="resize: none; height: 3rem;"></textarea>
+                <textarea name="descripcionaudio" id="" cols="30" rows="10"
+                  style="resize: none; height: 3rem;"></textarea>
               </div>
             </div>
 
