@@ -40,7 +40,6 @@ if ($fect) {
           </section>
           <section class="container-for">
             <h2><?php echo $titulo; ?></h2>
-            <p>Many people believe that English is a difficult language to learn but is it really? When you...</p>
           </section>
         </section>
 <?php
@@ -92,6 +91,9 @@ if ($fect) {
       }else if(clase == "Grammar"){
         var archivo= "preguntasGrammar.php"
       }
+
+      console.log(nivel);
+      console.log(nombre)
 
 
       $.ajax({
