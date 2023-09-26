@@ -34,7 +34,7 @@ mysqli_close($conexion);
 
 // Crear un array con el número de respuestas correctas e incorrectas
 $respuestaJSON = array(
-    "respuestas" => 'Respuestas correctas' .$respuestasCorrectas .'Respuestas incorrectas'. $respuestasIncorrectas
+    "respuestas" => 'Respuestas correctas' .$respuestasCorrectas .'<br>Respuestas incorrectas'. $respuestasIncorrectas
 );
 
 // Convertir el array en formato JSON

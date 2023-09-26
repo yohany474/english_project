@@ -20,7 +20,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 <p id="totalPregunta"></p>
             </span>
             <h4>Formulario de Preguntas</h4>
-            <form id="questionForm" action="resultadosListening.php" method="post">
+            <form id="questionForm"  method="post">
 
                 <?php
 
@@ -82,7 +82,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
         <script>
             function compae() {
-                function inicializarFormulario() {
+                function inicializarFormulario2() {
                     const form = document.getElementById("questionForm");
                     const questions = form.querySelectorAll(".question");
                     const nextButton = document.getElementById("nextButton");
@@ -93,7 +93,7 @@ if (mysqli_num_rows($resultado) > 0) {
                     totalPregunta.innerText = questions.length;
                     let currentQuestion = 0;
 
-                    function mostrarPregunta(index) {
+                    function mostrarPregunta2(index) {
                         questions.forEach((question, i) => {
                             if (i === index) {
                                 question.style.display = "flex";
@@ -125,7 +125,7 @@ if (mysqli_num_rows($resultado) > 0) {
                         currentQuestion++;
 
                         if (currentQuestion < questions.length) {
-                            mostrarPregunta(currentQuestion); // Usar la función para mostrar la siguiente pregunta
+                            mostrarPregunta2(currentQuestion); // Usar la función para mostrar la siguiente pregunta
                         } else {
                             nextButton.style.display = "none"; // Ocultar el botón "Siguiente"
                             previousButton.style.display = "none"; // Ocultar el botón "Siguiente"
@@ -137,19 +137,19 @@ if (mysqli_num_rows($resultado) > 0) {
                         if (currentQuestion > 0) {
                             questions[currentQuestion].style.display = "none";
                             currentQuestion--;
-                            mostrarPregunta(currentQuestion); // Usar la función para mostrar la pregunta anterior
+                            mostrarPregunta2(currentQuestion); // Usar la función para mostrar la pregunta anterior
                         }
                     });
 
                     // Mostrar la primera pregunta, ocultar las demás
-                    mostrarPregunta(currentQuestion);
+                    mostrarPregunta2(currentQuestion);
                 }
 
                 // Llamar a la función para inicializar el formulario de listening
-                inicializarFormulario();
+                inicializarFormulario2();
 
                 // Función para enviar el formulario por Fetch y manejar la respuesta como JSON
-                function enviarFormulario() {
+                function enviarFormulario2() {
                     // Obtén el formulario por su ID
                     const form = document.getElementById("questionForm");
 
@@ -176,6 +176,7 @@ if (mysqli_num_rows($resultado) > 0) {
                         .then(data => {
                             // Maneja la respuesta del servidor como JSON aqu
                             alert(data.respuestas);
+
                         })
                         .catch(error => {
                             // Maneja errores de la solicitud aquí
@@ -187,7 +188,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 const form = document.getElementById("questionForm");
                 form.addEventListener("submit", function(e) {
                     e.preventDefault(); // Evita el envío normal del formulario
-                    enviarFormulario(); // Llama a la función para enviar el formulario
+                    enviarFormulario2(); // Llama a la función para enviar el formulario
                 });
             }
 
