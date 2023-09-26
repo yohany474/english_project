@@ -1,21 +1,9 @@
 <?php
 require_once 'config/Conexion.php';
 
-function consultarPreguntasListening($nivel)
-{
-    global $conexion;
-    $resultado = array();
-    $nivelE = mysqli_real_escape_string($conexion, $nivel);
-    $consulta = $conexion->query("SELECT * FROM actividadlistening WHERE idNivel = '$nivelE' ");
 
-    if ($consulta->num_rows > 0) {
-        $resultado = array(
-            'titulo'
-        );
-    }
-}
 
-$sql = "SELECT * FROM actividadlistening  WHERE idNivel = 2";
+$sql = "SELECT * FROM actividadlistening  WHERE idNivel = 3 and titulo = 'Exploring Colombian Culinary Traditions'";
 $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
@@ -39,17 +27,19 @@ if (mysqli_num_rows($resultado) > 0) {
                 /
                 <p id="totalPregunta"></p>
             </span>
-            <h2>Formulario de Preguntas</h2>
+
             <form id="questionForm" action="" method="post">
 
                 <?php
 
                 $audio_actual = ''; // Variable para almacenar el audio actual
-            
+                $titulo_actual = '';
+
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
                     $idActividad = $pregunta["idactividadlistening"];
-                    $audio_pregunta = $pregunta["audio"]; // Obtener el audio de la pregunta actual
+                    $audio_pregunta = 'uploads/' . $pregunta["audio"] . '.mp3'; // Obtener el audio de la preguntaactual
+                    $tituloo = $pregunta['titulo'];
                     $preguntaa = $pregunta["pregunta"];
                     $opciones = explode('/', $pregunta["opciones"]);
 
@@ -58,6 +48,13 @@ if (mysqli_num_rows($resultado) > 0) {
                         echo '<audio id="audio" controls src="' . $audio_pregunta . '"></audio>';
                         $audio_actual = $audio_pregunta;
                     }
+
+                    if ($tituloo != $titulo_actual) {
+                        echo '<h2>' . $pregunta['titulo'] . '</h2>';
+                        $titulo_actual = $tituloo;
+                    }
+
+
                     ?>
                     <div class="question">
                         <label for="pregunta1">
