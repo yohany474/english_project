@@ -18,7 +18,18 @@ var second= document.getElementById("senador");
 $(document).ready(function () {
    $(".totem").on("click", function () {
       var valor = $(this).data("valor");
-      console.log(valor)
+      var lugar = document.getElementById("Title")
+      
+      if(valor == 1){
+         lugar.innerHTML= "Listening";
+      }else if(valor == 2){
+         lugar.innerHTML= "Reading";
+      }else if(valor == 3){
+         lugar.innerHTML= "Writing";
+      }else if(valor == 4){
+         lugar.innerHTML= "Grammar";
+      }
+
       primer.classList.add('regular');
 
       $.ajax({

@@ -627,8 +627,36 @@ body {
    margin-top: 15px;
    font: 700 2.5rem/1.5rem 'Inter', sans-serif;
    color: #103D7C;
+   display: flex;
+}
+#Title{
+   margin-left: 10px;
 }
 
+.sofes{
+   display: none;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   z-index: 3;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.267);
+}
+
+.der{
+   display: flex;
+}
+
+.x{
+   position: absolute;
+   right: 14px;
+   top: 18px;
+   font-size: 20px;
+   font-weight: 550;
+}
 .encabe-new p{
    margin-top: 8px;
    font: 300 0.9rem/1.5rem 'Inter', sans-serif;
@@ -720,17 +748,17 @@ body {
    border-radius: 8px 8px 0px 0px;
 }
 
-.container{
+.container-for{
    padding: 0.7rem;
    height: 48%;
 }
 
-.container h2{
+.container-for h2{
    color: #103D7C;
    font: 700 1.3rem/1.5rem 'Inter', sans-serif;
 }
 
-.container p{
+.container-for p{
    margin-top: 5px;
    font: 0.95rem/1.2rem 'Inter', sans-serif;}
 

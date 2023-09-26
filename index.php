@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/css/login.css">
         <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/cards_vocabulary.css">
+        <link rel="stylesheet" href="assets/css/preguntasListening.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
                 integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -80,7 +81,7 @@
         <section class="senador" id="senador">
                 <header>
                         <div class="encabe-new">
-                                <h2>Temas de Listening</h2>
+                                <h2>Temas de <div id="Title"></div> </h2>
                                 <p>Explora y disfruta de las actividades que tenemos para ti</p>
                         </div>
                         <div class="filtros">
@@ -644,6 +645,8 @@
                         </form>
                 </article>
         </footer>
+
+        <section class="sofes" id="SOF"></section>
         <script src="assets/js/login.js"></script>
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>
