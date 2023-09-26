@@ -3,7 +3,7 @@ require_once 'config/Conexion.php';
 
 $nombre = $_POST["nombre"];
 $nivel = $_POST["nivel"];
-$tabla= $_POST["tabla"];
+
 
 $sql = "SELECT * FROM actividadlistening  WHERE idNivel = '$nivel' and titulo = '$nombre'";
 $resultado = mysqli_query($conexion, $sql);

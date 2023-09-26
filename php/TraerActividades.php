@@ -83,22 +83,23 @@ if ($fect) {
       var nivel = $(this).data("nivel");
       var clase = $(this).data("clase");
 
-      if(valor == "Listening"){
-         var tabla= ""
-      }else if(valor == "Grammar"){
-
-      }else{
-
+      if(clase == "Listening"){
+         var archivo= "preguntasListening.PHP"
+      }else if(clase == "Reading"){
+        var archivo= "preguntasReading.php"
+      }else if(clase == "Writing"){
+        var archivo= "preguntasWriting.php"
+      }else if(clase == "Grammar"){
+        var archivo= "preguntasGrammar.php"
       }
 
 
       $.ajax({
-        url: "./preguntasListening.PHP",
+        url: "./" + archivo,
         method: "POST",
         data: {
           nombre: nombre,
           nivel: nivel,
-          
         },
         success: function(response) {
           document.getElementById('SOF').classList.add("der");
