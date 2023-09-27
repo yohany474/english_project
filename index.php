@@ -417,6 +417,21 @@
                                                         target="_blank">Electrical
                                                         and Electronic Maintenance of Motor Vehicles</a>
                                         </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1ganm7GTL0N0O-JLdK7JfLzjSupjC-0wJ/view?usp=sharing"  target="_blank" >Local Tourism Operations</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1VvPPLS7gLHyjqvXEOho-NlFgNLT-KYHl/view?usp=sharing"  target="_blank">Maintenance and Installation of Air Conditioning</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1sbZ91EvaGM--alw7N5vARhBZJCt_sbbc/view?usp=sharing"  target="_blank">Musical Performance</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1vFBtDajaROOmHfKCCOsbORWVpbzsICd5/view?usp=sharing"  target="_blank">Public Health</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1Qgtx9Bber6Vb2g1SyK3d5n_JvkXigSJk/view?usp=sharing"  target="_blank">Tourism Guiadance</a>
+                                        </li>
 
                                 </ul>
 
@@ -519,6 +534,27 @@
                                                 <a href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing"
                                                         target="_blank">Welding
                                                         of Metallic Products</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1C1uwLg8dsV-13e1PQQVe_hu9gQtU9otg/view?usp=sharing"
+                                                        target="_blank">Administrative Management</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1KE6ORGui25-kzj59gErMXHxfND8FXoa7/view?usp=sharing"
+                                                        target="_blank">Cabinetmaking</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1BE8gSkX4m1vDYfjatv4DdZaUe89hv12Y/view?usp=sharing"
+                                                        target="_blank">Dancing Performance</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1TisAEFI2AXDbfirzulJUq5rNAhB3o3lw/view?usp=sharing"
+                                                        target="_blank">Installation and Maintenance of Electrical of
+                                                        Solar Panels and Photovoltaic Grids</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://drive.google.com/file/d/1vf1C8iUViKyByHm94NP3Jl7uxGCxsY7n/view?usp=sharing"
+                                                        target="_blank">Installation of Electrical Network</a>
                                         </li>
 
                                 </ul>

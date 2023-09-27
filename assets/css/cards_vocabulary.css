@@ -159,26 +159,31 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 450px;
+    height: 650px;
     margin-bottom: 20px;
   }
+
   .bank_words h1 {
     display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     font-size: 1.5em;
-    
+    word-wrap: break-word;
     background-color: #3d3dff;
     width: 90%;
-    height: 250px;
+    height: 350px;
+    margin-bottom: 10px;
     border-radius: 5px 5px 0px 0px;
   }
+
+
   .columns{
     display: flex;
     flex-direction: column;
-  
+    width: 80%;
     gap: 5px ;
-    overflow: auto;
+    overflow: 600px;
   }
   
   
@@ -189,6 +194,7 @@
   padding: unset;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 35px;
 
 }
@@ -203,6 +209,7 @@
 .columns ul li a{
   color:#0066cc ;
   height: 50px;
+  width: 50´x ;
 }
 .columns ul li a:hover{
   text-decoration: underline;
