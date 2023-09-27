@@ -93,7 +93,9 @@ function enviarFormulario() {
         })
         .then(data => {
             // Maneja la respuesta del servidor como JSON aqu
+        
             alert(data.respuestas);
+            // mostrarVentanaResult();
         })
         .catch(error => {
             // Maneja errores de la solicitud aquí
@@ -110,3 +112,6 @@ form.addEventListener("submit", function (e) {
 }
 
 compae();
+
+
+

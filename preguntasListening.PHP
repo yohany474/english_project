@@ -11,8 +11,9 @@ if ($resultado) {
     if (mysqli_num_rows($resultado) > 0) {
 ?>
 
-
+        <!-- Resultados  -->
         <div class="container">
+            
             <div class="x" id="x2">X</div>
             <span>
                 <p id="preguntaActual"></p>
@@ -183,7 +184,13 @@ if ($resultado) {
                         })
                         .then(data => {
                             // Maneja la respuesta del servidor como JSON aqu
-                            alert(data.respuestas);
+                            document.getElementById('SOF').innerHTML ='';
+                            document.getElementById('SOF').classList.remove('der');
+                            var correctas = data.correctas;
+                            var incorrectas = data.incorrectas;
+                            var totalPreguntas = data.totalPreguntas;
+                            var calificacion = data.calificacion;
+                            mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
                         })
                         .catch(error => {
                             // Maneja errores de la solicitud aquí
@@ -223,3 +230,5 @@ mysqli_close($conexion);
 
     hacer();
 </script>
+
+
