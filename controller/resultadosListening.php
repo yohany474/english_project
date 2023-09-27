@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $respuestasIncorrectas = 0;
     $totalPreguntas = 0;
     $calificacion = '';
+    $title = $_POST['titulo'];
 
     // Recorremos todas las respuestas enviadas por el formulario
     foreach ($_POST as $key => $value) {
@@ -22,12 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Validar la respuesta del usuario
             if ($respuestaUsuario === $respuestaCorrecta) {
                 $respuestasCorrectas++;
+                $totalPreguntas++;
             } else {
                 $respuestasIncorrectas++;
+                $totalPreguntas++;
             }
 
         }
-        $totalPreguntas++;
+        
     }
 
     if ($respuestasCorrectas > $respuestasIncorrectas) {
@@ -44,7 +47,8 @@ $respuestaJSON = array(
     "correctas" => $respuestasCorrectas,
     "incorrectas" => 'Incorrect answers ' . $respuestasIncorrectas,
     "totalPreguntas" => 'of ' . $totalPreguntas,
-    "calificacion" => $calificacion
+    "calificacion" => $calificacion,
+    "titulo" => $title
 );
 
 // Convertir el array en formato JSON

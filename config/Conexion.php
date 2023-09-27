@@ -6,6 +6,15 @@
     private $password = '';
     // private $bd = 'ingles_project';
     private $bd = 'ingles_project';
+
+
+
+
+    // private $hostname = 'localhost';
+    // private $user = 'c1601882_english';
+    // private $password = 'keGOtude02';
+    // // private $bd = 'ingles_project';
+    // private $bd = 'c1601882_english';
     private $conexion = null;
 
     public function __construct(){

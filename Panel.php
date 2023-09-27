@@ -13,9 +13,7 @@
   <title>Panel Admin</title>
 </head>
 
-<<<<<<< HEAD:Panel.html
 <body id="body">
-=======
 <body>
 
   <section class="itad" id="productos">
@@ -40,7 +38,6 @@
     </section>
   </section>
 
->>>>>>> fa6a3f4e0b24af4714b3be1ac7944a5b058fc9e7:Panel.php
   <header id="header">
     <img src="assets/img/logo.png" alt="" class="logo" />
     <div class="header_right">

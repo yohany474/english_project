@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/cards_vocabulary.css">
         <link rel="stylesheet" href="assets/css/preguntasListening.css">
+        <link rel="stylesheet" href="assets/css/carga.css">
         <link rel="stylesheet" href="assets/css/cardResult.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -20,7 +21,7 @@
 
 <body id="body">
 
-      
+
 
         <div id="dark" class="urr">.</div>
         <div id="container_login">
@@ -651,8 +652,8 @@
                         </form>
                 </article>
         </footer>
-          <!-- Resultados de la actvidad -->
-          <section id="ventanaResult" class="ventanasYo">
+        <!-- Resultados de la actvidad -->
+        <section id="ventanaResult" class="ventanasYo">
                 <div class="results-summary-container">
                         <div class="confetti">
                                 <div class="confetti-piece"></div>
@@ -688,13 +689,30 @@
                                 <div class="summary__cta">
                                         <button class="btn btn__continue" onclick="ocultarVentanaResult()">Continue
                                         </button>
-                                        <button id="consultarPreguntasCorrectasIncorrectas" class="btn btn__continue" onclick="alert('En proceso')">Correct Answers
+                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA=""
+                                                onclick="mostrarRespuestasCorrecta();" class="btn btn__continue"
+                                                onclick="">Correct Answers
                                         </button>
                                 </div>
                         </div>
                 </div>
         </section>
         <!-- Resultados de la actvidad -->
+
+
+        <!-- Ventana de respuestas correctas e incorrectas -->
+        <section class="ventanasYo" id="respuestasCorrectasInco">
+                <article id="contenedorRespuestasServidor">
+
+                </article>
+        </section>
+        <!-- Ventana de respuestas correctas e incorrectas -->
+
+        <!-- Ventana de carga -->
+        <div class="" id="carga">
+                <div class="custom-loader"></div>
+                <h3 style="color: #f0f2f5;">Cargando...</h3>
+        </div>
 
         <section class="sofes" id="SOF">
         </section>

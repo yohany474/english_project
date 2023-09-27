@@ -78,6 +78,7 @@ if ($fect) {
   //Codigo para traer la activiad
   $(document).ready(function() {
     $(".target").on("click", function() {
+      document.getElementById('carga').style.display ='flex';
       var nombre = $(this).data("nombre");
       var nivel = $(this).data("nivel");
       var clase = $(this).data("clase");
@@ -104,6 +105,7 @@ if ($fect) {
           nivel: nivel,
         },
         success: function(response) {
+          document.getElementById('carga').style.display ='none';
           document.getElementById('SOF').classList.add("der");
           $('#SOF').html(response);
         },

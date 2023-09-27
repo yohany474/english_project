@@ -9,11 +9,11 @@ $sql = "SELECT * FROM actividadlistening  WHERE idNivel = '$nivel' and titulo = 
 $resultado = mysqli_query($conexion, $sql);
 if ($resultado) {
     if (mysqli_num_rows($resultado) > 0) {
-?>
+        ?>
 
         <!-- Resultados  -->
         <div class="container">
-            
+
             <div class="x" id="x2">X</div>
             <span>
                 <p id="preguntaActual"></p>
@@ -24,23 +24,29 @@ if ($resultado) {
             <form id="questionForm" action="" method="post">
 
                 <?php
-
                 $audio_actual = ''; // Variable para almacenar el audio actual
                 $titulo_actual = '';
 
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
                     $idActividad = $pregunta["idactividadlistening"];
-                    $audio_pregunta = 'uploads/' . $pregunta["audio"] . '.mp3'; // Obtener el audio de la preguntaactual
+                    $audio_pregunta = 'uploads/' . $pregunta["audio"];
+
+                    // Verificar si $audio_pregunta no termina con '.mp3' y agregarlo si es necesario
+                    if (substr($audio_pregunta, -4) !== '.mp3') {
+                        $audio_pregunta .= '.mp3';
+                    }
                     $tituloo = $pregunta['titulo'];
                     $preguntaa = $pregunta["pregunta"];
                     $opciones = explode('/', $pregunta["opciones"]);
 
                     // Si el audio actual es diferente al de la pregunta actual, actualízalo
                     if ($audio_pregunta != $audio_actual) {
+                        // Imprime el elemento <audio> solo si cambia el audio
                         echo '<audio id="audio" controls src="' . $audio_pregunta . '"></audio>';
                         $audio_actual = $audio_pregunta;
                     }
+
 
                     if ($tituloo != $titulo_actual) {
                         echo '<h2>' . $pregunta['titulo'] . '</h2>';
@@ -48,7 +54,7 @@ if ($resultado) {
                     }
 
 
-                ?>
+                    ?>
                     <div class="question">
                         <label for="pregunta1">
                             <?php echo $preguntaa ?>
@@ -58,8 +64,8 @@ if ($resultado) {
 
                         foreach ($opciones as $key => $opcion) {
                             $opcionesLabel = chr(65 + $key); // a), b), c), ...
-
-                        ?>
+            
+                            ?>
                             <label class="div1">
                                 <?php
                                 echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
@@ -71,16 +77,19 @@ if ($resultado) {
                                     ?>
                                 </label>
                             </label>
-                        <?php
+                            <?php
                         }
                         ?>
                     </div>
-                <?php
+                    <?php
                 }
                 ?>
+                <?php ?>
 
 
                 <div class="btn-container">
+                    <?php echo '<input type="hidden" name="titulo" value="' . $tituloo . '">';
+                    ?>
                     <button class="btn" type="button" id="previousButton">Anterior</button>
                     <button class="btn" type="button" id="nextButton">Siguiente</button>
                     <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
@@ -159,6 +168,8 @@ if ($resultado) {
 
                 // Función para enviar el formulario por Fetch y manejar la respuesta como JSON
                 function enviarFormulario() {
+
+                    document.getElementById('carga').style.display ='flex';
                     // Obtén el formulario por su ID
                     const form = document.getElementById("questionForm");
 
@@ -184,13 +195,19 @@ if ($resultado) {
                         })
                         .then(data => {
                             // Maneja la respuesta del servidor como JSON aqu
-                            document.getElementById('SOF').innerHTML ='';
+                            document.getElementById('SOF').innerHTML = '';
                             document.getElementById('SOF').classList.remove('der');
                             var correctas = data.correctas;
                             var incorrectas = data.incorrectas;
                             var totalPreguntas = data.totalPreguntas;
                             var calificacion = data.calificacion;
+                            var btnQueryAnswer = document.getElementById('consultarPreguntasCorrectasIncorrectas');
+                            var titulo = data.titulo; // Obtener el título de los datos
+                            btnQueryAnswer.setAttribute('data-mostrarRTA', titulo);
+
+                            document.getElementById('carga').style.display ='none';
                             mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
+
                         })
                         .catch(error => {
                             // Maneja errores de la solicitud aquí
@@ -200,7 +217,7 @@ if ($resultado) {
 
                 // Agrega un evento de escucha al formulario para enviarlo cuando se envíe
                 const form = document.getElementById("questionForm");
-                form.addEventListener("submit", function(e) {
+                form.addEventListener("submit", function (e) {
                     e.preventDefault(); // Evita el envío normal del formulario
                     enviarFormulario(); // Llama a la función para enviar el formulario
                 });
@@ -209,7 +226,7 @@ if ($resultado) {
             compae();
         </script>
 
-<?php
+        <?php
     } else {
         echo "No se encontraron actividades de listening.";
     }
@@ -230,5 +247,3 @@ mysqli_close($conexion);
 
     hacer();
 </script>
-
-

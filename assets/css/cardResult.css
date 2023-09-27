@@ -13,7 +13,19 @@
     overflow: hidden;
     transition:  all .5s ease;
 }
-
+.ventanasYo >article {
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+}
+#contenedorRespuestasServidor{
+    justify-content: center;
+    padding: 2em;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    
+}
 .ventanaResultVisible{
     transform: scale(1) !important;
 }

@@ -76,9 +76,63 @@ function ocultarVentanaResult() {
 }
 
 
-//   Funcion para traer las respuestas correctas e incorrectas 
+// Funcion para traer las respuestas correctas e incorrectas
+function mostrarRespuestasCorrecta() {
+   // Configurar los datos del formulario
 
-function mostrarRespuestasCorrecta(titulo){
+   var btnQueryAnswer = document.getElementById('consultarPreguntasCorrectasIncorrectas');
+   var titulo = btnQueryAnswer.getAttribute('data-mostrarRTA', titulo);; // Obtener el título de los datos
 
 
+
+   
+   const formData = new FormData();
+   formData.append('titulo', titulo);
+
+   // Configurar las opciones de la solicitud
+   const opciones = {
+      method: 'POST',
+      body: formData
+   };
+
+   // Realizar la solicitud utilizando fetch
+   fetch('controller/preguntasCorrectasIncorrectas.php', opciones)
+      .then((response) => {
+         if (!response.ok) {
+            throw new Error('Error en la solicitud');
+         }
+         return response.text(); // Suponiendo que el servidor devuelve una respuesta de texto
+      })
+      .then((data) => {
+         // Insertar la respuesta en el elemento con el id 'contenedorRespuestasServidor'
+         document.getElementById('contenedorRespuestasServidor').innerHTML = data;
+
+         // Agregar una clase para mostrar la ventana de resultados
+         document.getElementById('respuestasCorrectasInco').classList.add('ventanaResultVisible');
+      })
+      .catch(error => {
+         // Manejar errores, por ejemplo, mostrar un mensaje de error
+         console.error('Error:', error);
+      });
 }
+
+
+
+// Función para cerrar la ventana de preguntas correctas e incorrectas
+function cerrarVentanaPreguntasCorrectasIncorrectas() {
+   document.getElementById('respuestasCorrectasInco').classList.remove('ventanaResultVisible');
+}
+
+// Event listener para detectar clics en el documento
+document.addEventListener('click', function(event) {
+   const contenedorRespuestas = document.getElementById('contenedorRespuestasServidor');
+
+   // Comprobar si el clic ocurrió fuera del contenedor
+   if (!contenedorRespuestas.contains(event.target)) {
+      // Llamar a la función para cerrar la ventana
+      cerrarVentanaPreguntasCorrectasIncorrectas();
+   }
+});
+
+
+
