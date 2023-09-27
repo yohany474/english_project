@@ -10,6 +10,13 @@ $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
     ?>
+
+    <section class="pdf">
+        <?php
+        $t=mysqli_fetch_assoc($resultado);
+        ?>
+        <embed src="<?php echo $t["pdf"]?>" type="application/pdf" width="500" height="600">
+    </section>
         <div class="container">
         <div class="x" id="x2">X</div>
             <span>
