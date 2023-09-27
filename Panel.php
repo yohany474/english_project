@@ -5,12 +5,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="assets/css/panel.css" />
   <link rel="stylesheet" href="assets/css/ventanaCrearActividades.css" />
   <title>Panel Admin</title>
 </head>
 
 <body>
+
+  <section class="itad" id="productos">
+    <section class="activi">
+      <header>
+        <h2>Actividades</h2>
+        <div id="x3">
+          X
+        </div>
+      </header>
+      <section class="fot">
+        <div class="fores">
+          <input type="search" placeholder="Buscar actividad">
+        </div>
+        <div class="scroll" id="QERT">
+          <!-- CARGAR TODAS LAS ACTIVIADES DEL FILTRO -->
+        </div>
+      </section>
+    </section>
+    <section class="wer" id="WAER">
+      <!-- Contenedor para subir el archivo -->
+    </section>
+  </section>
+
   <header id="header">
     <img src="assets/img/logo.png" alt="" class="logo" />
     <div class="header_right">
@@ -142,11 +168,26 @@
           </article>
 
         </section>
+        <section class="oficinista">
+          <header>
+            Actulizar productos
+          </header>
+          <section class="carot" id="tore">
+            <div>
+              <section class="dares" data-clase="4">Grammar</section>
+              <section class="dares" data-clase="3">Writing</section>
+              <section class="dares" data-clase="2">Reading</section>
+              <section class="dares" data-clase="1">Listening</section>
+            </div>
+          </section>
+        </section>
+
       </section>
 
-      <section class="paginas contenedorActive" id="Grammar">
+      <section class="paginas" id="Grammar">
         <h2>Grammar</h2>
-        <form action="" id="ventanaFormGrammar" method="post" class="formulario-ejercicio" enctype="multipart/form-data">
+        <form action="" id="ventanaFormGrammar" method="post" class="formulario-ejercicio"
+          enctype="multipart/form-data">
           <section class="deanvulo">
             <div class="id">
               <label for="IDnivel">ID de Nivel:</label>
@@ -332,6 +373,7 @@
   <script src="assets/js/enviarListening.js"></script>
   <script src="assets/js/enviarReading.js"></script>
   <script src="assets/js/enviarGrammar.js"></script>
+  <script src="assets/js/PanelLlamado.js"></script>
   <script src="assets/js/cerrar.js"></script>
 </body>
 
