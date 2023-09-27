@@ -8,10 +8,10 @@ ventanaFormGrammar.addEventListener('submit', (event) => {
         body: FormDataa,
     }).then((response) => response.json())
         .then((data) => {
-            if(data.success === true){
+            if (data.success === true) {
                 alert('Actividad guardada correctamente')
             }
-            ventanaFormGrammar.reset(); 
+            ventanaFormGrammar.reset();
 
         })
         .catch((error) => {

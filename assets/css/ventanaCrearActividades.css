@@ -85,10 +85,152 @@ button {
 
 }
 
+.oficinista{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 78%;
+}
+
+.oficinista header{
+    color: rgb(49, 44, 44);
+    height: 20%;
+    padding: 0rem 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+    display: flex;
+    align-items: center;
+}
+
+
+.oficinista .carot{
+    height: 80%;
+    background-color: #0050e634;
+}
+.oficinista .carot div{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.oficinista .carot section{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    width: 48%;
+    height: 45% !important;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    height: 40%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.itad{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #3636366e;
+}
+
+.itad .activi{
+    background-color: white;
+    border-radius: 5px;
+    width: 49%;
+    height: 70%;
+}
+
+.itad .activi header{
+    height: 13%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+}
+.fot{
+    height: 87%;
+}
+.fot .scroll{
+    overflow-y: scroll;
+    height: 85%;
+}
+.fores{
+    height: 12%;
+}
+
+.fores input{
+    height: 80%;
+}
+.scroll .ret{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 14%;
+    margin-top: 7px;
+    padding: 0rem 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   }
+
+.scroll {
+    scrollbar-width: none;
+  }
+
+.scroll .ret button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.x3{
+    cursor: pointer;
+}
+.wer{
+    display: none;
+    border-radius: 7px;
+    width: 30%;
+    height: 30%;
+    margin-left: 1rem;
+    background-color: white;
+}
+.wer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+    width: 100%;
+    height: 100%;
+}
+.wer input{
+    display: none;
+}
+
+.wer form label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.wer form button{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.ass{
+    display: flex;
+}
 .column {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .itemForm {

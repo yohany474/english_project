@@ -3,7 +3,9 @@
 }
 
 .container_vocabulary h1 {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 3rem;
   width: 100%;
   color: black;

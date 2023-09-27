@@ -5,7 +5,7 @@
     private $user = 'root';
     private $password = '';
     // private $bd = 'ingles_project';
-    private $bd = 'diegoingles';
+    private $bd = 'ingles_project';
     private $conexion = null;
 
     public function __construct(){

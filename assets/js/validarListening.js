@@ -1,3 +1,4 @@
+function compae(){
 function inicializarFormulario() {
     const form = document.getElementById("questionForm");
     const questions = form.querySelectorAll(".question");
@@ -65,7 +66,6 @@ function inicializarFormulario() {
 // Llamar a la función para inicializar el formulario de listening
 inicializarFormulario();
 
-
 // Función para enviar el formulario por Fetch y manejar la respuesta como JSON
 function enviarFormulario() {
     // Obtén el formulario por su ID
@@ -93,9 +93,12 @@ function enviarFormulario() {
         })
         .then(data => {
             // Maneja la respuesta del servidor como JSON aqu
+        
             alert(data.respuestas);
+            // mostrarVentanaResult();
         })
         .catch(error => {
+            
             // Maneja errores de la solicitud aquí
             console.error("Error en la solicitud Fetch:", error);
         });
@@ -107,3 +110,9 @@ form.addEventListener("submit", function (e) {
     e.preventDefault(); // Evita el envío normal del formulario
     enviarFormulario(); // Llama a la función para enviar el formulario
 });
+}
+
+compae();
+
+
+

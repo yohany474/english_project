@@ -1,27 +1,9 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    display: flex;
-
-    background-color: #0054ef40;
-    margin: 0;
-    padding: 0 0 0 1em;
-}
-
-embed {
-    width: 100%;
-    height: 100vh; /* Establece la altura al 100% de la ventana gráfica */
-    display: block; /* Elimina cualquier espacio adicional alrededor del embed */
-    border: none; /* Elimina el borde si lo hubiera */
-}
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
-z-index: 0;
-overflow: hidden;
+    z-index: 0;
+    overflow: hidden;
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
@@ -87,7 +69,9 @@ input[type="radio"] {
     justify-content: center;
     border: 1ox solid #538fff;
     font-weight: 600;
+    height: 95% !important;
     align-items: center;
+    overflow: auto;
     flex-direction: column;
 }
 
