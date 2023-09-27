@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $respuestaUsuario = $value;
 
             // Obtener la respuesta correcta de la base de datos
-            $sql = "SELECT respuestacorrecta FROM actividadreading WHERE idactividadReading = $idActividad";
+            $sql = "SELECT respuestacorrecta FROM actividadesgrammar WHERE ID = $idActividad";
             $query = mysqli_query($conexion, $sql);
 
             if ($query) {
@@ -38,7 +38,7 @@ mysqli_close($conexion);
 
 // Crear un array con el número de respuestas correctas e incorrectas
 $respuestaJSON = array(
-    "respuestas" => 'correctas' .$respuestasCorrectas .'Respuestas incorrectas'. $respuestasIncorrectas
+    "respuestas" => 'Corret Answer' .$respuestasCorrectas. '\nWrong Answer'. $respuestasIncorrectas
 
 );
 

@@ -650,6 +650,12 @@ body {
    display: flex;
 }
 
+.pdf{
+   height: 100%;
+   margin-left: 10%;
+   margin-top: 5%;
+}
+
 .x{
    position: absolute;
    right: 14px;
@@ -729,7 +735,7 @@ body {
 /* TAREJTAS DISEÑO */
 .target{
    width: 22%;
-   height: 21rem;
+   height: auto;
    margin: 1rem 1rem 0rem 1rem;
    background-color: white;
    border-radius: 8px;
@@ -738,7 +744,7 @@ body {
 }
 
 .target .img-im{
-   height: 55%;
+   height: 10rem;
 }
 
 .target .img-im img{
@@ -749,8 +755,8 @@ body {
 }
 
 .container-for{
-   padding: 0.7rem;
-   height: 48%;
+   padding: 1rem;
+   height: auto;
 }
 
 .container-for h2{
