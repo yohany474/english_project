@@ -67,11 +67,9 @@
                 </section>
                 <section class="cuerpo-enca">
                         <section class="portaf">
-                                <h2>Aprende Inglés rápido</h2>
-                                <p>Aquí encontrarás todos los contenidos necesarios para aprender la lengua inglesa a tu
-                                        ritmo.</p>
-                                <input id="iSearch" type="text" placeholder="Introduce aquí el texto">
-                                <i class='bx bx-search-alt-2'></i>
+                                <h2>LEARN AND PRACTICE ENGLISH EASILY</h2>
+                                <p>Use SENALINGUA Caquetá for improving your skills.</p>
+                                
                         </section>
                 </section>
         </header>
@@ -519,7 +517,7 @@
                                  cannot be overstated, as it empowers institutions like SENA to stay current and effective in their
                                   educational endeavors.--></p> 
 
-                                <a href="https://adso24.com/web/" target="_blank">Conoce más de nosotros</a>
+                                <a href="https://adso24.com/web/" target="_blank">More about us</a>
                         </div>
                         <div class="img-contan">
                                 <img src="assets/img/WhatsApp Image 2023-09-21 at 7.13.22 AM.jpeg" alt="">

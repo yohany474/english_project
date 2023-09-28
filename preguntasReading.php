@@ -24,6 +24,7 @@ if (mysqli_num_rows($resultado) > 0) {
 
         while ($pregunta = mysqli_fetch_assoc($resultado)) {
             $idActividad = $pregunta["idactividadReading"];
+            $tecto= $pregunta["texto"];
             $imagen = $pregunta["img"];
             $preguntaa = $pregunta["pregunta"];
             $opciones = explode('/', $pregunta["opciones"]);
@@ -35,11 +36,10 @@ if (mysqli_num_rows($resultado) > 0) {
                     echo '</div>';
                 }
 
-<<<<<<< HEAD
                 $imagenAnterior = $imagen;
 
                 // Mostrar la imagen
-                echo '<img src="' . $imagen . '" width="200px" />';
+                echo '<div>'.$tecto.'</div>';
                 echo '<div>'; // Iniciar un nuevo conjunto de preguntas
             }
 
@@ -72,16 +72,6 @@ if (mysqli_num_rows($resultado) > 0) {
             <button class="btn" type="button" id="previousButton">Anterior</button>
             <button class="btn" type="button" id="nextButton">Siguiente</button>
             <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
-=======
-                <div class="btn-container">
-                <?php echo '<input type="hidden" name="titulo" value="' . $titulo . '">';
-                    ?>
-                    <button class="btn" type="button" id="previousButton">Anterior</button>
-                    <button class="btn" type="button" id="nextButton">Siguiente</button>
-                    <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
-                </div>
-            </form>
->>>>>>> b3fd7c69818cea2d9372bd12863c21ec1a347820
         </div>
     </form>
 </div>
