@@ -10,75 +10,70 @@ $resultado = mysqli_query($conexion, $sql);
 
 if (mysqli_num_rows($resultado) > 0) {
     ?>
-        <div class="container">
-        <div class="x" id="x2">X</div>
-            <span>
-                <p id="preguntaActual"></p>
+      <div class="container">
+    <div class="x" id="x2">X</div>
+    <span>
+        <p id="preguntaActual"></p> /
+        <p id="totalPregunta"></p>
+    </span>
+    <h4>Formulario de Preguntas</h4>
+    <form id="questionForm" method="post">
 
-                /
+        <?php
+        $imagenAnterior = ""; // Variable para almacenar la imagen anterior
 
-                <p id="totalPregunta"></p>
-            </span>
-            <h4>Formulario de Preguntas</h4>
-            <form id="questionForm"  method="post">
+        while ($pregunta = mysqli_fetch_assoc($resultado)) {
+            $idActividad = $pregunta["idactividadReading"];
+            $imagen = $pregunta["img"];
+            $preguntaa = $pregunta["pregunta"];
+            $opciones = explode('/', $pregunta["opciones"]);
 
-                <?php
-
-                $tituloAnterior = ""; // Variable para almacenar el título anterior
-                $imagenAnterior = ""; // Variable para almacenar el audio anterior
-
-                while ($pregunta = mysqli_fetch_assoc($resultado)) {
-                    $idActividad = $pregunta["idactividadReading"];
-                    $titulo = $pregunta["titulo"];
-                    $imagen = $pregunta["img"];
-                    $preguntaa = $pregunta["pregunta"];
-                    $opciones = explode('/', $pregunta["opciones"]);
-
-                    // Comprobar si el título y la imagen son diferentes del anterior
-                    if ($titulo !== $tituloAnterior || $imagen !== $imagenAnterior) {
-                        // Cerrar el div anterior si no es la primera actividad
-                        if ($tituloAnterior !== "") {
-                            echo '</div>';
-                        }
-
-                        $tituloAnterior = $titulo;
-                        $imagenAnterior = $imagen;
-
-                        // Mostrar el título y la imagen
-                        echo '<h5>Titulo de la actividad: ' . $titulo . '</h5>';
-                        echo '<img src="' . $imagen . '" width="20px" />';
-                        echo '<div>'; // Iniciar un nuevo conjunto de preguntas
-                    }
-
-                    // Agregar la pregunta al formulario actual
-                    echo '<div class="question">';
-                    echo '<audio src=""></audio>';
-                    echo '<label for="pregunta1">';
-                    echo $preguntaa;
-                    echo '</label>';
-
-                    foreach ($opciones as $key => $opcion) {
-                        $opcionesLabel = chr(65 + $key); // a), b), c), ...
-                        echo '<label class="div1">';
-                        echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
-                        echo '<div class="checkmark"></div>';
-                        echo '<label for="pregunta1_rojo">';
-                        echo $opcionesLabel . ') ' . $opcion . '';
-                        echo '</label>';
-                        echo '</label>';
-                    }
-
+            // Comprobar si la imagen es diferente de la anterior
+            if ($imagen !== $imagenAnterior) {
+                // Cerrar el div anterior si no es la primera actividad
+                if ($imagenAnterior !== "") {
                     echo '</div>';
                 }
-                ?>
 
-                <div class="btn-container">
-                    <button class="btn" type="button" id="previousButton">Anterior</button>
-                    <button class="btn" type="button" id="nextButton">Siguiente</button>
-                    <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
-                </div>
-            </form>
+                $imagenAnterior = $imagen;
+
+                // Mostrar la imagen
+                echo '<img src="' . $imagen . '" width="200px" />';
+                echo '<div>'; // Iniciar un nuevo conjunto de preguntas
+            }
+
+            // Agregar la pregunta al formulario actual
+            echo '<div class="question">';
+            echo '<audio src=""></audio>';
+            echo '<label for="pregunta1">';
+            echo $preguntaa;
+            echo '</label>';
+
+            foreach ($opciones as $key => $opcion) {
+                $opcionesLabel = chr(65 + $key); // a), b), c), ...
+                echo '<label class="div1">';
+                echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
+                echo '<div class="checkmark"></div>';
+                echo '<label for="pregunta1_rojo">';
+                echo $opcionesLabel . ') ' . $opcion . '';
+                echo '</label>';
+                echo '</label>';
+            }
+
+            echo '</div>';
+        }
+
+        // Cerrar el último conjunto de preguntas
+        echo '</div>';
+        ?>
+
+        <div class="btn-container">
+            <button class="btn" type="button" id="previousButton">Anterior</button>
+            <button class="btn" type="button" id="nextButton">Siguiente</button>
+            <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
         </div>
+    </form>
+</div>
 
         <script>
             function compae() {
