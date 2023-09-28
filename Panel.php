@@ -10,6 +10,7 @@
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="assets/css/panel.css" />
   <link rel="stylesheet" href="assets/css/ventanaCrearActividades.css" />
+  <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
   <title>Panel Admin</title>
 </head>
 
