@@ -1,9 +1,12 @@
 <?php
 require_once '../config/Conexion.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $resultadoValidacion = array(); // Array para almacenar los resultados de validación
     $respuestasCorrectas = 0;
     $respuestasIncorrectas = 0;
+    $totalPreguntas = 0;
+    $calificacion = '';
+    $title = $_POST['titulo'];
 
     // Recorremos todas las respuestas enviadas por el formulario
     foreach ($_POST as $key => $value) {
@@ -11,35 +14,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $idActividad = str_replace("respuesta_", "", $key);
             $respuestaUsuario = $value;
 
-            // Obtener la respuesta correcta de la base de datos
+
             $sql = "SELECT respuestacorrecta FROM actividadesgrammar WHERE ID = $idActividad";
             $query = mysqli_query($conexion, $sql);
+            $row = mysqli_fetch_assoc($query);
+            $respuestaCorrecta = $row["respuestacorrecta"];
 
-            if ($query) {
-                $row = mysqli_fetch_assoc($query);
-                $respuestaCorrecta = $row["respuestacorrecta"];
-
-                // Validar la respuesta del usuario
-                if ($respuestaUsuario === $respuestaCorrecta) {
-                    $resultadoValidacion[$idActividad] = "Respuesta correcta";
-                    $respuestasCorrectas++;
-                } else {
-                    $resultadoValidacion[$idActividad] = "Respuesta incorrecta. La respuesta correcta es: $respuestaCorrecta";
-                    $respuestasIncorrectas++;
-                }
+            // Validar la respuesta del usuario
+            if ($respuestaUsuario === $respuestaCorrecta) {
+                $respuestasCorrectas++;
+                $totalPreguntas++;
             } else {
-                $resultadoValidacion[$idActividad] = "Error al consultar la base de datos";
+                $respuestasIncorrectas++;
+                $totalPreguntas++;
             }
+
         }
+        
+    }
+
+    if ($respuestasCorrectas > $respuestasIncorrectas) {
+        $calificacion = 'Excelent';
+    } else {
+        $calificacion = 'Your is Bad';
     }
 }
 
 mysqli_close($conexion);
 
-// Crear un array con el número de respuestas correctas e incorrectas
+// Retornar lso resultados en json
 $respuestaJSON = array(
-    "respuestas" => 'Corret Answer' .$respuestasCorrectas. '\nWrong Answer'. $respuestasIncorrectas
-
+    "correctas" => $respuestasCorrectas,
+    "incorrectas" => 'Incorrect answers ' . $respuestasIncorrectas,
+    "totalPreguntas" => 'of ' . $totalPreguntas,
+    "calificacion" => $calificacion,
+    "titulo" => $title
 );
 
 // Convertir el array en formato JSON

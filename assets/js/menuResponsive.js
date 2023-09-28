@@ -117,7 +117,6 @@ function mostrarRespuestasCorrecta() {
 }
 
 
-
 // Función para cerrar la ventana de preguntas correctas e incorrectas
 function cerrarVentanaPreguntasCorrectasIncorrectas() {
    document.getElementById('respuestasCorrectasInco').classList.remove('ventanaResultVisible');
