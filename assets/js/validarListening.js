@@ -98,6 +98,7 @@ function enviarFormulario() {
             // mostrarVentanaResult();
         })
         .catch(error => {
+            
             // Maneja errores de la solicitud aquí
             console.error("Error en la solicitud Fetch:", error);
         });
