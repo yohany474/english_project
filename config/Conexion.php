@@ -4,7 +4,7 @@
     // private $hostname = 'localhost';
     // private $user = 'root';
     // private $password = '';
-    // // private $bd = 'ingles_project';
+    // private $bd = 'ingles_project';
     // private $bd = 'ingles_project';
 
 

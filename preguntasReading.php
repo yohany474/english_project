@@ -35,6 +35,7 @@ if (mysqli_num_rows($resultado) > 0) {
                     echo '</div>';
                 }
 
+<<<<<<< HEAD
                 $imagenAnterior = $imagen;
 
                 // Mostrar la imagen
@@ -71,6 +72,16 @@ if (mysqli_num_rows($resultado) > 0) {
             <button class="btn" type="button" id="previousButton">Anterior</button>
             <button class="btn" type="button" id="nextButton">Siguiente</button>
             <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
+=======
+                <div class="btn-container">
+                <?php echo '<input type="hidden" name="titulo" value="' . $titulo . '">';
+                    ?>
+                    <button class="btn" type="button" id="previousButton">Anterior</button>
+                    <button class="btn" type="button" id="nextButton">Siguiente</button>
+                    <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
+                </div>
+            </form>
+>>>>>>> b3fd7c69818cea2d9372bd12863c21ec1a347820
         </div>
     </form>
 </div>
@@ -170,7 +181,18 @@ if (mysqli_num_rows($resultado) > 0) {
                         })
                         .then(data => {
                             // Maneja la respuesta del servidor como JSON aqu
-                            alert(data.respuestas);
+                            document.getElementById('SOF').innerHTML = '';
+                            document.getElementById('SOF').classList.remove('der');
+                            var correctas = data.correctas;
+                            var incorrectas = data.incorrectas;
+                            var totalPreguntas = data.totalPreguntas;
+                            var calificacion = data.calificacion;
+                            var btnQueryAnswer = document.getElementById('consultarPreguntasCorrectasIncorrectas');
+                            var titulo = data.titulo; // Obtener el título de los datos
+                            btnQueryAnswer.setAttribute('data-mostrarRTA', titulo);
+
+                            document.getElementById('carga').style.display ='none';
+                            mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
 
                         })
                         .catch(error => {

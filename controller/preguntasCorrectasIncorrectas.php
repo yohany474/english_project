@@ -6,8 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['titulo'];
 }
 
-// Título predeterminado para pruebas
-$title = 'Dream Vacation in Colombia';
+
 
 // Consulta SQL
 $sql = "SELECT * FROM actividadlistening WHERE titulo = '$title'";

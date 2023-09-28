@@ -774,6 +774,19 @@ body {
 
 
 @media screen and (max-width: 600px){
+   .sofes{
+      flex-direction: column;
+      border: 1px solid black;
+   }
+
+   .sofes .pdf{
+      height: 10%;
+      border: 1px solid black;
+   }
+   .sofes .pdf embed{
+      height: 100%;
+   }
+
    .encabezado{
       padding: 0rem 2.2rem;
    }
