@@ -364,7 +364,7 @@ body {
 
 .adso .contenta {
    width: 45%;
-   height: 17rem;
+   height: auto;
 }
 
 .adso .img-contan {
@@ -430,7 +430,7 @@ body {
    display: flex;
    width: 100%;
    margin-top: 3rem;
-   height: 29rem;
+   height: auto;
    border-radius: 8px;
    background-color: white;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
