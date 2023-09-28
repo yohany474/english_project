@@ -219,8 +219,8 @@ input[type="radio"] {
 
 .container {
     display: flex;
-    height: 80vh;
-    width: 430px;
+    height: 90vh;
+    width: 90%;
     background: linear-gradient(#ecf2ff, #ffffff) padding-box,
         linear-gradient(145deg, transparent 10%, #e81cff, #40c9ff) border-box;
     border: 1px solid #538fff;
