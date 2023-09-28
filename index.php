@@ -9,6 +9,8 @@
         <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/cards_vocabulary.css">
         <link rel="stylesheet" href="assets/css/preguntasListening.css">
+        <link rel="stylesheet" href="assets/css/carga.css">
+        <link rel="stylesheet" href="assets/css/cardResult.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
                 integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -17,7 +19,10 @@
         <title>Aprende ingles Sena ingles</title>
 </head>
 
-<body>
+<body id="body">
+
+
+
         <div id="dark" class="urr">.</div>
         <div id="container_login">
                 <form class="form" id="acceso" method="post">
@@ -81,7 +86,8 @@
         <section class="senador" id="senador">
                 <header>
                         <div class="encabe-new">
-                                <h2>Temas de <div id="Title"></div> </h2>
+                                <h2>Temas de <div id="Title"></div>
+                                </h2>
                                 <p>Explora y disfruta de las actividades que tenemos para ti</p>
                         </div>
                         <div class="filtros">
@@ -96,6 +102,7 @@
                         </div>
                 </header>
                 <section class="espaciadores">
+
                         <div class="scroll">
                                 <section class="text-te" id="llegar-activi">
                                         <!-- LLEGADA DE ACTIVIADES DE MANERA DINAMICA -->
@@ -645,8 +652,70 @@
                         </form>
                 </article>
         </footer>
+        <!-- Resultados de la actvidad -->
+        <section id="ventanaResult" class="ventanasYo">
+                <div class="results-summary-container">
+                        <div class="confetti">
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                                <div class="confetti-piece"></div>
+                        </div>
+                        <div class="results-summary-container__result">
+                                <div class="heading-tertiary">Your Result</div>
+                                <div class="result-box">
+                                        <div class="heading-primary" id="respuestasCorrectas"></div>
+                                        <p class="result" id="totalPreguntas"></p>
+                                </div>
+                                <div class="result-text-box">
+                                        <div class="heading-secondary" id="calification"></div>
+                                        <p class="paragraph" id="respuestasIncorrectas"></p>
+                                </div>
+                                <div class="summary__cta">
+                                        <button class="btn btn__continue" onclick="ocultarVentanaResult()">Continue
+                                        </button>
+                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA=""
+                                                onclick="mostrarRespuestasCorrecta();" class="btn btn__continue"
+                                                onclick="">Correct Answers
+                                        </button>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Resultados de la actvidad -->
 
-        <section class="sofes" id="SOF"></section>
+
+        <!-- Ventana de respuestas correctas e incorrectas -->
+        <section class="ventanasYo" id="respuestasCorrectasInco">
+                <article id="contenedorRespuestasServidor">
+
+                </article>
+        </section>
+        <!-- Ventana de respuestas correctas e incorrectas -->
+
+        <!-- Ventana de carga -->
+        <div class="" id="carga">
+                <div class="custom-loader"></div>
+                <h3 style="color: #f0f2f5;">Cargando...</h3>
+        </div>
+
+        <section class="sofes" id="SOF">
+        </section>
         <script src="assets/js/login.js"></script>
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>

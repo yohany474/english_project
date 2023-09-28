@@ -30,7 +30,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
                     $idActividad = $pregunta["idactividadReading"];
                     $titulo = $pregunta["titulo"];
-                    $imagen = $pregunta["imagen"];
+                    $imagen = $pregunta["img"];
                     $preguntaa = $pregunta["pregunta"];
                     $opciones = explode('/', $pregunta["opciones"]);
 

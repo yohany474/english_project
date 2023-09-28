@@ -15,7 +15,7 @@ $(document).ready(function () {
             success: function (response) {
                 if (response.success) {
                     alert('Acceso concedido');
-                    window.location.href = 'Panel.html';
+                    window.location.href = 'Panel.php';
                 } else if (response.error) {
                     alert(response.error);
                 } else {

@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] ==='POST') {
     // Nivel seleccionado
     $nivel  =$_POST['nivel'];
     // Descripcion del audio
-    $descripcionAudio = $_POST['descripcionaudio'];
+    $descripcionAudio = mysqli_real_escape_string( $conexion, $_POST['descripcionaudio']);
 
     // Ruta completa para guardar el archivo de audio
     $rutaBd = 'uploads/' . $nombreUnicoAudio;

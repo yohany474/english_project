@@ -13,6 +13,7 @@
   <title>Panel Admin</title>
 </head>
 
+<body id="body">
 <body>
 
   <section class="itad" id="productos">
