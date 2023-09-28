@@ -26,11 +26,13 @@ if ($resultado) {
                 <?php
                 $audio_actual = ''; // Variable para almacenar el audio actual
                 $titulo_actual = '';
+                $imagen_actual = '';
 
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
                     $idActividad = $pregunta["idactividadlistening"];
                     $audio_pregunta = 'uploads/' . $pregunta["audio"];
+                    $imagen_pregunta =  $pregunta["img"];
 
                     // Verificar si $audio_pregunta no termina con '.mp3' y agregarlo si es necesario
                     if (substr($audio_pregunta, -4) !== '.mp3') {
@@ -45,6 +47,13 @@ if ($resultado) {
                         // Imprime el elemento <audio> solo si cambia el audio
                         echo '<audio id="audio" controls src="' . $audio_pregunta . '"></audio>';
                         $audio_actual = $audio_pregunta;
+                    }
+
+                    // Si la imagen actual es diferente al de la pregunta actual, actualízalo
+                    if ($imagen_pregunta != $imagen_actual) {
+                        // Imprime el elemento <audio> solo si cambia el audio
+                        echo '<img src="' . $imagen_pregunta . '" style="width: 100px">';
+                        $imagen_actual = $imagen_pregunta;
                     }
 
 
