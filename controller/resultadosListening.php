@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($respuestasCorrectas > $respuestasIncorrectas) {
         $calificacion = 'Excelent';
     } else {
-        $calificacion = 'Your is Bad';
+        $calificacion = 'keep trying';
     }
 }
 

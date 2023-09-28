@@ -5,7 +5,6 @@
     private $user = 'root';
     private $password = '';
     private $bd = 'ingles_project';
-    
 
 
 

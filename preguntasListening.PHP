@@ -11,6 +11,8 @@ if ($resultado) {
     if (mysqli_num_rows($resultado) > 0) {
         ?>
 
+        
+
         <!-- Resultados  -->
         <div class="container">
 
@@ -26,13 +28,13 @@ if ($resultado) {
                 <?php
                 $audio_actual = ''; // Variable para almacenar el audio actual
                 $titulo_actual = '';
-       
+                $descripcion_audio_actual = '';
 
                 while ($pregunta = mysqli_fetch_assoc($resultado)) {
 
                     $idActividad = $pregunta["idactividadlistening"];
                     $audio_pregunta = 'uploads/' . $pregunta["audio"];
-                   
+                    $descripcion_audio_pregunta = $pregunta["descripcionaudio"];
 
                     // Verificar si $audio_pregunta no termina con '.mp3' y agregarlo si es necesario
                     if (substr($audio_pregunta, -4) !== '.mp3') {
@@ -49,11 +51,21 @@ if ($resultado) {
                         $audio_actual = $audio_pregunta;
                     }
 
+ 
 
                     if ($tituloo != $titulo_actual) {
                         echo '<h2>' . $pregunta['titulo'] . '</h2>';
                         $titulo_actual = $tituloo;
                     }
+                   // Si la descripcion_audio actual es diferente al de la pregunta actual, actualízalo
+                   if ($descripcion_audio_pregunta != $descripcion_audio_actual) {
+                    // Imprime el elemento <audio> solo si cambia el audio
+                    echo '<P id="contenidoTexto" style="display: none;">
+                    '. $descripcion_audio_pregunta . '  
+                    <button class="" type="button" onclick="cerrarTexto()">Cancelar</button>
+                    </P>';
+                    $descripcion_audio_actual = $descripcion_audio_pregunta;
+                }
 
 
                     ?>
@@ -92,8 +104,9 @@ if ($resultado) {
                 <div class="btn-container">
                     <?php echo '<input type="hidden" name="titulo" value="' . $tituloo . '">';
                     ?>
-                    <button class="btn" type="button" id="previousButton">Anterior</button>
-                    <button class="btn" type="button" id="nextButton">Siguiente</button>
+                    <button class="btn" type="button" id="previousButton">Previous</button>
+                    <button class="btn" type="button" id="nextButton">Next</button>
+                    <button class="btn" type="button" onclick="mostrarTexto()">Description</button>
                     <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
                 </div>
             </form>
@@ -171,7 +184,7 @@ if ($resultado) {
                 // Función para enviar el formulario por Fetch y manejar la respuesta como JSON
                 function enviarFormulario() {
 
-                    document.getElementById('carga').style.display ='flex';
+                    document.getElementById('carga').style.display = 'flex';
                     // Obtén el formulario por su ID
                     const form = document.getElementById("questionForm");
 
@@ -207,7 +220,7 @@ if ($resultado) {
                             var titulo = data.titulo; // Obtener el título de los datos
                             btnQueryAnswer.setAttribute('data-mostrarRTA', titulo);
 
-                            document.getElementById('carga').style.display ='none';
+                            document.getElementById('carga').style.display = 'none';
                             mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
 
                         })
@@ -248,4 +261,15 @@ mysqli_close($conexion);
     }
 
     hacer();
+    function mostrarTexto() {
+      
+        document.getElementById('contenidoTexto').style.display = 'flex';
+        document.getElementById('previousButton').style.display = 'none';
+        document.getElementById('nextButton').style.display = 'none';
+    }
+    function cerrarTexto() { 
+        document.querySelector('.container').innerHTML = '';
+        document.getElementById('SOF').classList.remove('der');
+    }
+
 </script>
