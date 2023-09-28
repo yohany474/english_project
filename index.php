@@ -12,9 +12,7 @@
         <link rel="stylesheet" href="assets/css/carga.css">
         <link rel="stylesheet" href="assets/css/cardResult.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <title>Aprende ingles Sena ingles</title>
 </head>
@@ -23,7 +21,7 @@
 
 
 
-        <div id="dark" class="urr">.</div>
+        <div id="dark" class="urr"></div>
         <div id="container_login">
                 <form class="form" id="acceso" method="post">
                         <p class="form-title">Sign in to your account</p>
@@ -55,17 +53,11 @@
                         <section class="missing" id="miss">
                                 <i class='bx bx-x' id="dasr"></i>
                                 <section class="conten">
-                                        <li><a href="https://prototiposena.englishinteraction.net/senaplacement2022/quiz_html5.html"
-                                                        target="_blank">SEPT</a><i class='bx bxs-right-arrow-alt'
-                                                        id="ders"></i></li>
-                                        <li class="totem" data-valor="1">LISTENING <i class='bx bxs-right-arrow-alt'
-                                                        id="ders"></i></li>
-                                        <li class="totem" data-valor="2">READING <i class='bx bxs-right-arrow-alt'
-                                                        id="ders"></i></li>
-                                        <li class="totem" data-valor="3">WRITING <i class='bx bxs-right-arrow-alt'
-                                                        id="ders"></i></li>
-                                        <li class="totem" data-valor="4">GRAMMAR <i class='bx bxs-right-arrow-alt'
-                                                        id="ders"></i></li>
+                                        <li><a href="https://prototiposena.englishinteraction.net/senaplacement2022/quiz_html5.html" target="_blank">SEPT</a><i class='bx bxs-right-arrow-alt' id="ders"></i></li>
+                                        <li class="totem" data-valor="1">LISTENING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
+                                        <li class="totem" data-valor="2">READING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
+                                        <li class="totem" data-valor="3">WRITING <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
+                                        <li class="totem" data-valor="4">GRAMMAR <i class='bx bxs-right-arrow-alt' id="ders"></i></li>
                                 </section>
                                 <section class="accede">
                                         <p id="login" class="cd">Accede</p>
@@ -164,44 +156,34 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1pBgkHMuIMzXauFM4OArkVOaJRSATE4qn/view?usp=sharing"
-                                                                target="_blank">Days of the week and months</a>
+                                                        <a href="https://drive.google.com/file/d/1pBgkHMuIMzXauFM4OArkVOaJRSATE4qn/view?usp=sharing" target="_blank">Days of the week and months</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1Ua3OXNiaxGymZleN_kFTsbda_PBmxYI1/view?usp=sharing"
-                                                                target="_blank">Number and prices</a>
+                                                        <a href="https://drive.google.com/file/d/1Ua3OXNiaxGymZleN_kFTsbda_PBmxYI1/view?usp=sharing" target="_blank">Number and prices</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1CZXq6Le6PCvEVGxXMZbzME_k0hV3iucL/view?usp=sharing"
-                                                                target="_blank">Countries and nationalities</a>
+                                                        <a href="https://drive.google.com/file/d/1CZXq6Le6PCvEVGxXMZbzME_k0hV3iucL/view?usp=sharing" target="_blank">Countries and nationalities</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/18nlEvKclmnHpc_DyfVeW9uG3ugXYkUMv/view?usp=sharing"
-                                                                target="_blank">Colors</a>
+                                                        <a href="https://drive.google.com/file/d/18nlEvKclmnHpc_DyfVeW9uG3ugXYkUMv/view?usp=sharing" target="_blank">Colors</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1V2CMSRuZsngfJHdTm0l_BZO5W-r_-Iyp/view?usp=sharing"
-                                                                target="_blank">Personal Possessions</a>
+                                                        <a href="https://drive.google.com/file/d/1V2CMSRuZsngfJHdTm0l_BZO5W-r_-Iyp/view?usp=sharing" target="_blank">Personal Possessions</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1WGcre7dVGzYOQvL-SMBWjXtNB-3nPwNU/view?usp=sharing"
-                                                                target="_blank">Parts of the body</a>
+                                                        <a href="https://drive.google.com/file/d/1WGcre7dVGzYOQvL-SMBWjXtNB-3nPwNU/view?usp=sharing" target="_blank">Parts of the body</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1mpBmtxYH60XF3q2MkO00QMdempblq3fj/view?usp=sharing"
-                                                                target="_blank">Family and Friends</a>
+                                                        <a href="https://drive.google.com/file/d/1mpBmtxYH60XF3q2MkO00QMdempblq3fj/view?usp=sharing" target="_blank">Family and Friends</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1D2-KVxniomiC9VibWrnxQGLli7GPtzBj/view?usp=sharing"
-                                                                target="_blank">Food and Drinks</a>
+                                                        <a href="https://drive.google.com/file/d/1D2-KVxniomiC9VibWrnxQGLli7GPtzBj/view?usp=sharing" target="_blank">Food and Drinks</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1fbgUdEuWdqZKLul0LukBvwm0_2aNkj6t/view?usp=sharing"
-                                                                target="_blank">Household Rooms and Objects</a>
+                                                        <a href="https://drive.google.com/file/d/1fbgUdEuWdqZKLul0LukBvwm0_2aNkj6t/view?usp=sharing" target="_blank">Household Rooms and Objects</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1nwbwVRtGsw1XcMe8Gf9osc_kfw9t86yX/view?usp=sharing"
-                                                                target="_blank">Clothes</a>
+                                                        <a href="https://drive.google.com/file/d/1nwbwVRtGsw1XcMe8Gf9osc_kfw9t86yX/view?usp=sharing" target="_blank">Clothes</a>
                                                 </li>
 
 
@@ -218,48 +200,37 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1gSQRh3RutP9AJvBclSx0HARhBx3ZrzRL/view?usp=sharing"
-                                                                target="_blank">Feelings and emotions</a>
+                                                        <a href="https://drive.google.com/file/d/1gSQRh3RutP9AJvBclSx0HARhBx3ZrzRL/view?usp=sharing" target="_blank">Feelings and emotions</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/10kZ6Ve_JgEdyjB0slCTs86vBM-SpVeCO/view?usp=sharing"
-                                                                target="_blank">Food and Drinks</a>
+                                                        <a href="https://drive.google.com/file/d/10kZ6Ve_JgEdyjB0slCTs86vBM-SpVeCO/view?usp=sharing" target="_blank">Food and Drinks</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1kA-VjoTj9XeKQCvDC6ezZMticmpjLjQO/view?usp=sharing"
-                                                                target="_blank">Education</a>
+                                                        <a href="https://drive.google.com/file/d/1kA-VjoTj9XeKQCvDC6ezZMticmpjLjQO/view?usp=sharing" target="_blank">Education</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1EPlWhtd5e9QEcUqPXFZav_zbjkaB9fqg/view?usp=sharing"
-                                                                target="_blank">Jobs</a>
+                                                        <a href="https://drive.google.com/file/d/1EPlWhtd5e9QEcUqPXFZav_zbjkaB9fqg/view?usp=sharing" target="_blank">Jobs</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1DAWNBkSiejc87xaboxx594d-pou0zUVv/view?usp=sharing"
-                                                                target="_blank">Weather</a>
+                                                        <a href="https://drive.google.com/file/d/1DAWNBkSiejc87xaboxx594d-pou0zUVv/view?usp=sharing" target="_blank">Weather</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1zHAQvjhRqE26BWajlMOiix8AOY-TqemO/view?usp=sharing"
-                                                                target="_blank">Family and Friends</a>
+                                                        <a href="https://drive.google.com/file/d/1zHAQvjhRqE26BWajlMOiix8AOY-TqemO/view?usp=sharing" target="_blank">Family and Friends</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1jqp2aDZGOcbiDaHKy4RTusxLxclbw9_j/view?usp=sharing"
-                                                                target="_blank">Daily routines</a>
+                                                        <a href="https://drive.google.com/file/d/1jqp2aDZGOcbiDaHKy4RTusxLxclbw9_j/view?usp=sharing" target="_blank">Daily routines</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1EvNPUlM5IGIv946wfCrGmgOXKfLLO5J2/view?usp=sharing"
-                                                                target="_blank">Free-time Activities</a>
+                                                        <a href="https://drive.google.com/file/d/1EvNPUlM5IGIv946wfCrGmgOXKfLLO5J2/view?usp=sharing" target="_blank">Free-time Activities</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1Vl5q1Zn-jivevhafjKz2L722boQcKuKB/view?usp=sharing"
-                                                                target="_blank">Places in Town</a>
+                                                        <a href="https://drive.google.com/file/d/1Vl5q1Zn-jivevhafjKz2L722boQcKuKB/view?usp=sharing" target="_blank">Places in Town</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1uXHYiUDg1LkRmGTFv4zjck_YA08xbKo7/view?usp=drive_link"
-                                                                target="_blank">Body and Health</a>
+                                                        <a href="https://drive.google.com/file/d/1uXHYiUDg1LkRmGTFv4zjck_YA08xbKo7/view?usp=drive_link" target="_blank">Body and Health</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1ogUaRovtdDc89lJZEx1mVfA6tOCm0Ex7/view?usp=sharing"
-                                                                target="_blank">Transport and Travel</a>
+                                                        <a href="https://drive.google.com/file/d/1ogUaRovtdDc89lJZEx1mVfA6tOCm0Ex7/view?usp=sharing" target="_blank">Transport and Travel</a>
                                                 </li>
 
 
@@ -273,44 +244,34 @@
 
                                         <ul class="option_vocabulary">
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1MSSJuXf0XAVn51HJY0w6R3YXxDTVUg5O/view?usp=sharing"
-                                                                target="_blank">Education</a>
+                                                        <a href="https://drive.google.com/file/d/1MSSJuXf0XAVn51HJY0w6R3YXxDTVUg5O/view?usp=sharing" target="_blank">Education</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1kuYMAhRKpjVQT8v2d8Xq_Xo_qkSZegtQ/view?usp=sharing"
-                                                                target="_blank">Emotions</a>
+                                                        <a href="https://drive.google.com/file/d/1kuYMAhRKpjVQT8v2d8Xq_Xo_qkSZegtQ/view?usp=sharing" target="_blank">Emotions</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1k6kpeEcfdZbwSP1SYiwMtqnNS6cbPYEV/view?usp=sharing"
-                                                                target="_blank">Entertainment</a>
+                                                        <a href="https://drive.google.com/file/d/1k6kpeEcfdZbwSP1SYiwMtqnNS6cbPYEV/view?usp=sharing" target="_blank">Entertainment</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1UvIj9rxMk3TmUq7Qshr7gPKQd53eCYlx/view?usp=sharing"
-                                                                target="_blank">Leisure Activities</a>
+                                                        <a href="https://drive.google.com/file/d/1UvIj9rxMk3TmUq7Qshr7gPKQd53eCYlx/view?usp=sharing" target="_blank">Leisure Activities</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/181OdRP7ZH4DOqINRwRfhosfxbIjfmgcJ/view?usp=sharing"
-                                                                target="_blank">News and Media </a>
+                                                        <a href="https://drive.google.com/file/d/181OdRP7ZH4DOqINRwRfhosfxbIjfmgcJ/view?usp=sharing" target="_blank">News and Media </a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1tETWGlYh5TzuhmExJNJPe77PcFBbhccy/view?usp=sharing"
-                                                                target="_blank">Sports, health and Fitness</a>
+                                                        <a href="https://drive.google.com/file/d/1tETWGlYh5TzuhmExJNJPe77PcFBbhccy/view?usp=sharing" target="_blank">Sports, health and Fitness</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1sLmMi6EW0WNWA1pnk5GwKCQhWg25K5Y0/view?usp=sharing"
-                                                                target="_blank">Technology</a>
+                                                        <a href="https://drive.google.com/file/d/1sLmMi6EW0WNWA1pnk5GwKCQhWg25K5Y0/view?usp=sharing" target="_blank">Technology</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1tdnDQ4tKwSdK-ocwDSzPEuej5hoDgtw1/view?usp=sharing"
-                                                                target="_blank">Time Expresion for the Future</a>
+                                                        <a href="https://drive.google.com/file/d/1tdnDQ4tKwSdK-ocwDSzPEuej5hoDgtw1/view?usp=sharing" target="_blank">Time Expresion for the Future</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/1L0E6TDSDoYP5_OliT_VkKPnOOAcZfTUD/view?usp=sharing"
-                                                                target="_blank">Time Expressions for the Past</a>
+                                                        <a href="https://drive.google.com/file/d/1L0E6TDSDoYP5_OliT_VkKPnOOAcZfTUD/view?usp=sharing" target="_blank">Time Expressions for the Past</a>
                                                 </li>
                                                 <li>
-                                                        <a href="https://drive.google.com/file/d/19AcAXelqAcFmM_onHclC6hmbqYX-VqBJ/view?usp=sharing"
-                                                                target="_blank">Travel and Transport</a>
+                                                        <a href="https://drive.google.com/file/d/19AcAXelqAcFmM_onHclC6hmbqYX-VqBJ/view?usp=sharing" target="_blank">Travel and Transport</a>
                                                 </li>
 
 
@@ -328,117 +289,97 @@
                         <div class="columns">
                                 <ul>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1C6CVHF34KK6TzWWuSU1lsF4LgqGpo9SQ/view?usp=sharing"
-                                                        target="_blank">3D
+                                                <a href="https://drive.google.com/file/d/1C6CVHF34KK6TzWWuSU1lsF4LgqGpo9SQ/view?usp=sharing" target="_blank">3D
                                                         Animation</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1fHlWUTw3Hl7ytebenorhKRqgNvHPFB02/view?usp=sharing"
-                                                        target="_blank">Accounting
+                                                <a href="https://drive.google.com/file/d/1fHlWUTw3Hl7ytebenorhKRqgNvHPFB02/view?usp=sharing" target="_blank">Accounting
                                                         and Financial Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1Vcyc2QKXD8b5mx-hLF8cG8xbVDje59t-/view?usp=sharing"
-                                                        target="_blank">Accounting
+                                                <a href="https://drive.google.com/file/d/1Vcyc2QKXD8b5mx-hLF8cG8xbVDje59t-/view?usp=sharing" target="_blank">Accounting
                                                         For Commercial and Financial Transactions</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1WY_8-n08p5l7d62wx__2Kg8kOcdgSyG1/view?usp=sharing"
-                                                        target="_blank">Administrative
+                                                <a href="https://drive.google.com/file/d/1WY_8-n08p5l7d62wx__2Kg8kOcdgSyG1/view?usp=sharing" target="_blank">Administrative
                                                         Assistance</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1lpTMlQK1k9f6v8dTaUDXN5dnPd3aHKNt/view?usp=sharing"
-                                                        target="_blank">Agricultura
+                                                <a href="https://drive.google.com/file/d/1lpTMlQK1k9f6v8dTaUDXN5dnPd3aHKNt/view?usp=sharing" target="_blank">Agricultura
                                                         Business Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1H1hUdjdXsPZxAfToTJNneh-ixP7W6M4a/view?usp=sharing"
-                                                        target="_blank">Agricultural
+                                                <a href="https://drive.google.com/file/d/1H1hUdjdXsPZxAfToTJNneh-ixP7W6M4a/view?usp=sharing" target="_blank">Agricultural
                                                         Crops</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1vGhnRecX91MPsQ8ykytlogg6k96IBrOY/view?usp=sharing"
-                                                        target="_blank">Agricultural
+                                                <a href="https://drive.google.com/file/d/1vGhnRecX91MPsQ8ykytlogg6k96IBrOY/view?usp=sharing" target="_blank">Agricultural
                                                         Projects</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1nQxu32If3peJuH80mmoKCG_gUATR7d2w/view?usp=sharing"
-                                                        target="_blank">Aquaculture</a>
+                                                <a href="https://drive.google.com/file/d/1nQxu32If3peJuH80mmoKCG_gUATR7d2w/view?usp=sharing" target="_blank">Aquaculture</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1iG7OUZjhTWfNL_GPeACBLP-152Hc86_a/view?usp=sharing"
-                                                        target="_blank">Assistance
+                                                <a href="https://drive.google.com/file/d/1iG7OUZjhTWfNL_GPeACBLP-152Hc86_a/view?usp=sharing" target="_blank">Assistance
                                                         and Organization of Archives</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1MVVYb6P0ACUUuv4VGFbm141FkBKXy2kw/view?usp=sharing"
-                                                        target="_blank">Bakery</a>
+                                                <a href="https://drive.google.com/file/d/1MVVYb6P0ACUUuv4VGFbm141FkBKXy2kw/view?usp=sharing" target="_blank">Bakery</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1b2sMiezKkf7UHRnEz8DsPSlQkUBM-yKt/view?usp=sharing"
-                                                        target="_blank">Building
+                                                <a href="https://drive.google.com/file/d/1b2sMiezKkf7UHRnEz8DsPSlQkUBM-yKt/view?usp=sharing" target="_blank">Building
                                                         Construction</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1TmTKSpO8SgcAtKyLjc8_kgttokx2KnCz/view?usp=sharing"
-                                                        target="_blank">Business
+                                                <a href="https://drive.google.com/file/d/1TmTKSpO8SgcAtKyLjc8_kgttokx2KnCz/view?usp=sharing" target="_blank">Business
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1INddRuJ-fVgH3RvHAjr8TxvExGIeqP9A/view?usp=sharing"
-                                                        target="_blank">Cattle
+                                                <a href="https://drive.google.com/file/d/1INddRuJ-fVgH3RvHAjr8TxvExGIeqP9A/view?usp=sharing" target="_blank">Cattle
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1EZjrwrRIR7WssbdRcXmThCnLyXNbE75R/view?usp=sharing"
-                                                        target="_blank">Cattle
+                                                <a href="https://drive.google.com/file/d/1EZjrwrRIR7WssbdRcXmThCnLyXNbE75R/view?usp=sharing" target="_blank">Cattle
                                                         Production</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1j_pz7IADIm7rYacsv4TcsOsPqQ6Fubnj/view?usp=sharing"
-                                                        target="_blank">Cooking
+                                                <a href="https://drive.google.com/file/d/1j_pz7IADIm7rYacsv4TcsOsPqQ6Fubnj/view?usp=sharing" target="_blank">Cooking
                                                         and kitchen</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1f3iJb0C3nsHtbx2bhxWwWAMISOmdGI-e/view?usp=sharing"
-                                                        target="_blank">Dairy
+                                                <a href="https://drive.google.com/file/d/1f3iJb0C3nsHtbx2bhxWwWAMISOmdGI-e/view?usp=sharing" target="_blank">Dairy
                                                         Processing</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1Q5OW-CA1YdaZfNI5pDTmgM5iiL5cx6hE/view?usp=sharing"
-                                                        target="_blank">Digital
+                                                <a href="https://drive.google.com/file/d/1Q5OW-CA1YdaZfNI5pDTmgM5iiL5cx6hE/view?usp=sharing" target="_blank">Digital
                                                         Content Integration</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1pzZWouOUPeBSsQj_fSBnGBip4ve277cS/view?usp=sharing"
-                                                        target="_blank">Document
+                                                <a href="https://drive.google.com/file/d/1pzZWouOUPeBSsQj_fSBnGBip4ve277cS/view?usp=sharing" target="_blank">Document
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1VyNFGvpvmU4hsjGE2O9uDLeQ8bWqDbYU/view?usp=sharing"
-                                                        target="_blank">Ecologial
+                                                <a href="https://drive.google.com/file/d/1VyNFGvpvmU4hsjGE2O9uDLeQ8bWqDbYU/view?usp=sharing" target="_blank">Ecologial
                                                         Farming Systems</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1nfxXZPrTui0yZ6TjIJ6yR143tSkmoTw2/view?usp=sharing"
-                                                        target="_blank">Electrical
+                                                <a href="https://drive.google.com/file/d/1nfxXZPrTui0yZ6TjIJ6yR143tSkmoTw2/view?usp=sharing" target="_blank">Electrical
                                                         and Electronic Maintenance of Motor Vehicles</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1ganm7GTL0N0O-JLdK7JfLzjSupjC-0wJ/view?usp=sharing"  target="_blank" >Local Tourism Operations</a>
+                                                <a href="https://drive.google.com/file/d/1ganm7GTL0N0O-JLdK7JfLzjSupjC-0wJ/view?usp=sharing" target="_blank">Local Tourism Operations</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1VvPPLS7gLHyjqvXEOho-NlFgNLT-KYHl/view?usp=sharing"  target="_blank">Maintenance and Installation of Air Conditioning</a>
+                                                <a href="https://drive.google.com/file/d/1VvPPLS7gLHyjqvXEOho-NlFgNLT-KYHl/view?usp=sharing" target="_blank">Maintenance and Installation of Air Conditioning</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1sbZ91EvaGM--alw7N5vARhBZJCt_sbbc/view?usp=sharing"  target="_blank">Musical Performance</a>
+                                                <a href="https://drive.google.com/file/d/1sbZ91EvaGM--alw7N5vARhBZJCt_sbbc/view?usp=sharing" target="_blank">Musical Performance</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1vFBtDajaROOmHfKCCOsbORWVpbzsICd5/view?usp=sharing"  target="_blank">Public Health</a>
+                                                <a href="https://drive.google.com/file/d/1vFBtDajaROOmHfKCCOsbORWVpbzsICd5/view?usp=sharing" target="_blank">Public Health</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1Qgtx9Bber6Vb2g1SyK3d5n_JvkXigSJk/view?usp=sharing"  target="_blank">Tourism Guiadance</a>
+                                                <a href="https://drive.google.com/file/d/1Qgtx9Bber6Vb2g1SyK3d5n_JvkXigSJk/view?usp=sharing" target="_blank">Tourism Guiadance</a>
                                         </li>
 
                                 </ul>
@@ -446,123 +387,98 @@
                                 <ul>
 
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1vDEA-14uWkg5IVb1G_M7E2CZ2rNWYVv8/view?usp=sharing"
-                                                        target="_blank">Enviroment
+                                                <a href="https://drive.google.com/file/d/1vDEA-14uWkg5IVb1G_M7E2CZ2rNWYVv8/view?usp=sharing" target="_blank">Enviroment
                                                         Monitoring</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1sFU83Htew3ov8cEO77gWPQn2nGBVD1ks/view?usp=sharing"
-                                                        target="_blank">Food
+                                                <a href="https://drive.google.com/file/d/1sFU83Htew3ov8cEO77gWPQn2nGBVD1ks/view?usp=sharing" target="_blank">Food
                                                         Proccesing </a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/18EwI9nrGIly9kyiJ0xaer8n-yXEFZune/view?usp=sharing"
-                                                        target="_blank">Health
+                                                <a href="https://drive.google.com/file/d/18EwI9nrGIly9kyiJ0xaer8n-yXEFZune/view?usp=sharing" target="_blank">Health
                                                         Administrative Support</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/12kfLwGtX4GfsQFzuJsPAGDyIVBYbra87/view?usp=sharing"
-                                                        target="_blank">Human
+                                                <a href="https://drive.google.com/file/d/12kfLwGtX4GfsQFzuJsPAGDyIVBYbra87/view?usp=sharing" target="_blank">Human
                                                         Resources</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1674ppoU_WhiAt7NSPlnwMnatY-x0ZmBR/view?usp=sharing"
-                                                        target="_blank">Human
+                                                <a href="https://drive.google.com/file/d/1674ppoU_WhiAt7NSPlnwMnatY-x0ZmBR/view?usp=sharing" target="_blank">Human
                                                         Talent Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1MGy5mS1RWQ4LoFbNKavuk_oX2IL0TwAr/view?usp=sharing"
-                                                        target="_blank"> Livestock
+                                                <a href="https://drive.google.com/file/d/1MGy5mS1RWQ4LoFbNKavuk_oX2IL0TwAr/view?usp=sharing" target="_blank"> Livestock
                                                         Production</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1N7RfV29GU0Iji0ykSJrFqD8yKhvkiNbz/view?usp=sharing"
-                                                        target="_blank">Maintenance
+                                                <a href="https://drive.google.com/file/d/1N7RfV29GU0Iji0ykSJrFqD8yKhvkiNbz/view?usp=sharing" target="_blank">Maintenance
                                                         of Diesel Engines</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1rabmoBhxmmZ6ywLxqHLaRh_Bp40DP2NC/view?usp=sharing"
-                                                        target="_blank">Market
+                                                <a href="https://drive.google.com/file/d/1rabmoBhxmmZ6ywLxqHLaRh_Bp40DP2NC/view?usp=sharing" target="_blank">Market
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/18k29RyfOC6J_rLsqSI4aPZRNVXAvrJ-7/view?usp=sharing"
-                                                        target="_blank">Meat
+                                                <a href="https://drive.google.com/file/d/18k29RyfOC6J_rLsqSI4aPZRNVXAvrJ-7/view?usp=sharing" target="_blank">Meat
                                                         Processing</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1lqueVXLfmMkmGwW3oligjMao-LcYqPYd/view?usp=sharing"
-                                                        target="_blank">Network
+                                                <a href="https://drive.google.com/file/d/1lqueVXLfmMkmGwW3oligjMao-LcYqPYd/view?usp=sharing" target="_blank">Network
                                                         Installation</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1KLkOHY3vkCc-lQuMVNfXFnwnJmourOkv/view?usp=sharing"
-                                                        target="_blank">Nursery
+                                                <a href="https://drive.google.com/file/d/1KLkOHY3vkCc-lQuMVNfXFnwnJmourOkv/view?usp=sharing" target="_blank">Nursery
                                                         Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1p8mxPIz1f-Yzpn4zd-Xb5b3kKITpSxVu/view?usp=sharing"
-                                                        target="_blank">Nursing</a>
+                                                <a href="https://drive.google.com/file/d/1p8mxPIz1f-Yzpn4zd-Xb5b3kKITpSxVu/view?usp=sharing" target="_blank">Nursing</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/15YAR6phBYxB20cc1tit_UOylt5n2mq9I/view?usp=sharing"
-                                                        target="_blank">Pharmaceutical
+                                                <a href="https://drive.google.com/file/d/15YAR6phBYxB20cc1tit_UOylt5n2mq9I/view?usp=sharing" target="_blank">Pharmaceutical
                                                         Services</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1a5gmYEVm4vdrV2FAlAjJCjtDOaqOMFRQ/view?usp=sharing"
-                                                        target="_blank">Software
+                                                <a href="https://drive.google.com/file/d/1a5gmYEVm4vdrV2FAlAjJCjtDOaqOMFRQ/view?usp=sharing" target="_blank">Software
                                                         Analysis and Development</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1dOLxwCx08vm9E7Z6CAWnkV3ucm2fZAQd/view?usp=sharing"
-                                                        target="_blank">Sport
+                                                <a href="https://drive.google.com/file/d/1dOLxwCx08vm9E7Z6CAWnkV3ucm2fZAQd/view?usp=sharing" target="_blank">Sport
                                                         Training</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/18cwGZ9TiECj0sflUjlV1bPXVEYZ1mlo8/view?usp=sharing"
-                                                        target="_blank">Systems</a>
+                                                <a href="https://drive.google.com/file/d/18cwGZ9TiECj0sflUjlV1bPXVEYZ1mlo8/view?usp=sharing" target="_blank">Systems</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1EvT-rZv6fRMKrfedzKJ9hokGCY7rUghu/view?usp=sharing"
-                                                        target="_blank">The
+                                                <a href="https://drive.google.com/file/d/1EvT-rZv6fRMKrfedzKJ9hokGCY7rUghu/view?usp=sharing" target="_blank">The
                                                         Implementation of Sporting and Recreational Events</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1KiE7fNt7kGsz6yoC87pCPZBaWICClIbm/view?usp=sharing"
-                                                        target="_blank">Production
+                                                <a href="https://drive.google.com/file/d/1KiE7fNt7kGsz6yoC87pCPZBaWICClIbm/view?usp=sharing" target="_blank">Production
                                                         of minor Species</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1qFg6klT6bUAPqPu3cE-gCSnxCBxUw082/view?usp=sharing"
-                                                        target="_blank">Wastewater
+                                                <a href="https://drive.google.com/file/d/1qFg6klT6bUAPqPu3cE-gCSnxCBxUw082/view?usp=sharing" target="_blank">Wastewater
                                                         Treatment</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing"
-                                                        target="_blank">Welding
+                                                <a href="https://drive.google.com/file/d/1nnlgArij2kARkAtDxbRzj6_nlC69_IzD/view?usp=sharing" target="_blank">Welding
                                                         of Metallic Products</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1C1uwLg8dsV-13e1PQQVe_hu9gQtU9otg/view?usp=sharing"
-                                                        target="_blank">Administrative Management</a>
+                                                <a href="https://drive.google.com/file/d/1C1uwLg8dsV-13e1PQQVe_hu9gQtU9otg/view?usp=sharing" target="_blank">Administrative Management</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1KE6ORGui25-kzj59gErMXHxfND8FXoa7/view?usp=sharing"
-                                                        target="_blank">Cabinetmaking</a>
+                                                <a href="https://drive.google.com/file/d/1KE6ORGui25-kzj59gErMXHxfND8FXoa7/view?usp=sharing" target="_blank">Cabinetmaking</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1BE8gSkX4m1vDYfjatv4DdZaUe89hv12Y/view?usp=sharing"
-                                                        target="_blank">Dancing Performance</a>
+                                                <a href="https://drive.google.com/file/d/1BE8gSkX4m1vDYfjatv4DdZaUe89hv12Y/view?usp=sharing" target="_blank">Dancing Performance</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1TisAEFI2AXDbfirzulJUq5rNAhB3o3lw/view?usp=sharing"
-                                                        target="_blank">Installation and Maintenance of Electrical of
+                                                <a href="https://drive.google.com/file/d/1TisAEFI2AXDbfirzulJUq5rNAhB3o3lw/view?usp=sharing" target="_blank">Installation and Maintenance of Electrical of
                                                         Solar Panels and Photovoltaic Grids</a>
                                         </li>
                                         <li>
-                                                <a href="https://drive.google.com/file/d/1vf1C8iUViKyByHm94NP3Jl7uxGCxsY7n/view?usp=sharing"
-                                                        target="_blank">Installation of Electrical Network</a>
+                                                <a href="https://drive.google.com/file/d/1vf1C8iUViKyByHm94NP3Jl7uxGCxsY7n/view?usp=sharing" target="_blank">Installation of Electrical Network</a>
                                         </li>
 
                                 </ul>
@@ -574,21 +490,13 @@
         </section>
         <section class="dome">
                 <picture>
-                        <source media="(min-width: 1280px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
-                        <source media="(min-width: 1024px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
-                        <source media="(min-width: 768px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
-                        <source media="(min-width: 481px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
-                        <source media="(min-width: 321px)" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
-                        <source class="b3Yrqyzc" type="image/svg+xml"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
-                        <img class="b3Yrqyzc"
-                                srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg"
-                                alt="">
+                        <source media="(min-width: 1280px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1440.svg">
+                        <source media="(min-width: 1024px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1280.svg">
+                        <source media="(min-width: 768px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_1024.svg">
+                        <source media="(min-width: 481px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_768.svg">
+                        <source media="(min-width: 321px)" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_480.svg">
+                        <source class="b3Yrqyzc" type="image/svg+xml" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg">
+                        <img class="b3Yrqyzc" srcset="https://d1q4kshf6f0axi.cloudfront.net/hubpage/hero-images-2/svgs/hero_8_320.svg" alt="">
 
                 </picture>
                 <section class="contaner">
@@ -601,11 +509,15 @@
                         <div class="contenta">
                                 <div class="ftr">Tecnólogo a cargo</div>
                                 <h2>Análisis y Desarrollo de Software para el Sector Servicios</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, facilis
-                                        repellendus
-                                        culpa rem nobis, aut architecto quaerat impedit explicabo dolore
-                                        voluptatibus?
-                                        Vel quibusdam veniam fuga voluptate dolor reiciendis eum error.</p>
+                                <p>The presence of this established software analysis and development group is paramount 
+                                in various domains including business, commerce, and education. Specifically, in Florencia, 
+                                Caquetá, at the Servicio Nacional de Aprendizaje (SENA), such a group is equally vital in 
+                                English language teaching. This team plays a pivotal role in creating customized software 
+                                solutions tailored to the unique needs of learners and educators. These applications facilitate 
+                                efficient language acquisition, interactive lessons, and progress tracking, enhancing the overall 
+                                quality of English language education. <!-- In an increasingly digital world, the importance of this group
+                                 cannot be overstated, as it empowers institutions like SENA to stay current and effective in their
+                                  educational endeavors.--></p> 
 
                                 <a href="https://adso24.com/web/" target="_blank">Conoce más de nosotros</a>
                         </div>
@@ -725,9 +637,7 @@
                                 <div class="summary__cta">
                                         <button class="btn btn__continue" onclick="ocultarVentanaResult()">Continue
                                         </button>
-                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA=""
-                                                onclick="mostrarRespuestasCorrecta();" class="btn btn__continue"
-                                                onclick="">Correct Answers
+                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA="" onclick="mostrarRespuestasCorrecta();" class="btn btn__continue" onclick="">Correct Answers
                                         </button>
                                 </div>
                         </div>
@@ -756,9 +666,7 @@
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
