@@ -125,7 +125,7 @@
     }
 }
 
-.btn {
+.btnR {
     width: 240px;
     padding: 10px;
     color: #ffffff;
@@ -141,7 +141,7 @@
     transition: all 0.3s;
 }
 
-.btn:hover {
+.btnR:hover {
     transform: translateY(5px);
     background-image: linear-gradient(to left, #aa076b, #61045f);
 }

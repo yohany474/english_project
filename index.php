@@ -635,9 +635,9 @@
                                         <p class="paragraph" id="respuestasIncorrectas"></p>
                                 </div>
                                 <div class="summary__cta">
-                                        <button class="btn btn__continue" onclick="ocultarVentanaResult()">Continue
+                                        <button class="btnR btn__continue" onclick="ocultarVentanaResult()">Continue
                                         </button>
-                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA="" onclick="mostrarRespuestasCorrecta();" class="btn btn__continue" onclick="">Correct Answers
+                                        <button id="consultarPreguntasCorrectasIncorrectas" data-mostrarRTA="" onclick="mostrarRespuestasCorrecta();" class="btnR btn__continue" onclick="">Correct Answers
                                         </button>
                                 </div>
                         </div>
