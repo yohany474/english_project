@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/preguntasListening.css">
         <link rel="stylesheet" href="assets/css/carga.css">
         <link rel="stylesheet" href="assets/css/cardResult.css">
+        <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
                 integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -114,7 +115,7 @@
                         <p>Estos son nuestros cursos de inglés listos para que empieces a aprender
                         </p>
                         <section class="destrutor">
-                                <section class="contro">
+                                <section class="contro" data-nivel="1">
                                         <section class="wer">
                                                 <img src="assets/img/illu-basic-large.svg" alt="">
                                         </section>
@@ -125,7 +126,7 @@
                                         </section>
                                 </section>
 
-                                <section class="contro">
+                                <section class="contro" data-nivel="2">
                                         <section class="wer">
                                                 <img src="assets/img/illu-intermedio-large.svg" alt="">
                                         </section>
@@ -138,7 +139,7 @@
                                         </section>
                                 </section>
 
-                                <section class="contro">
+                                <section class="contro" data-nivel="3">
                                         <section class="wer">
                                                 <img src="assets/img/illu-avanzado-large.svg" alt="">
                                         </section>
@@ -148,6 +149,52 @@
                                                         inglés.
                                                 </p>
                                         </section>
+                                </section>
+                        </section>
+                </section>
+                <section class="temas-space">
+                        <section class="tarjetas" id="tarjetasMaster">
+                                <section class="terget" data-level=" " data-clase="1">
+                                        <section class="target-bb">
+                                                <i class="fas fa-headphones" style="color: #51a8ff;"></i>
+                                        </section>
+                                        <section class="target-text azul">
+                                                <h2>Listening</h2>
+                                                <p>The ability to hear and comprehend speech and sounds in a language.</p>
+                                        </section>
+                                </section>
+                                <section class="terget" data-level=" " data-clase="2">
+                                        <section class="target-bb">
+                                                <i class="fas fa-book-open" style="color: #ff6961;"></i>
+                                        </section>
+                                        <section class="target-text red">
+                                                <h2>Reading</h2>
+                                                <p>The ability to understand and process written text in a language.</p>
+                                        </section>
+                                </section>
+                                <section class="terget" data-level=" " data-clase="3">
+                                        <section class="target-bb">
+                                                <i class="fas fa-pencil-alt" style="color: #ffbb00;"></i>
+                                        </section>
+                                        <section class="target-text amar">
+                                                <h2>Writing</h2>
+                                                <p>The ability to express thoughts and words through writing in a language.</p>
+                                        </section>
+                                </section>
+                                <section class="terget" data-level=" " data-clase="4">
+                                        <section class="target-bb">
+                                                <i class="fas fa-book" style="color: #45d3a6;"></i>
+                                        </section>
+                                        <section class="target-text">
+                                                <h2>Grammar</h2>
+                                                <p> The rules and structures governing sentence construction and word formation in a language.</p>
+                                        </section>
+                                </section>
+                        </section>
+
+                        <section class="aplicar" id="septionTraer">
+                                <section class="espace-aplicar" id="Aplicar">
+                                        
                                 </section>
                         </section>
                 </section>
@@ -809,6 +856,7 @@
         <script src="assets/js/login.js"></script>
         <script src="assets/js/acceso.js"></script>
         <script src="assets/js/menuResponsive.js"></script>
+        <script src="assets/js/llamarActividadNivel.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
                 integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
