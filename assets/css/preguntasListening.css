@@ -233,7 +233,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 560px) {
     .container{
-        width: 97% !important;
+        width: 90% !important;
     }
     .btn-container {
         flex-wrap: wrap;

@@ -1,8 +1,8 @@
 <?php
 require_once 'config/Conexion.php';
 
-$nombre = $_POST["nombre"];
-$nivel = $_POST["nivel"];
+$nombre = mysqli_real_escape_string($conexion, $_POST["nombre"]);
+$nivel = mysqli_real_escape_string($conexion, $_POST["nivel"]);
 
 
 $sql = "SELECT * FROM actividadlistening  WHERE idNivel = '$nivel' and titulo = '$nombre'";
@@ -154,7 +154,7 @@ if ($resultado) {
                         }
 
                         questions[currentQuestion].style.display = "none";
-                      
+
                         currentQuestion++;
 
                         if (currentQuestion < questions.length) {
@@ -265,16 +265,16 @@ mysqli_close($conexion);
     hacer();
     function mostrarTexto() {
 
-        if(confirmacion()){
+        if (confirmacion()) {
             const questions = document.querySelectorAll(".question");
-        questions.forEach((question, i) => {
-            question.style.display = "none";
-        });
+            questions.forEach((question, i) => {
+                question.style.display = "none";
+            });
 
-        document.getElementById('verDescrip').style.display = 'none';
-        document.getElementById('contenidoTexto').style.display = 'flex';
-        document.getElementById('previousButton').style.display = 'none';
-        document.getElementById('nextButton').style.display = 'none';
+            document.getElementById('verDescrip').style.display = 'none';
+            document.getElementById('contenidoTexto').style.display = 'flex';
+            document.getElementById('previousButton').style.display = 'none';
+            document.getElementById('nextButton').style.display = 'none';
         }
 
 
@@ -283,10 +283,10 @@ mysqli_close($conexion);
         document.querySelector('.container').innerHTML = '';
         document.getElementById('SOF').classList.remove('der');
     }
-    function confirmacion(){
-        if(confirm("Al ver la descripcion perderas el progreso de la evaluacion. Deseas continuar ?")){
+    function confirmacion() {
+        if (confirm("Al ver la descripcion perderas el progreso de la evaluacion. Deseas continuar ?")) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

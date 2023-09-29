@@ -20,7 +20,7 @@
     <div class="modal-contenido" style="width: 80%; height: 80%;">
       <button id="cerrarModal" class="cerrar">&times;</button>
       <h2>Editar Listening</h2>
-      <form method="post" action="" enctype="multipart/form-data">
+      <form method="post" action="controller/actualizarImgAudioListening.php" enctype="multipart/form-data">
         <!-- Tu contenido del formulario aquí -->
         <label for="nombre">Selecciona el tema que quieres modificar:</label>
         <select name="titulo" id="">
@@ -53,11 +53,11 @@
 
         </select>
         <label for="audio">Audio</label>
-        <input type="file" name="audio" id="">
+        <input type="file" name="audio" id="audio" accept=".mp3">
 
-        <label for="audio">Imagen</label>
-        <input type="file" name="imagen" id="">
-      
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*">
+
         <br>
         <button type="submit">Guardar</button>
       </form>
