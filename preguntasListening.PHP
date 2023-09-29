@@ -16,7 +16,7 @@ if ($resultado) {
         <!-- Resultados  -->
         <div class="container">
 
-            <div class="x" id="x2">X</div>
+            <div class="x" id="x2" onclick="mutedAudio()">X</div>
             <span>
                 <p id="preguntaActual"></p>
                 /
@@ -47,20 +47,20 @@ if ($resultado) {
                     // Si el audio actual es diferente al de la pregunta actual, actualízalo
                     if ($audio_pregunta != $audio_actual) {
                         // Imprime el elemento <audio> solo si cambia el audio
-                        echo '<audio id="audio" controls src="' . $audio_pregunta . '"></audio>';
+                        echo '<audio id="audio" class="contenidoActividad" controls src="' . $audio_pregunta . '"></audio>';
                         $audio_actual = $audio_pregunta;
                     }
 
 
 
                     if ($tituloo != $titulo_actual) {
-                        echo '<h2>' . $pregunta['titulo'] . '</h2>';
+                        echo '<h2 class="contenidoActividad">' . $pregunta['titulo'] . '</h2>';
                         $titulo_actual = $tituloo;
                     }
                     // Si la descripcion_audio actual es diferente al de la pregunta actual, actualízalo
                     if ($descripcion_audio_pregunta != $descripcion_audio_actual) {
                         // Imprime el elemento <audio> solo si cambia el audio
-                        echo '<P id="contenidoTexto" style="display: none;">
+                        echo '<P class="contenidoActividad" id="contenidoTexto" style="display: none;">
                     ' . $descripcion_audio_pregunta . '  
                     <button class="btnR" type="button" onclick="cerrarTexto()">Cancelar</button>
                     </P>';
@@ -79,19 +79,15 @@ if ($resultado) {
                         foreach ($opciones as $key => $opcion) {
                             $opcionesLabel = chr(65 + $key); // a), b), c), ...
             
-                            ?>
-                            <label class="div1">
-                                <?php
-                                echo '<input class="input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
-                                ?>
-                                <div class="checkmark"></div>
-                                <label for="pregunta1_rojo">
-                                    <?php
-                                    echo $opcionesLabel . ') ' . $opcion . '';
-                                    ?>
-                                </label>
-                            </label>
-                            <?php
+
+                            echo '
+                            <article class="radio-container">
+                                <input class="radio-input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">
+                                <label class="radio-label" style="font-size: 15.4px; font-weight: 350;">' . $opcionesLabel . ') ' . $opcion . '</label>
+                            </article>
+                            ';
+
+
                         }
                         ?>
                     </div>
@@ -163,6 +159,10 @@ if ($resultado) {
                             document.getElementById('verDescrip').style.display = 'none';
                             nextButton.style.display = "none"; // Ocultar el botón "Siguiente"
                             previousButton.style.display = "none"; // Ocultar el botón "Siguiente"
+                            const contenidoActividad = document.querySelectorAll('.contenidoActividad');
+                            contenidoActividad.forEach(item => {
+                                item.style.display = 'none';
+                            });
                             document.getElementById('audio').style.display = "none"; // Ocultar el botón "Siguiente"
                             submitButton.style.display = "flex"; // Mostrar el botón "Enviar respuestas"
                         }
@@ -187,6 +187,7 @@ if ($resultado) {
                 function enviarFormulario() {
 
                     document.getElementById('carga').style.display = 'flex';
+                    mutedAudio();
                     // Obtén el formulario por su ID
                     const form = document.getElementById("questionForm");
 
@@ -212,6 +213,8 @@ if ($resultado) {
                         })
                         .then(data => {
                             // Maneja la respuesta del servidor como JSON aqu
+
+                            
                             document.getElementById('SOF').innerHTML = '';
                             document.getElementById('SOF').classList.remove('der');
                             var correctas = data.correctas;
@@ -224,6 +227,8 @@ if ($resultado) {
 
                             document.getElementById('carga').style.display = 'none';
                             mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
+
+
 
                         })
                         .catch(error => {
@@ -260,6 +265,7 @@ mysqli_close($conexion);
         x_cerrar.addEventListener('click', () => {
             document.getElementById("SOF").classList.remove("der");
         })
+        mutedAudio();
     }
 
     hacer();
@@ -270,7 +276,7 @@ mysqli_close($conexion);
             questions.forEach((question, i) => {
                 question.style.display = "none";
             });
-
+           
             document.getElementById('verDescrip').style.display = 'none';
             document.getElementById('contenidoTexto').style.display = 'flex';
             document.getElementById('previousButton').style.display = 'none';
@@ -282,6 +288,7 @@ mysqli_close($conexion);
     function cerrarTexto() {
         document.querySelector('.container').innerHTML = '';
         document.getElementById('SOF').classList.remove('der');
+        mutedAudio();
     }
     function confirmacion() {
         if (confirm("Al ver la descripcion perderas el progreso de la evaluacion. Deseas continuar ?")) {
@@ -289,6 +296,13 @@ mysqli_close($conexion);
         } else {
             return false;
         }
+    }
+
+
+    //Funcion mutear audio
+
+    function mutedAudio(){
+        document.getElementById('audio').muted = true;
     }
 
 </script>
