@@ -23,7 +23,8 @@
 .container_vocabulary article {
   width: 30%;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;}
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
 
 .title_vocabulary {
   text-align: center;
@@ -64,12 +65,12 @@
 }
 
 .option_vocabulary li:hover {
-  color:#000000 ;
+  color: #000000;
   text-decoration: underline;
 }
 
-.option_vocabulary li a:hover{
-  color:#0066cc ;
+.option_vocabulary li a:hover {
+  color: #0066cc;
 }
 
 
@@ -94,11 +95,11 @@
   border-radius: 5px 5px 0px 0px;
 }
 
-.columns{
+.columns {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap:5px ;
+  gap: 5px;
   overflow: auto;
 }
 
@@ -113,16 +114,17 @@
   margin-top: 10px;
 }
 
-.columns ul li{
-  list-style:inside;
-  
+.columns ul li {
+  list-style: inside;
+
 }
 
 
-.columns ul li a{
-  color:#0066cc ;
+.columns ul li a {
+  color: #0066cc;
 }
-.columns ul li a:hover{
+
+.columns ul li a:hover {
   text-decoration: underline;
 }
 
@@ -180,41 +182,42 @@
   }
 
 
-  .columns{
+  .columns {
     display: flex;
     flex-direction: column;
     width: 80%;
-    gap: 5px ;
+    gap: 5px;
     overflow: 600px;
   }
-  
-  
-.columns ul {
-  font-size: 1.1rem;
-  height: auto;
-  width: 100%;
-  padding: unset;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 35px;
-
-}
-
-.columns ul li{
-  list-style:inside;
-  
-  
-}
 
 
-.columns ul li a{
-  color:#0066cc ;
-  height: 50px;
-  width: 50´x ;
-}
-.columns ul li a:hover{
-  text-decoration: underline;
-}
+  .columns ul {
+    font-size: 1.1rem;
+    height: auto;
+    width: 100%;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+
+  }
+
+  .columns ul li {
+    list-style: inside;
+
+
+  }
+
+
+  .columns ul li a {
+    color: #0066cc;
+    height: 50px;
+    width: 50´x;
+  }
+
+  .columns ul li a:hover {
+    text-decoration: underline;
+  }
 
 }

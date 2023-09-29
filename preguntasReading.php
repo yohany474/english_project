@@ -25,28 +25,25 @@ if (mysqli_num_rows($resultado) > 0) {
             <?php
 
             $tituloAnterior = ""; // Variable para almacenar el título anterior
-            $imagenAnterior = ""; // Variable para almacenar el audio anterior
-        
+
             while ($pregunta = mysqli_fetch_assoc($resultado)) {
                 $idActividad = $pregunta["idactividadReading"];
                 $titulo = $pregunta["titulo"];
-                $imagen = $pregunta["img"];
                 $preguntaa = $pregunta["pregunta"];
                 $opciones = explode('/', $pregunta["opciones"]);
 
                 // Comprobar si el título y la imagen son diferentes del anterior
-                if ($titulo !== $tituloAnterior || $imagen !== $imagenAnterior) {
+                if ($titulo !== $tituloAnterior) {
                     // Cerrar el div anterior si no es la primera actividad
                     if ($tituloAnterior !== "") {
                         echo '</div>';
                     }
 
                     $tituloAnterior = $titulo;
-                    $imagenAnterior = $imagen;
+
 
                     // Mostrar el título y la imagen
                     echo '<h5>Titulo de la actividad: ' . $titulo . '</h5>';
-                    echo '<img src="' . $imagen . '" width="200px" />';
                     echo '<div>'; // Iniciar un nuevo conjunto de preguntas
                 }
 
@@ -60,7 +57,7 @@ if (mysqli_num_rows($resultado) > 0) {
                 foreach ($opciones as $key => $opcion) {
                     $opcionesLabel = chr(65 + $key); // a), b), c), ...
                     echo '<label class="div1">';
-                    echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
+                    echo '<input class="input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
                     echo '<div class="checkmark"></div>';
                     echo '<label for="pregunta1_rojo">';
                     echo $opcionesLabel . ') ' . $opcion . '';

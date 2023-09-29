@@ -38,3 +38,34 @@ $(document).ready(function () {
 document.getElementById('x3').addEventListener('click', () => {
   document.getElementById('productos').classList.remove("ass");
 })
+
+
+
+
+
+
+
+const abrirModalBtn = document.getElementById("abrirModal");
+const cerrarModalBtn = document.getElementById("cerrarModal");
+const ventanaEditarListening = document.getElementById("ventanaEditarListening");
+const modalContenido = document.querySelector(".modal-contenido");
+
+abrirModalBtn.addEventListener("click", () => {
+    ventanaEditarListening.style.display = "flex";
+});
+
+cerrarModalBtn.addEventListener("click", () => {
+    ventanaEditarListening.style.display = "none";
+});
+
+// Agregar un evento de clic al fondo oscuro
+ventanaEditarListening.addEventListener("click", (e) => {
+    if (e.target === ventanaEditarListening) {
+        ventanaEditarListening.style.display = "none";
+    }
+});
+
+// Evita que el clic en el contenido del formulario se cierre la modal
+modalContenido.addEventListener("click", (e) => {
+    e.stopPropagation();
+});

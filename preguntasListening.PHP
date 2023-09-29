@@ -11,7 +11,7 @@ if ($resultado) {
     if (mysqli_num_rows($resultado) > 0) {
         ?>
 
-        
+
 
         <!-- Resultados  -->
         <div class="container">
@@ -51,21 +51,21 @@ if ($resultado) {
                         $audio_actual = $audio_pregunta;
                     }
 
- 
+
 
                     if ($tituloo != $titulo_actual) {
                         echo '<h2>' . $pregunta['titulo'] . '</h2>';
                         $titulo_actual = $tituloo;
                     }
-                   // Si la descripcion_audio actual es diferente al de la pregunta actual, actualízalo
-                   if ($descripcion_audio_pregunta != $descripcion_audio_actual) {
-                    // Imprime el elemento <audio> solo si cambia el audio
-                    echo '<P id="contenidoTexto" style="display: none;">
-                    '. $descripcion_audio_pregunta . '  
-                    <button class="" type="button" onclick="cerrarTexto()">Cancelar</button>
+                    // Si la descripcion_audio actual es diferente al de la pregunta actual, actualízalo
+                    if ($descripcion_audio_pregunta != $descripcion_audio_actual) {
+                        // Imprime el elemento <audio> solo si cambia el audio
+                        echo '<P id="contenidoTexto" style="display: none;">
+                    ' . $descripcion_audio_pregunta . '  
+                    <button class="btnR" type="button" onclick="cerrarTexto()">Cancelar</button>
                     </P>';
-                    $descripcion_audio_actual = $descripcion_audio_pregunta;
-                }
+                        $descripcion_audio_actual = $descripcion_audio_pregunta;
+                    }
 
 
                     ?>
@@ -82,7 +82,7 @@ if ($resultado) {
                             ?>
                             <label class="div1">
                                 <?php
-                                echo '<input type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
+                                echo '<input class="input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
                                 ?>
                                 <div class="checkmark"></div>
                                 <label for="pregunta1_rojo">
@@ -106,7 +106,7 @@ if ($resultado) {
                     ?>
                     <button class="btn" type="button" id="previousButton">Previous</button>
                     <button class="btn" type="button" id="nextButton">Next</button>
-                    <button class="btn" type="button" onclick="mostrarTexto()">Description</button>
+                    <button id="verDescrip" class="btn" type="button" onclick="mostrarTexto()">Description</button>
                     <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
                 </div>
             </form>
@@ -154,11 +154,13 @@ if ($resultado) {
                         }
 
                         questions[currentQuestion].style.display = "none";
+                      
                         currentQuestion++;
 
                         if (currentQuestion < questions.length) {
                             mostrarPregunta(currentQuestion); // Usar la función para mostrar la siguiente pregunta
                         } else {
+                            document.getElementById('verDescrip').style.display = 'none';
                             nextButton.style.display = "none"; // Ocultar el botón "Siguiente"
                             previousButton.style.display = "none"; // Ocultar el botón "Siguiente"
                             document.getElementById('audio').style.display = "none"; // Ocultar el botón "Siguiente"
@@ -262,14 +264,31 @@ mysqli_close($conexion);
 
     hacer();
     function mostrarTexto() {
-      
+
+        if(confirmacion()){
+            const questions = document.querySelectorAll(".question");
+        questions.forEach((question, i) => {
+            question.style.display = "none";
+        });
+
+        document.getElementById('verDescrip').style.display = 'none';
         document.getElementById('contenidoTexto').style.display = 'flex';
         document.getElementById('previousButton').style.display = 'none';
         document.getElementById('nextButton').style.display = 'none';
+        }
+
+
     }
-    function cerrarTexto() { 
+    function cerrarTexto() {
         document.querySelector('.container').innerHTML = '';
         document.getElementById('SOF').classList.remove('der');
+    }
+    function confirmacion(){
+        if(confirm("Al ver la descripcion perderas el progreso de la evaluacion. Deseas continuar ?")){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 </script>
