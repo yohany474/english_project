@@ -34,9 +34,9 @@ if ($fect) {
         $titulos_vistos[] = $titulo;
         $id_total[] = $id;
 ?>
-        <section class="target" data-nombre="<?php echo $titulo ?>" data-nivel="<?php echo $t["nivel"] ?>" data-clase="<?php echo $clase ?>">
+        <section class="target" data-nombre="<?php echo $titulo ?>" data-nivel="<?php echo $t["nivel"] ?>" data-clase="<?php echo $clase ?>" data-writing="<?php echo $id ?>">
           <section class="img-im">
-            <img src="<?php echo $t["img"]?>" alt="">
+            <img src="<?php echo $t["img"] ?>" alt="">
           </section>
           <section class="container-for">
             <h2><?php echo $titulo; ?></h2>
@@ -78,19 +78,38 @@ if ($fect) {
   //Codigo para traer la activiad
   $(document).ready(function() {
     $(".target").on("click", function() {
-      document.getElementById('carga').style.display ='flex';
+      document.getElementById('carga').style.display = 'flex';
       var nombre = $(this).data("nombre");
       var nivel = $(this).data("nivel");
       var clase = $(this).data("clase");
+      var writing = $(this).data("writing");
 
-      if(clase == "Listening"){
-         var archivo= "preguntasListening.PHP"
-      }else if(clase == "Reading"){
-        var archivo= "preguntasReading.php"
-      }else if(clase == "Writing"){
-        var archivo= "preguntasWriting.php"
-      }else if(clase == "Grammar"){
-        var archivo= "preguntasGrammar.php"
+      if (clase == "Listening") {
+        var archivo = "preguntasListening.PHP"
+      } else if (clase == "Reading") {
+        var archivo = "preguntasReading.php"
+      } else if (clase == "Writing") {
+        var archivo = "preguntasWriting.php"
+
+        $.ajax({
+          url: "./" + archivo,
+          method: "POST",
+          data: {
+            writing: writing,
+          },
+          success: function(response) {
+            document.getElementById('carga').style.display = 'none';
+            document.getElementById('SOF').classList.add("der");
+            $('#SOF').html(response);
+          },
+          error: function(xhr, status, error) {
+            alert(error)
+            console.error(error);
+          }
+        });
+        return;
+      } else if (clase == "Grammar") {
+        var archivo = "preguntasGrammar.php"
       }
 
       console.log(nivel);
@@ -105,7 +124,7 @@ if ($fect) {
           nivel: nivel,
         },
         success: function(response) {
-          document.getElementById('carga').style.display ='none';
+          document.getElementById('carga').style.display = 'none';
           document.getElementById('SOF').classList.add("der");
           $('#SOF').html(response);
         },
@@ -116,5 +135,4 @@ if ($fect) {
       });
     });
   });
-
 </script>
