@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="assets/css/panel.css" />
   <link rel="stylesheet" href="assets/css/ventanaCrearActividades.css" />
   <link rel="shortcut icon" href="assets/img/S_EN_A.png" type="image/x-icon">
@@ -15,8 +15,103 @@
 </head>
 
 <body id="body">
-<body>
+  <!-- Modal para editar el audio y descripcionaudio -->
+  <div id="ventanaEditarListening" class="modal">
+    <div class="modal-contenido" style="width: 80%; height: 80%;">
+      <button id="cerrarModal" class="cerrar">&times;</button>
+      <h2>Editar Listening</h2>
+      <form method="post" action="controller/actualizarImgAudioListening.php" enctype="multipart/form-data">
+        <!-- Tu contenido del formulario aquí -->
+        <label for="nombre">Selecciona el tema que quieres modificar:</label>
+        <select name="titulo" id="">
+          <?php
+          require_once 'config/Conexion.php';
 
+          $sql = "SELECT * FROM actividadlistening";
+          $resultado = mysqli_query($conexion, $sql);
+
+          if ($resultado) {
+            if (mysqli_num_rows($resultado) > 0) {
+              $titulos = array(); // Array para almacenar los títulos ya agregados
+          
+              while ($opcion = $resultado->fetch_assoc()) {
+                $titulo = $opcion['titulo'];
+
+                // Verificar si el título ya se ha agregado
+                if (!in_array($titulo, $titulos)) {
+                  $titulos[] = $titulo; // Agregar el título al array
+                  ?>
+                  <option value="<?php echo $titulo ?>">
+                    <?php echo $titulo ?>
+                  </option>
+                  <?php
+                }
+              }
+            }
+          }
+          ?>
+
+        </select>
+        <label for="audio">Audio</label>
+        <input type="file" name="audio" id="audio" accept=".mp3">
+
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*">
+
+        <br>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="ventanaEditarReading" class="modal">
+    <div class="modal-contenido" style="width: 80%; height: 80%;">
+      <button id="cerrarModal2" class="cerrar">&times;</button>
+      <h2>Editar Reading</h2>
+      <form method="post" action="controller/actualizarImgAudioListening.php" enctype="multipart/form-data">
+        <!-- Tu contenido del formulario aquí -->
+        <label for="nombre">Selecciona el tema que quieres modificar:</label>
+        <select name="titulo" id="">
+          <?php
+          require_once 'config/Conexion.php';
+
+          $sql = "SELECT * FROM actividadreading";
+          $resultado = mysqli_query($conexion, $sql);
+
+          if ($resultado) {
+            if (mysqli_num_rows($resultado) > 0) {
+              $titulos = array(); // Array para almacenar los títulos ya agregados
+          
+              while ($opcion = $resultado->fetch_assoc()) {
+                $titulo = $opcion['titulo'];
+
+                // Verificar si el título ya se ha agregado
+                if (!in_array($titulo, $titulos)) {
+                  $titulos[] = $titulo; // Agregar el título al array
+                  ?>
+                  <option value="<?php echo $titulo ?>">
+                    <?php echo $titulo ?>
+                  </option>
+                  <?php
+                }
+              }
+            }
+          }
+          ?>
+
+        </select>
+        <label for="audio">Texto de actividad</label>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*">
+
+        <br>
+        <button type="submit" name="reading">Guardar</button>
+      </form>
+    </div>
+  </div>
   <section class="itad" id="productos">
     <section class="activi">
       <header>
@@ -128,8 +223,7 @@
             </span>
             <span style="background-color: #45d3a6;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #7bd8ba;">
-              <a href="#">Ver contenido</a>
-              <a href="#">Ver estadísticas</a>
+              <div id="editG">Editar contenido</div>
             </span>
           </article>
 
@@ -140,8 +234,7 @@
             </span>
             <span style="background-color: #ffd600;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #fcdf96;">
-              <a href="#">Ver contenido</a>
-              <a href="#">Ver estadísticas</a>
+              <div id="editW">Editar contenido</div>
             </span>
           </article>
 
@@ -152,8 +245,7 @@
             </span>
             <span style="background-color: #ff6961;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #ffbfb0;">
-              <a href="preguntasReading.php">Ver contenido</a>
-              <a href="#">Ver estadísticas</a>
+              <div id="editR">Editar contenido</div>
             </span>
           </article>
 
@@ -164,8 +256,7 @@
             </span>
             <span>12 Activities</span>
             <span class="cardActivitiesEnlace">
-              <a href="preguntasListening.PHP">Ver contenido</a>
-              <a href="#">Ver estadísticas</a>
+              <div id="abrirModal">Editar contenido</div>
             </span>
           </article>
 

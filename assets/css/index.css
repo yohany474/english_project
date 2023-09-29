@@ -48,6 +48,7 @@ body {
 .encabezado .rt-img img {
    width: 38%;
    object-fit: cover;
+   cursor: pointer;
 }
 
 .encabezado .conten {
@@ -294,6 +295,7 @@ body {
 
 .aplicar{
    display: none;
+   flex-direction: column;
    overflow-y: scroll;
    padding: 0.5rem 1rem;
    height: auto;
@@ -307,7 +309,29 @@ body {
    flex-wrap: wrap;
    height: auto;
 }
+.afro{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+padding: 0rem 2rem;
+}
 
+.afro button{
+   border-radius: 99rem;
+  cursor: pointer;
+  width: 12%;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font: 700 0.7rem/1.4rem 'Inter', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #103D7C;
+}
 .targetMas{
    display: flex !important;
 }

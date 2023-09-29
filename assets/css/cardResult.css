@@ -21,7 +21,10 @@
 #contenedorRespuestasServidor{
     justify-content: center;
     padding: 2em;
+    box-sizing: border-box;
+    overflow: auto;
     display: flex;
+    border-radius: .2em;
     gap: .5em;
     flex-direction: column;
     

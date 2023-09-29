@@ -1,4 +1,15 @@
 
+document.getElementById('miImagen').addEventListener('click', function() {
+   var elementsWithClasses = document.querySelectorAll('.targetMas, .resolver, .regular');
+   
+   elementsWithClasses.forEach(function(element) {
+       element.classList.remove('targetMas', 'resolver', 'regular');
+   });
+});
+
+
+
+
 $(document).ready(function () {
   $(".contro").on("click", function () {
     var nivel = $(this).data("nivel");
@@ -9,13 +20,15 @@ $(document).ready(function () {
     });
 
     document.getElementById('tarjetasMaster').classList.add("targetMas");
+    document.getElementById('septionTraer').classList.remove("targetMas");
+
   });
 
    $(".terget").on("click", function () {
       var level = $(this).data("level");
       var clase = $(this).data("clase");
 
-      document.getElementById('tarjetasMaster').classList.add('ser')
+      document.getElementById('tarjetasMaster').classList.remove('targetMas')
 
       $.ajax({
          url: "php/FiltradoTraerActividades.php",
@@ -29,10 +42,9 @@ $(document).ready(function () {
             $('#Aplicar').html(response);
          },
          error: function (xhr, status, error) {
-          document.getElementById('tarjetasMaster').classList.remove('ser')
+          document.getElementById('tarjetasMaster').classList.remove('targetMas')
             console.error(error);
          }
       });
    });
 });
-

@@ -94,4 +94,11 @@ if ($fect) {
     });
   });
 
+
+  
+document.getElementById('limpiarEste').addEventListener('click', ()=>{
+   document.getElementById('septionTraer').classList.remove('targetMas');
+   document.getElementById('tarjetasMaster').classList.add('targetMas')
+})
+
 </script>
