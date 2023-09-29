@@ -64,6 +64,54 @@
     </div>
   </div>
 
+
+  <div id="ventanaEditarReading" class="modal">
+    <div class="modal-contenido" style="width: 80%; height: 80%;">
+      <button id="cerrarModal2" class="cerrar">&times;</button>
+      <h2>Editar Reading</h2>
+      <form method="post" action="controller/actualizarImgAudioListening.php" enctype="multipart/form-data">
+        <!-- Tu contenido del formulario aquí -->
+        <label for="nombre">Selecciona el tema que quieres modificar:</label>
+        <select name="titulo" id="">
+          <?php
+          require_once 'config/Conexion.php';
+
+          $sql = "SELECT * FROM actividadreading";
+          $resultado = mysqli_query($conexion, $sql);
+
+          if ($resultado) {
+            if (mysqli_num_rows($resultado) > 0) {
+              $titulos = array(); // Array para almacenar los títulos ya agregados
+          
+              while ($opcion = $resultado->fetch_assoc()) {
+                $titulo = $opcion['titulo'];
+
+                // Verificar si el título ya se ha agregado
+                if (!in_array($titulo, $titulos)) {
+                  $titulos[] = $titulo; // Agregar el título al array
+                  ?>
+                  <option value="<?php echo $titulo ?>">
+                    <?php echo $titulo ?>
+                  </option>
+                  <?php
+                }
+              }
+            }
+          }
+          ?>
+
+        </select>
+        <label for="audio">Texto de actividad</label>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*">
+
+        <br>
+        <button type="submit" name="reading">Guardar</button>
+      </form>
+    </div>
+  </div>
   <section class="itad" id="productos">
     <section class="activi">
       <header>
