@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verificar si se ha cargado una descripcion
         if (isset($_POST['descripcion'])) {
-            $descripcion_audio_actual = $_POST['descripcion'];
+            $descripcion_audio_actual =mysqli_real_escape_string($conexion, $_POST['descripcion']);
             $sqlActualizarAudio = "UPDATE actividadlistening SET descripcionaudio = '$descripcion_audio_actual' WHERE titulo = '$titulo'";
             mysqli_query($conexion, $sqlActualizarAudio);
         }
