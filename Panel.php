@@ -15,6 +15,30 @@
 </head>
 
 <body id="body">
+
+<section class="itad" id="productos">
+    <section class="activi">
+      <header>
+        <h2>Actividades</h2>
+        <div id="x3">
+          X
+        </div>
+      </header>
+      <section class="fot">
+        <div class="fores">
+          <input type="search" placeholder="Buscar actividad">
+        </div>
+        <div class="scroll" id="QERT">
+          <!-- CARGAR TODAS LAS ACTIVIADES DEL FILTRO -->
+        </div>
+      </section>
+    </section>
+    <section class="wer" id="WAER">
+      <!-- Contenedor para subir el archivo -->
+    </section>
+  </section>
+
+
   <!-- Modal para editar el audio y descripcionaudio -->
   <div id="ventanaEditarListening" class="modal">
     <div class="modal-contenido" style="width: 80%; height: 80%;">
@@ -102,7 +126,7 @@
 
         </select>
         <label for="audio">Texto de actividad</label>
-        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+        <textarea name="texto" id="" cols="30" rows="5"></textarea>
 
         <label for="imagen">Imagen</label>
         <input type="file" name="imagen" id="imagen" accept="image/*">
@@ -112,27 +136,6 @@
       </form>
     </div>
   </div>
-  <section class="itad" id="productos">
-    <section class="activi">
-      <header>
-        <h2>Actividades</h2>
-        <div id="x3">
-          X
-        </div>
-      </header>
-      <section class="fot">
-        <div class="fores">
-          <input type="search" placeholder="Buscar actividad">
-        </div>
-        <div class="scroll" id="QERT">
-          <!-- CARGAR TODAS LAS ACTIVIADES DEL FILTRO -->
-        </div>
-      </section>
-    </section>
-    <section class="wer" id="WAER">
-      <!-- Contenedor para subir el archivo -->
-    </section>
-  </section>
 
   <header id="header">
     <img src="assets/img/logo.png" alt="" class="logo" />
@@ -190,12 +193,7 @@
         <p>Listening</p>
       </div>
 
-      <!-- <div id="voca" class="button" onclick="mostrarContenedoresMenu('Vocabulary', this)">
-        <i class="fas fa-language"></i>
-        <p>Vocabulary</p>
-      </div> -->
 
-      <!-- Banner -->
 
       <section class="botones_cont_bottom">
         <img src="assets/img/banner.png" alt="" class="banner" />
@@ -223,7 +221,7 @@
             </span>
             <span style="background-color: #45d3a6;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #7bd8ba;">
-              <div id="editG">Editar contenido</div>
+              <div id="editG">Ver actividades</div>
             </span>
           </article>
 
@@ -234,7 +232,7 @@
             </span>
             <span style="background-color: #ffd600;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #fcdf96;">
-              <div id="editW">Editar contenido</div>
+              <div id="editW">Ver actividades</div>
             </span>
           </article>
 
@@ -245,7 +243,7 @@
             </span>
             <span style="background-color: #ff6961;">12 Activities</span>
             <span class="cardActivitiesEnlace" style="background-color: #ffbfb0;">
-              <div id="editR">Editar contenido</div>
+              <div >Ver actividades</div>
             </span>
           </article>
 
@@ -256,21 +254,21 @@
             </span>
             <span>12 Activities</span>
             <span class="cardActivitiesEnlace">
-              <div id="abrirModal">Editar contenido</div>
+              <div>Ver actividades</div>
             </span>
           </article>
 
         </section>
         <section class="oficinista">
           <header>
-            Actulizar productos
+            Actualizar contenido
           </header>
           <section class="carot" id="tore">
             <div>
               <section class="dares" data-clase="4">Grammar</section>
               <section class="dares" data-clase="3">Writing</section>
-              <section class="dares" data-clase="2">Reading</section>
-              <section class="dares" data-clase="1">Listening</section>
+              <section class="" id="editR">Reading</section>
+              <section class="" id="abrirModal">Listening</section>
             </div>
           </section>
         </section>
@@ -333,7 +331,7 @@
 
 
           <label for="contenido">Contenido del Ejercicio:</label>
-          <textarea id="contenido" name="contenido" rows="5" required></textarea>
+          <textarea id="contenido" name="contenido" rows="3" required></textarea>
 
           <label for="palabras-clave">Palabras Clave (separadas por comas):</label>
           <input type="text" id="palabras-clave" name="palabras-clave" required>

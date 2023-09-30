@@ -19,50 +19,50 @@ if (mysqli_num_rows($resultado) > 0) {
 
             <p id="totalPregunta"></p>
         </span>
-        <h4>Formulario de Preguntas</h4>
         <form id="questionForm" method="post">
-
             <?php
-
-            $tituloAnterior = ""; // Variable para almacenar el título anterior
+            $tituloAnterior = "";
+            $textoAnterior = "";
+            $instruccionAnterior = "";
+            $contador = 0;
 
             while ($pregunta = mysqli_fetch_assoc($resultado)) {
                 $idActividad = $pregunta["idactividadReading"];
                 $titulo = $pregunta["titulo"];
                 $preguntaa = $pregunta["pregunta"];
+                $instruccion = $pregunta["instrucciones"];
+                $texto = $pregunta["texto"];
                 $opciones = explode('/', $pregunta["opciones"]);
 
-                // Comprobar si el título y la imagen son diferentes del anterior
                 if ($titulo !== $tituloAnterior) {
-                    // Cerrar el div anterior si no es la primera actividad
-                    if ($tituloAnterior !== "") {
-                        echo '</div>';
-                    }
-
                     $tituloAnterior = $titulo;
-
-
-                    // Mostrar el título y la imagen
-                    echo '<h5>Titulo de la actividad: ' . $titulo . '</h5>';
-                    echo '<div>'; // Iniciar un nuevo conjunto de preguntas
+                    echo '<h2 class="contenidoActividad">' . $titulo . '</h2>';
                 }
 
-                // Agregar la pregunta al formulario actual
+                if ($instruccion !== $instruccionAnterior) {
+                    echo '<p class="contenidoActividad" style="font-size: 15px; font-weight: 350; margin-bottom: 1em;">' . $instruccion . '</p>';
+                    $instruccionAnterior = $instruccion;
+                }
+
+                if ($texto !== $textoAnterior) {
+                    echo '<p class="contenidoActividad" style="font-size: 14px; font-weight: 300; text-align: justify; margin-bottom: 1em;">' . $texto . '</p>';
+                    $textoAnterior = $texto;
+                }
+
                 echo '<div class="question">';
-                echo '<audio src=""></audio>';
                 echo '<label for="pregunta1">';
                 echo $preguntaa;
                 echo '</label>';
 
                 foreach ($opciones as $key => $opcion) {
                     $opcionesLabel = chr(65 + $key); // a), b), c), ...
-                    echo '<label class="div1">';
-                    echo '<input class="input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">';
-                    echo '<div class="checkmark"></div>';
-                    echo '<label for="pregunta1_rojo">';
-                    echo $opcionesLabel . ') ' . $opcion . '';
-                    echo '</label>';
-                    echo '</label>';
+                    echo '
+                    <article class="radio-container">
+                        <input class="radio-input" type="radio" name="respuesta_' . $idActividad . '" value="' . $opcionesLabel . '">
+                        <label class="radio-label" style="font-size: 15.4px; font-weight: 350;">' . $opcionesLabel . ') ' . $opcion . '</label>
+                    </article>
+                    ';
+
                 }
 
                 echo '</div>';
@@ -70,6 +70,7 @@ if (mysqli_num_rows($resultado) > 0) {
             ?>
 
             <div class="btn-container">
+                <?php echo '<input type="hidden" name="titulo" value="' . $titulo . '">'; ?>
                 <button class="btn" type="button" id="previousButton">Anterior</button>
                 <button class="btn" type="button" id="nextButton">Siguiente</button>
                 <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
@@ -126,6 +127,10 @@ if (mysqli_num_rows($resultado) > 0) {
                     } else {
                         nextButton.style.display = "none"; // Ocultar el botón "Siguiente"
                         previousButton.style.display = "none"; // Ocultar el botón "Siguiente"
+                        const contenidoActividad = document.querySelectorAll('.contenidoActividad');
+                        contenidoActividad.forEach(item => {
+                            item.style.display = 'none';
+                        });
                         submitButton.style.display = "flex"; // Mostrar el botón "Enviar respuestas"
                     }
                 });
@@ -171,8 +176,18 @@ if (mysqli_num_rows($resultado) > 0) {
                         return response.json(); // Parsea la respuesta como JSON
                     })
                     .then(data => {
-                        // Maneja la respuesta del servidor como JSON aqu
-                        alert(data.respuestas);
+                        document.getElementById('SOF').innerHTML = '';
+                        document.getElementById('SOF').classList.remove('der');
+                        var correctas = data.correctas;
+                        var incorrectas = data.incorrectas;
+                        var totalPreguntas = data.totalPreguntas;
+                        var calificacion = data.calificacion;
+                        var btnQueryAnswer = document.getElementById('consultarPreguntasCorrectasIncorrectas');
+                        var titulo = data.titulo; // Obtener el título de los datos
+                        btnQueryAnswer.setAttribute('data-mostrarRTA', titulo);
+
+                        document.getElementById('carga').style.display = 'none';
+                        mostrarVentanaResult(correctas, incorrectas, totalPreguntas, calificacion);
 
                     })
                     .catch(error => {
