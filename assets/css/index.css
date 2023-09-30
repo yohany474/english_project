@@ -920,6 +920,45 @@ body {
       border: 1px solid black;
    }
 
+   .tarjetas{
+      overflow-x: scroll !important;
+      height: 230px !important;
+      padding:5px !important ;
+      width:  100% !important;
+      gap: .5em;
+      flex-wrap: wrap !important;
+      justify-content: none !important;
+   }
+   .target-text h2 {
+      font-size: 16.5px !important;
+   }
+   target-text p{
+      font-size: 14.5px !important;
+   }
+   .terget .target-bb{
+      font-size: 3.3em !important;
+      height: 35%;
+   }
+   .terget .target-text{
+      padding-bottom: .5em !important;
+      height: 65%;
+   }
+   .container_vocabulary h1{
+      font-size: 2.5em !important;
+   }
+   .adso .contenta p {
+      text-align: justify !important;
+   } 
+   .tarjetas .terget{
+      width: 180px !important;
+      height: 220px !important;
+
+
+   }
+   .temas-space {
+      height: 230px !important;
+   }
+
    .sofes .pdf {
       height: 10%;
       border: 1px solid black;
