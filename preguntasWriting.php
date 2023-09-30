@@ -31,7 +31,6 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
         // Mezclar las palabras clave en un orden aleatorio
         shuffle($palabrasClaveArray);
 ?>
-<section class="fores">
         <section class="ares">
             <div class="palabras">
                 <section class="palar">
@@ -76,7 +75,6 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
                     </section>
                 </section>
             </div>
-        </section>
         </section>
 <?php
     } else {
