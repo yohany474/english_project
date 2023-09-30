@@ -1162,6 +1162,39 @@ padding: 0rem 2rem;
     .target{
       width: 100%;
     }
+
+
+    .ares{
+      width: 99% !important;
+      align-items: center;
+      flex-direction: column !important;
+    }
+
+    .palabras{
+      width: 90% !important;
+      padding: 0 !important;
+
+    }
+
+    .text-date{
+      width: 90% !important;
+      padding: 0 !important;
+      height: 90%;
+    }
+
+    .scrall{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .scrall li{
+      margin: 0.3rem;
+    }
+
+    .over-croll{
+      height: 78% !important;
+    }
 }
 
 
@@ -1178,4 +1211,121 @@ padding: 0rem 2rem;
       height: 100%;
    }
    
+}
+
+
+
+
+
+.fores{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   background-color: #00000073;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.ares{
+   display: flex;
+   width: 65%;
+   height: 80%;
+}
+
+.ares .palabras{
+   padding: 0.5rem 0.3rem;
+   width: 20%;
+}
+
+.ares .text-date{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 80%;
+   padding: 0rem 1rem;
+}
+
+.text-date .texto-comple{
+   position: relative;
+   height: 60%;
+   border-radius: 8px;
+   background-color: white;
+   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.13);
+   padding: 0.6rem 1rem;
+}
+.text-date .texto-comple h2{
+   font: 700 1.2rem/1.5rem 'Inter', sans-serif;
+  color: #103D7C;
+}
+.text-date .texto-comple .fades{
+   margin-top: 8px;
+   height: 82%;
+}
+.over-croll{
+   overflow-y: scroll;
+   height: auto;
+   max-height: 100%;
+   font: 300 0.9rem/1.2rem 'Inter', sans-serif;
+}
+
+.over-croll {
+   scrollbar-width: none;
+}
+
+
+.text-date .texto-comple p{
+   font: 300 0.8rem/1rem 'Inter', sans-serif;
+}
+
+
+
+.text-date .input-relle{
+   height: 35%;
+   border-radius: 8px;
+   padding: 0rem 0.5rem;
+   background-color: white;
+}
+
+.text-date .input-relle h2{
+   font: 700 1rem/1.5rem 'Inter', sans-serif;
+   color: #103D7C;
+   margin-top: 5px;
+}
+
+.text-date .input-relle h3{
+   font: 300 0.9rem 'Inter', sans-serif;
+   color: #103D7C;
+   margin-bottom: 5px;
+}
+
+.fares{
+   height: 80%;
+}
+
+.over-croll input[type="text"]{
+   width: 100%;
+   width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.palar{
+   padding: 0.5rem 0.2rem;
+   height: auto;
+   border-radius: 5px;
+   background-color: white;
+}
+
+.scrall{
+   height: 50%;
+   font-size: 14px;
+}
+
+.scrall li{
+   margin-top: 5px;
 }
