@@ -82,6 +82,9 @@
         <label for="imagen">Imagen</label>
         <input type="file" name="imagen" id="imagen" accept="image/*">
 
+        <label for="Descripcion">Descripcion del audio en texto</label>
+        <textarea id="Descripcion" name="descripcion" cols="30" rows="3" placeholder=""></textarea>
+
         <br>
         <button type="submit">Guardar</button>
       </form>
