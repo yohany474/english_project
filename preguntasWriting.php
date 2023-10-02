@@ -32,12 +32,35 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
         shuffle($palabrasClaveArray);
 ?>
         <style>
+            #formularioRespuestas {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                gap: 10px;
+            }
+
+            .cont_palabras_writing {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3px;
+            }
+
+            .ejercicio-pw {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
             .ejercicio-pw input[type="text"] {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #ddd;
-                border-radius: 5px;
+                width: 100px;
+                border: none;
+                border-bottom: 1px solid #000;
+            }
+
+            .ejercicio-pw input[type="text"]:focus {
+                outline: none;
+                border-color: #0056b3;
             }
 
             .ejercicio-pw button {
@@ -61,35 +84,41 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
                 <h1><?php echo $titulo; ?></h1>
             </header>
             <section class="descripcion-corta">
-                <p><?php echo $secrip_corta; ?></p>
+                <p style="font-variant: all-petite-caps;"><?php echo $secrip_corta; ?></p>
             </section>
-            <main class="main-pw">
+            <main class="main-pw" style="height: 100%;">
                 <section class="ejercicio-pw">
-                    <h2>Título del Ejercicio</h2>
-                    <p><?php echo $contenidoEjercicio; ?></p>
-                    <h3>Palabras Clave:</h3>
+                    <h3 style="color: #1b85e5;">Keywords:</h3>
                     <ul>
                         <?php
                         foreach ($palabrasClaveArray as $posicion => $palabraClave) {
                             echo '<li>' . $palabraClave . '</li>';
                         }
                         ?>
-                    </ul>
-                    <h3>Espacios en Blanco:</h3>
-                    <form id="formularioRespuestas">
-                        <input type="hidden" name="ejercicioID" value="<?php echo $ejercicioID; ?>">
-                        <?php
-                        if (!empty($palabrasClaveArray)) {
-                            foreach ($palabrasClaveArray as $posicion => $palabraClave) {
-                                echo '<label for="respuesta_' . ($posicion + 1) . '">Espacio en blanco ' . ($posicion + 1) . ':</label>';
-                                echo '<input type="text" id="respuesta_' . ($posicion + 1) . '" name="respuestas[' . ($posicion + 1) . ']" required>';
-                            }
+                    </ul><br>
+                    <h2><?php echo $titulo; ?></h2>
+                    <?php
+                    $palabras = preg_split('/\s+/', $contenidoEjercicio);
+
+                    echo '<form id="formularioRespuestas">';
+                    echo '<input type="hidden" name="ejercicioID" value="' . $ejercicioID . '">';
+                    echo '<div class="cont_palabras_writing">';
+                    foreach ($palabras as $posicion => $palabra) {
+                        if (preg_match('/^.*-{3,}.*$|^-{3,}$/', $palabra)) {
+                            // Reemplazar palabras con 3 o más guiones con inputs
+                            echo '<input type="text" id="respuesta_' . ($posicion + 1) . '" name="respuestas[' . ($posicion + 1) . ']" required>';
                         } else {
-                            echo '<p>No se encontraron palabras clave para este ejercicio.</p>';
+                            echo '<p>' . $palabra . '</p>';
                         }
-                        ?>
-                        <button id="btnMostrarModal" type="submit">Enviar Respuestas</button>
-                    </form>
+                    }
+
+                    if (empty($palabras)) {
+                        echo '<p>No se encontraron palabras clave para este ejercicio.</p>';
+                    }
+                    echo '</div>';
+                    echo '<button id="btnMostrarModal" type="submit">Enviar Respuestas</button>';
+                    echo '</form>';
+                    ?>
                 </section>
             </main>
         </div>
