@@ -114,7 +114,7 @@
                         <section class="destrutor">
                                 <section class="contro" data-nivel="1">
                                         <section class="wer">
-                                                <img src="assets/img/illu-basic-large.svg" alt="">
+                                                <img src="assets/img/auno.jpg" alt="">
                                         </section>
                                         <section class="estupe">
                                                 <h3>Nivel A1</h3>
@@ -125,7 +125,7 @@
 
                                 <section class="contro" data-nivel="2">
                                         <section class="wer">
-                                                <img src="assets/img/illu-intermedio-large.svg" alt="">
+                                                <img src="assets/img/ados.jpg" alt="">
                                         </section>
                                         <section class="estupe">
                                                 <h3>Nivel A2</h3>
@@ -138,7 +138,7 @@
 
                                 <section class="contro" data-nivel="3">
                                         <section class="wer">
-                                                <img src="assets/img/illu-avanzado-large.svg" alt="">
+                                                <img src="assets/img/buno.jpg" alt="">
                                         </section>
                                         <section class="estupe">
                                                 <h3>Nivel B1</h3>
@@ -586,7 +586,7 @@
                 </section>
                 <section class="instru">
                         <section class="doshes">
-                                <img src="assets/img/WhatsApp Image 2023-09-21 at 8.26.12 AM.jpeg" alt="">
+                                <img src="assets/img/IMG-20221117-WA0051.jpg" alt="">
                         </section>
                         <section class="casta">
                                 <div>Instructor a cargo</div>
@@ -599,26 +599,6 @@
                                         sequi, temporibus, praesentium enim nesciunt totam aperiam ut ab facere
                                         odit.
                                         Similique, magnam ipsa?</li>
-                                <li>
-                                        <i class='bx bxs-polygon'></i> Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Incidunt consequuntur aut expedita nostrum libero excepturi
-                                        reiciendis
-                                        sequi, temporibus, praesentium enim nesciunt totam aperiam ut ab facere
-                                        odit.
-                                        Similique, magnam ipsa?
-                                </li>
-                                </li>
-                                <li>
-                                        <i class='bx bxs-polygon'></i> Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Incidunt consequuntur aut expedita nostrum libero excepturi
-                                        reiciendis
-                                        sequi, temporibus, praesentium enim nesciunt totam aperiam ut ab facere
-                                        odit.
-                                        Similique, magnam ipsa?
-                                </li>
-                                </li>
                                 <a href="https://adso24.com/web/" target="_blank">Perfil profesional</a>
 
                         </section>
@@ -635,6 +615,8 @@
 
 
                 <article class="footer-contact">
+                        <!-- Imagen del PO -->
+                        <img src="assets/img//WhatsApp Image 2023-09-21 at 8.26.12 AM.jpeg" alt="" class="imgPo">
                         <h3>Contacto</h3>
                         <p>Email: contacto@example.com</p>
                         <p>Phone: +123456789</p>
