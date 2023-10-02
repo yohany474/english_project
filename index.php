@@ -27,7 +27,7 @@
                 <form class="form" id="acceso" method="post">
                         <p class="form-title">Sign in to your account</p>
                         <div class="input-container">
-                                <input type="number" name="id" id="id" placeholder="Enter email">
+                                <input type="number" name="id" id="id" placeholder="Enter DNI">
                                 <span>
                                 </span>
                         </div>
@@ -46,7 +46,7 @@
 
         </div>
         <header class="enca-contenido">
-                <section class="encabezado">
+                <section class="encabezado" >
                         <section class="rt-img">
                                 <img src="assets/img/S_EN_A-WHITE.png" alt="" id="miImagen">
                         </section>
@@ -66,7 +66,7 @@
                                 </section>
                         </section>
                 </section>
-                <section class="cuerpo-enca">
+                <section class="cuerpo-enca" id="headerP">
                         <section class="portaf">
                                 <h2>LEARN AND PRACTICE ENGLISH EASILY</h2>
                                 <p>Use SENALINGUA Caquetá for improving your skills.</p>
@@ -74,6 +74,11 @@
                         </section>
                 </section>
         </header>
+
+        <!-- Btn para redirigir al inicio -->
+        <a id="subir" href="#headerP">
+                <i class="fa-solid fa-arrow-up"></i>
+        </a>
         <section class="senador" id="senador">
                 <header>
                         <div class="encabe-new">

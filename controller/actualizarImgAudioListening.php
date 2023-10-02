@@ -2,14 +2,15 @@
 require_once '../config/Conexion.php';
 
 
-if(isset($_POST["reading"])){
+if (isset($_POST["reading"])) {
     if (isset($_POST["titulo"])) {
         $titulo = mysqli_real_escape_string($conexion, $_POST["titulo"]);
+
 
         // Verificar si se ha subido el texto
         if (isset($_POST["texto"])) {
             $nombreArchivo = mysqli_real_escape_string($conexion, $_POST["texto"]);
-            
+
             $sqlActualizarAudio = "UPDATE actividadreading SET texto='$nombreArchivo' WHERE titulo = '$titulo'";
             mysqli_query($conexion, $sqlActualizarAudio);
         }
@@ -26,7 +27,7 @@ if(isset($_POST["reading"])){
             $sqlActualizarImagen = "UPDATE actividadreading SET img = 'uploads/$nombreArchivoImagen' WHERE titulo = '$titulo'";
             mysqli_query($conexion, $sqlActualizarImagen);
         }
-        
+
         // Redirige utilizando JavaScript
         echo "
             <script>
@@ -71,6 +72,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_query($conexion, $sqlActualizarAudio);
         }
 
+        // Verificar si se ha cargado una descripcion
+        if (isset($_POST['descripcion'])) {
+            $descripcion_audio_actual =mysqli_real_escape_string($conexion, $_POST['descripcion']);
+            $sqlActualizarAudio = "UPDATE actividadlistening SET descripcionaudio = '$descripcion_audio_actual' WHERE titulo = '$titulo'";
+            mysqli_query($conexion, $sqlActualizarAudio);
+        }
+
+
         // Verificar si se ha subido un archivo de imagen
         if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] == 0) {
             $nombreArchivoImagen = mysqli_real_escape_string($conexion, $_FILES["imagen"]["name"]);
@@ -83,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sqlActualizarImagen = "UPDATE actividadlistening SET img = 'uploads/$nombreArchivoImagen' WHERE titulo = '$titulo'";
             mysqli_query($conexion, $sqlActualizarImagen);
         }
-        
+
         // Redirige utilizando JavaScript
         echo "
             <script>

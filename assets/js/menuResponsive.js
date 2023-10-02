@@ -15,6 +15,34 @@ var primer = document.getElementById("remplazar");
 var second = document.getElementById("senador");
 
 
+// Ocultar el menu al dar clik en cualquier enlace
+
+var item_Menu = document.querySelectorAll('.totem');
+item_Menu.forEach(item =>{
+   item.addEventListener('click', ()=>{
+      ventana_esta.classList.remove('samon');
+   })
+})
+
+
+// Mostrar flecha para subir el cursor al header 
+
+function mostrarAlertaEnScroll() {
+   
+   if (window.scrollY > window.innerHeight) {
+       document.getElementById('subir').classList.add('subirVisible');
+   }else{
+      document.getElementById('subir').classList.remove('subirVisible');
+   }
+}
+
+// Agrega un evento de desplazamiento (scroll) al documento
+window.addEventListener("scroll", mostrarAlertaEnScroll);
+
+
+
+
+
 $(document).ready(function () {
    $(".totem").on("click", function () {
       var valor = $(this).data("valor");

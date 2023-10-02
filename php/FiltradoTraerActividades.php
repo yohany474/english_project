@@ -36,7 +36,7 @@ if ($fect) {
         $titulos_vistos[] = $titulo;
         $id_total[] = $id;
 ?>
-        <section class="target" data-nombre="<?php echo $titulo ?>" data-nivel="<?php echo $t["nivel"] ?>" data-clase="<?php echo $clase ?>">
+        <section class="target" data-nombre="<?php echo $titulo ?>" data-nivel="<?php echo $t["nivel"] ?>" data-clase="<?php echo $clase ?>" data-writing="<?php echo $id ?>">
           <section class="img-im">
             <img src="<?php echo $t["img"]?>" alt="">
           </section>
@@ -63,6 +63,7 @@ if ($fect) {
       var nombre = $(this).data("nombre");
       var nivel = $(this).data("nivel");
       var clase = $(this).data("clase");
+      var writing = $(this).data("writing");
 
       if(clase == "Listening"){
          var archivo= "preguntasListening.PHP"
@@ -80,6 +81,7 @@ if ($fect) {
         data: {
           nombre: nombre,
           nivel: nivel,
+          writing: writing,
         },
         success: function(response) {
           document.getElementById('carga').style.display ='none';
