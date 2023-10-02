@@ -592,13 +592,7 @@
                                 <div>Instructor a cargo</div>
                                 <h2>Diego Alejandro Peña Rojas</h2>
 
-                                <li><i class='bx bxs-polygon'></i> Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit. Incidunt consequuntur aut expedita nostrum libero excepturi
-                                        reiciendis
-                                        sequi, temporibus, praesentium enim nesciunt totam aperiam ut ab facere
-                                        odit.
-                                        Similique, magnam ipsa?</li>
+                                <li><i class='bx bxs-polygon'></i>He fundamental purpose of this web page is to provide valuable support to the SENA community in their journey to elevate their English language skills. Through a rich collection of resources, interactive activities, and a diverse range of engaging topics, we aim to empower individuals to excel in English as a foreign language, fostering their personal and professional growth. Our commitment to facilitating language mastery underscores our dedication to the SENA community's success in the realm of English proficiency.</li>
                                 <a href="https://adso24.com/web/" target="_blank">Perfil profesional</a>
 
                         </section>
