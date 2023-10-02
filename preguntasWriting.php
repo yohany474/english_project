@@ -70,14 +70,14 @@
         $ejercicioID = $_POST['writing'];
 
         // Consulta para obtener el ejercicio y sus palabras clave, incluyendo el campo "secrip-corta"
-        $sql = "SELECT Titulo, Contenido_del_Ejercicio, `secrip-corta` FROM ejercicios WHERE ID = $ejercicioID";
+        $sql = "SELECT Titulo, Contenido_del_Ejercicio, secrip_corta FROM ejercicios WHERE ID = $ejercicioID";
         $result = $conexion->query($sql);
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             $titulo = $row["Titulo"];
             $contenidoEjercicio = $row["Contenido_del_Ejercicio"];
-            $secrip_corta = $row["secrip-corta"];
+            $secrip_corta = $row["secrip_corta"];
 
             // Consulta para obtener las palabras clave del ejercicio
             $sqlPalabrasClave = "SELECT Palabra_Clave FROM Palabras_Clave WHERE Ejercicio_ID = $ejercicioID";
