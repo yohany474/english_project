@@ -1,8 +1,8 @@
 <?php
 include "../config/Conexion.php";
 
-$tipo = $_POST["valor"];
-$nivel = $_POST["clase"];
+$tipo = $_POST["clase"];
+$nivel = $_POST["level"];
 
 
 if ($tipo == 1) {
