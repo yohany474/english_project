@@ -8,7 +8,8 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
     $ejercicioID = $_POST['writing'];
 
     // Consulta para obtener el ejercicio y sus palabras clave, incluyendo el campo "secrip-corta"
-    $result = $conexion->query("SELECT Titulo, Contenido_del_Ejercicio, secrip_corta FROM ejercicios WHERE ID = $ejercicioID ");
+    $sql = "SELECT Titulo, Contenido_del_Ejercicio, secrip_corta FROM ejercicios WHERE ID = $ejercicioID";
+    $result = $conexion->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -30,51 +31,99 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
         // Mezclar las palabras clave en un orden aleatorio
         shuffle($palabrasClaveArray);
 ?>
-        <section class="ares">
-            <div class="palabras">
-                <section class="palar">
-                    <h2>Palabras Clave</h2>
-                    <section class="scrall">
+        <style>
+            .ejercicio-pw input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .ejercicio-pw button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .ejercicio-pw button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+
+        <div class="container">
+            <div class="x" id="x2">X</div>
+            <header class="header-pw">
+                <h1><?php echo $titulo; ?></h1>
+            </header>
+            <section class="descripcion-corta">
+                <p><?php echo $secrip_corta; ?></p>
+            </section>
+            <main class="main-pw">
+                <section class="ejercicio-pw">
+                    <h2>Título del Ejercicio</h2>
+                    <p><?php echo $contenidoEjercicio; ?></p>
+                    <h3>Palabras Clave:</h3>
+                    <ul>
                         <?php
                         foreach ($palabrasClaveArray as $posicion => $palabraClave) {
                             echo '<li>' . $palabraClave . '</li>';
                         }
                         ?>
-                    </section>
-                </section>
-            </div>
-            <div class="text-date">
-                <section class="texto-comple">
-                    <div class="x" id="x2">X</div>
-                    <h2><?php echo $titulo ?></h2>
-                    <p><?php echo $secrip_corta ?></p>
-                    <section class="fades">
-                        <div class="over-croll">
-                            <?php echo $contenidoEjercicio ?>
-                        </div>
-                    </section>
-                </section>
-                <section class="input-relle">
-                    <h2>Espacios para rellenar</h2>
-                    <section class="fares">
-                        <form id="formularioRespuestas" class="over-croll">
-                            <input type="hidden" name="ejercicioID" value="<?php echo $ejercicioID ?>">
-                            <?php
-                            if ($resultPalabrasClave->num_rows > 0) {
-                                foreach ($palabrasClaveArray as $posicion => $palabraClave) {
-                                    echo '<label for="respuesta_' . ($posicion + 1) . '">Espacio en blanco ' . ($posicion + 1) . ':</label>';
-                                    echo '<input type="text" id="respuesta_' . ($posicion + 1) . '" name="respuestas[' . ($posicion + 1) . ']" required>';
-                                }
-                            } else {
-                                echo '<p>No se encontraron palabras clave para este ejercicio.</p>';
+                    </ul>
+                    <h3>Espacios en Blanco:</h3>
+                    <form id="formularioRespuestas">
+                        <input type="hidden" name="ejercicioID" value="<?php echo $ejercicioID; ?>">
+                        <?php
+                        if (!empty($palabrasClaveArray)) {
+                            foreach ($palabrasClaveArray as $posicion => $palabraClave) {
+                                echo '<label for="respuesta_' . ($posicion + 1) . '">Espacio en blanco ' . ($posicion + 1) . ':</label>';
+                                echo '<input type="text" id="respuesta_' . ($posicion + 1) . '" name="respuestas[' . ($posicion + 1) . ']" required>';
                             }
-                            echo '<button id="btnMostrarModal" type="submit">Enviar Respuestas</button>';
-                            ?>
-                        </form>
-                    </section>
+                        } else {
+                            echo '<p>No se encontraron palabras clave para este ejercicio.</p>';
+                        }
+                        ?>
+                        <button id="btnMostrarModal" type="submit">Enviar Respuestas</button>
+                    </form>
                 </section>
-            </div>
-        </section>
+            </main>
+        </div>
+
+        <script>
+            // Código para cerrar la ventana
+            function hacer() {
+                var x_cerrar = document.getElementById('x2');
+
+                x_cerrar.addEventListener('click', () => {
+                    document.getElementById("SOF").classList.remove("der");
+                })
+            }
+
+            hacer();
+            var ventanaFormwriting = document.querySelector('#formularioRespuestas');
+            ventanaFormwriting.addEventListener('submit', (event) => {
+                document.getElementById('carga').style.display = 'flex';
+                event.preventDefault();
+                FormDataa = new FormData(ventanaFormwriting);
+                fetch('php/procesarRespuestas.php', {
+                        method: 'POST',
+                        body: FormDataa,
+                    }).then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById('carga').style.display = 'none';
+                        $('#SOF').html(data);
+                    })
+                    .catch((error) => {
+                        document.getElementById('carga').style.display = 'none';
+                        alert(JSON.stringify(error));
+                    })
+            })
+        </script>
 <?php
     } else {
         echo '<p>Ejercicio no encontrado.</p>';
@@ -84,35 +133,3 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
 }
 $conexion->close();
 ?>
-</div>
-
-<script>
-    //Codigo para cerrar la ventana
-    function hacer() {
-        var x_cerrar = document.getElementById('x2');
-
-        x_cerrar.addEventListener('click', () => {
-            document.getElementById("SOF").classList.remove("der");
-        })
-    }
-
-    hacer();
-    var ventanaFormwriting = document.querySelector('#formularioRespuestas');
-    ventanaFormwriting.addEventListener('submit', (event) => {
-        document.getElementById('carga').style.display = 'flex';
-        event.preventDefault();
-        FormDataa = new FormData(ventanaFormwriting);
-        fetch('php/procesarRespuestas.php', {
-                method: 'POST',
-                body: FormDataa,
-            }).then((response) => response.text())
-            .then((data) => {
-                document.getElementById('carga').style.display = 'none';
-                $('#SOF').html(data);
-            })
-            .catch((error) => {
-                document.getElementById('carga').style.display = 'none';
-                alert(JSON.stringify(error))
-            })
-    })
-</script>
