@@ -1,17 +1,18 @@
 .container_vocabulary {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 3.4em;
 }
 
 .container_vocabulary h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 100%;
   color: #103D7C;
 
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .container_vocabulary div {

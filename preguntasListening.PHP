@@ -102,7 +102,7 @@ if ($resultado) {
                     ?>
                     <button class="btn" type="button" id="previousButton">Previous</button>
                     <button class="btn" type="button" id="nextButton">Next</button>
-                    <button id="verDescrip" class="btn" type="button" onclick="mostrarTexto()">Description</button>
+                    <button id="verDescrip" class="btn" type="button" onclick="mostrarTexto()">Script</button>
                     <button class="btn" type="submit" id="submitButton" style="display:none;">Enviar respuestas</button>
                 </div>
             </form>
