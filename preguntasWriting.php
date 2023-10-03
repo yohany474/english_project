@@ -104,10 +104,13 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
                     echo '<form id="formularioRespuestas">';
                     echo '<input type="hidden" name="ejercicioID" value="' . $ejercicioID . '">';
                     echo '<div class="cont_palabras_writing">';
+                    $contador = 0;
+
                     foreach ($palabras as $posicion => $palabra) {
                         if (preg_match('/^.*-{3,}.*$|^-{3,}$/', $palabra)) {
                             // Reemplazar palabras con 3 o más guiones con inputs
-                            echo '<input type="text" id="respuesta_' . ($posicion + 1) . '" name="respuestas[' . ($posicion + 1) . ']" required>';
+                            $contador++;
+                            echo '<input type="text" id="respuesta_' . ($contador) . '" name="respuestas[' . ($contador) . ']" required>';
                         } else {
                             echo '<p>' . $palabra . '</p>';
                         }
@@ -117,7 +120,7 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
                         echo '<p>No se encontraron palabras clave para este ejercicio.</p>';
                     }
                     echo '</div>';
-                    echo '<button id="btnMostrarModal" type="submit">Enviar Respuestas</button>';
+                    echo '<button id="btnMostrarModal" type="submit">Check my answers</button>';
                     echo '</form>';
                     ?>
                 </section>
