@@ -18,7 +18,7 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
         $secrip_corta = $row["secrip_corta"];
 
         // Consulta para obtener las palabras clave del ejercicio
-        $sqlPalabrasClave = "SELECT Palabra_Clave FROM Palabras_Clave WHERE Ejercicio_ID = $ejercicioID";
+        $sqlPalabrasClave = "SELECT Palabra_Clave FROM palabras_clave WHERE Ejercicio_ID = $ejercicioID";
         $resultPalabrasClave = $conexion->query($sqlPalabrasClave);
 
         // Obtener todas las palabras clave en un array
@@ -55,6 +55,7 @@ if (isset($_POST['writing']) && is_numeric($_POST['writing'])) {
             .ejercicio-pw input[type="text"] {
                 width: 100px;
                 border: none;
+                text-align: center;
                 border-bottom: 1px solid #000;
             }
 
